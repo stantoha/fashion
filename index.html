@@ -10,33 +10,56 @@
 </head>
 <style>
     @media (max-width:1100px) {
-        .wrapper{
+        .wrapper {
             margin: 0 auto;
         }
-        .container{
+
+        .container {
             max-width: 990px;
         }
-    }
-    @media (max-width:992px) {
-        .wrapper{
-            margin: 0 auto;
-        }
-        .container{
-            max-width: 766px;
-        }
-        .menu{
+
+        .menu {
             visibility: hidden;
         }
-        .burger{
+
+        .burger {
             visibility: visible;
         }
     }
-    @media (max-width:768px) {
-        .wrapper{
+
+    @media (max-width:992px) {
+        .wrapper {
             margin: 0 auto;
         }
-        .container{
+
+        .container {
+            max-width: 766px;
+        }
+
+        .menu {
+            visibility: hidden;
+        }
+
+        .burger {
+            visibility: visible;
+        }
+    }
+
+    @media (max-width:768px) {
+        .wrapper {
+            margin: 0 auto;
+        }
+/* 
+        .container {
             max-width: 320px;
+        } */
+
+        .menu {
+            visibility: hidden;
+        }
+
+        .burger {
+            visibility: visible;
         }
     }
 </style>
@@ -50,15 +73,15 @@
             <header class="header">
 
                 <div class="title__container">
+
                     <a href="#" class="title">
-                        <h2>Аліна Столярова</h2>
+                        <h3>Аліна Столярова</h3>
                     </a>
-                
                     <p class="sub__title">
-                        персональний стиліст 
+                        персональний стиліст
                     </p>
                 </div>
-                    
+
                 <div class="nav__container">
                     <ul class="menu">
                         <li class="menu__item">
@@ -80,7 +103,7 @@
                     <div class="burger">
                         <input id="nav-toggle" type="checkbox" />
                         <label class="nav-btn" for="nav-toggle">
-                           <span ></span>
+                            <span></span>
                         </label>
                         <nav class="nav">
                             <li class="nav__item">
@@ -99,434 +122,443 @@
                                 <a class="nav__link" href="#">контакти</a>
                             </li>
                         </nav>
-                     </div>
+                    </div>
                 </div>
-    
-            </header>           
+
+            </header>
         </div>
 
         <main class="main">
-                    
-                <div class="container">
-                    <section class="presentation">
-                        <div class="presentation__card">
-                            <h3 class="introduction">
-                                Привіт!
-                                Я Аліна-персональний стиліст та консультант формування Вашого індивідуального стилю та підбору гардеробу
-                            </h3>
-                            <p class="text__block short__desc">
+
+            <div class="container">
+                <section class="presentation">
+                    <div class="presentation__card">
+                        <h2 class="introduction">
+                            Привіт!
+                            Я Аліна-персональний стиліст та консультант Вашого індивідуального стилю та підбору
+                            гардеробу
+                        </h2>
+
+                        <p class="text__block short__desc">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet illum praesentium harum
+                            molestiae sequi aperiam consequatur inventore
+                            adipisci tempora ipsam cum nesciunt atque quia pariatur repudiandae quasi maiores, ad
+                            impedit?Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum voluptas numquam
+                            nulla ex possimus maxime sapiente ipsam alias inventore molestias ab tenetur voluptatem,
+                            quaerat quibusdam consequatur sed modi expedita facilis!
+                        </p>
+
+                        <img class="content__pic" src="img/a.jpg" alt="#">
+                    </div>
+                    <div class="presentation__card">
+                        <h2 class="introduction">
+                            Хто це-персональний стиліст?
+                        </h2>
+                        <img class="content__pic" src="img/alinka4.jpg" alt="#">
+                        <p class="text__block short__desc">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem nisi cum, consequuntur
+                            consequatur veniam quis sapiente, facere, culpa beatae
+                            atque quos architecto iste? Nobis cumque, corporis architecto sequi aut eos?
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione porro maiores eveniet
+                            exercitationem, suscipit consequatur ipsam eligendi in ipsum, officiis similique maxime vero
+                            perspiciatis aspernatur, facere labore distinctio rerum ullam?
+                        </p>
+                        
+                    </div>
+                    <div class="presentation__card">
+                        <h2 class="introduction">
+                            Чого очікувати?
+                        </h2>
+                        <p class="text__block short__desc">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto laborum assumenda magni cum,
+                            inventore eum id, sunt ex nulla suscipit aut voluptates
+                            ipsa. Consequatur velit enim, aspernatur obcaecati perferendis vel!
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste aut vitae perferendis
+                            laboriosam quisquam eaque, illum architecto voluptatum vel aliquid assumenda ratione maxime
+                            odio minus quod placeat provident eos suscipit.
+                        </p>
+                        <img class="content__pic" src="img/alinka1.jpg" alt="#">
+                    </div>
+                </section>
+            </div>
+
+
+            <div class="slogan container">
+                <h2 class="slogan">
+                    SLOGAN TEXT
+                </h2>
+            </div>
+
+
+            <div class="container">
+                <section class="advantages">
+                    <h2 class="section__name">
+                        Переваги
+                    </h2>
+                    <ul class="advantages__list">
+                        <li class="advantages__item">
+                            <h4 class="advantage__name">
+                                Перевага 1
+                            </h4>
+                            <p class="text__block advantage__desc">
 
                             </p>
+                        </li>
+                        <li class="advantages__item">
+                            <h4 class="advantage__name">
+                                Перевага 2
+                            </h4>
+                            <p class="text__block advantage__desc">
+
+                            </p>
+                        </li>
+                        <li class="advantages__item">
+                            <h4 class="advantage__name">
+                                Перевага 3
+                            </h4>
+                            <p class="text__block advantage__desc">
+
+                            </p>
+                        </li>
+                    </ul>
+
+
+                </section>
+            </div>
+
             
-                            <img src="" alt="#">
-                        </div>
-                        <div class="presentation__card">
-                            <h3 class="introduction">
-                                Хто це-персональний стиліст? 
-                            </h3>
-                            <p class="text__block short__desc">
-
-                            </p>
-                            <img src="" alt="#">
-                        </div>
-                        <div class="presentation__card">
-                            <h3 class="introduction">
-                                Чого очікувати?
-                            </h3>
-                            <p class="text__block short__desc">
-
-                            </p>
-                            <img src="" alt="#">
-                        </div>
-                        <div class="presentation__card">
-                            <h3 class="introduction">
-                                Ми чудово розважимося!
-                            </h3>
-                            <p class="text__block short__desc">
-
-                            </p>
-                            <img src="" alt="#">
-                        </div>
-                        
-
-                    </section>
-                </div>
-
-                    
-                <div class="slogan container">
-                    <h1 class="slogan">
-                        SLOGAN TEXT
-                    </h1>
-                </div>
-                
-
-                <div class="container">
-                    <section class="advantages">
-                        <h3 class="section__name">
-                            Переваги
-                        </h3>
-                        <ul class="advantages__list">
-                            <li class="advantages__item">
-                                <h4 class="advantage__name">
-                                    Перевага 1
-                                </h4>
-                                <p class="text__block advantage__desc">
-
-                                </p>
-                            </li>
-                            <li class="advantages__item">
-                                <h4 class="advantage__name">
-                                    Перевага 2
-                                </h4>
-                                <p class="text__block advantage__desc">
-
-                                </p>
-                            </li>
-                            <li class="advantages__item">
-                                <h4 class="advantage__name">
-                                    Перевага 3
-                                </h4>
-                                <p class="text__block advantage__desc">
-
-                                </p>
-                            </li>
-                        </ul>
 
 
-                    </section>
-                </div>
+            <div class="slogan container">
+                <h2 class="slogan">
+                    SLOGAN TEXT
+                </h2>
+            </div>
 
-                    
-                <div class="slogan container">
-                    <h1 class="slogan">
-                        SLOGAN TEXT
-                    </h1>
-                </div>
-           
-                
-                <div class="container">
-                    <section class="about__me">
-                        <h3 class="section__name">
-                            Про мене
-                        </h3>
-                        <p class=""></p>
-
-                    </section>
-                </div>
-                  
-                    
-                <div class="slogan container">
-                    <h1 class="slogan">
-                        SLOGAN TEXT
-                    </h1>
-                </div>
+            
+            <div class="container">
+                <section class="services">
+                    <h2 class="section__name">
+                        Мої послуги
+                    </h2>
+                    <ul class="services__list">
+                        <li class="service__item">
+                            <a class="service__link" href="#">
+                                <h4 class="service__name">Розбір гардеробу</h4><img src="img\1.jpg" alt="">
+                            </a>
+                        </li>
+                        <a class="more_details btn hide" href="#">Дізнатися більше</a>
         
+                        <li class="service__item">
+                            <a class="service__link" href="#">
+                                <h4 class="service__name">Консультація по гардеробу</h4><img src="img\2.jpg" alt="">
+                            </a>
+                        </li>
+                        <a class="more_details btn hide" href="#">Дізнатися більше</a>
+        
+                        <li class="service__item">
+                            <a class="service__link" href="#">
+                                <h4 class="service__name">Шоппінг</h4><img src="" alt="">
+                            </a>
+                        </li>
+                        <a class="more_details btn hide" href="#">Дізнатися більше</a>
+        
+                        <li class="service__item">
+                            <a class="service__link" href="#">
+                                <h4 class="service__name">Створення капсульного гардеробу</h4><img src="" alt="">
+                            </a>
+                        </li>
+                        <a class="more_details btn hide" href="#">Дізнатися більше</a>
+        
+                        <li class="service__item">
+                            <a class="service__link" href="#">
+                                <h4 class="service__name">Створення капсульного гардеробу</h4><img src="" alt="">
+                            </a>
+                        </li>
+                        <a class="more_details btn hide" href="#">Дізнатися більше</a>
+        
+                        <li class="service__item">
+                            <a class="service__link" href="#">
+                                <h4 class="service__name">Створення образу під подію</h4><img src="" alt="">
+                            </a>
+                        </li>
+                        <a class="more_details btn hide" href="#">Дізнатися більше</a>
+                    </ul>
+                </section>
+            </div>
 
-                <div class="container">
-                    <section class="services">
-                        <h3 class="section__name">
-                            Моі послуги
-                        </h3>
-                        <ul class="services-list">
-                            <li class="service-item">
-                                <a class="service-link" href="#">
-                                    <h3 class="service-name">Консультація по стилю</h3>
-                                    <a class="more_details btn hide" href="#">Дізнатися більше</a>
-                                </a>
-                            </li>
 
-                            <li class="service-item">
-                                <a class="service-link" href="#">
-                                    <h3 class="service-name">Розбір гардеробу</h3>
-                                    <a class="more_details btn hide" href="#">Дізнатися більше</a>
-                                </a>
-                            </li>
+            <div class="slogan container">
+                <h2 class="slogan">
+                    SLOGAN TEXT
+                </h2>
+            </div>
 
-                            <li class="service-item">
-                                <a class="service-link" href="#">
-                                    <h3 class="service-name">Консультація по гардеробу</h3>
-                                    <a class="more_details btn hide" href="#">Дізнатися більше</a>
-                                </a>
-                            </li>
+            <div class="container">
+                <section class="about__me">
+                    <h2 class="section__name">
+                        Про мене
+                    </h2>
+                    <p class=""></p>
 
-                            <li class="service-item">
-                                <a class="service-link" href="#">
-                                    <h3 class="service-name">Шоппінг</h3>
-                                    <a class="more_details btn hide" href="#">Дізнатися більше</a>
-                                </a>
-                            </li>
+                </section>
+            </div>
 
-                            <li class="service-item">
-                                <a class="service-link" href="#">
-                                    <h3 class="service-name">Створення капсульного гардеробу</h3>
-                                    <a class="more_details btn hide" href="#">Дізнатися більше</a>
-                                </a>
-                            </li>
 
-                            <li class="service-item">
-                                <a class="service-link" href="#">
-                                    <h3 class="service-name">Створення образу під подію</h3>
-                                    <a class="more_details btn hide" href="#">Дізнатися більше</a>
-                                </a>
-                            </li>
-                        </ul>
+            <div class="slogan container">
+                <h2 class="slogan">
+                    SLOGAN TEXT
+                </h2>
+            </div>
 
-                    </section>
-                </div>
 
-           
-                <div class="slogan container">
-                    <h1 class="slogan">
-                        SLOGAN TEXT
-                    </h1>
-                </div>
-               
 
-                <div class="container">
-                    <section class="clients__reviews">
-                        <h3 class="section__name">
-                            Відгуки
-                        </h3>
-                        <ul class="reviews__list">
-                            <li class="reviews__item">
-                                <img class="client__pic" src="" alt="#">
-                                <p class="client__name">
 
-                                </p>
-                                <p class="services__recieved">
+            <div class="container">
+                <section class="clients__reviews">
+                    <h2 class="section__name">
+                        Відгуки
+                    </h2>
+                    <ul class="reviews__list">
+                        <li class="reviews__item">
+                            <img class="client__pic" src="" alt="#">
+                            <p class="client__name">
 
-                                </p>
-                                <p class="text__block review">
+                            </p>
+                            <p class="services__recieved">
 
-                                </p>
-                            </li>
+                            </p>
+                            <p class="text__block review">
 
-                            <li class="reviews__item">
-                                <img class="client__pic" src="" alt="#">
-                                <p class="client__name">
+                            </p>
+                        </li>
 
-                                </p>
-                                <p class="services__recieved">
+                        <li class="reviews__item">
+                            <img class="client__pic" src="" alt="#">
+                            <p class="client__name">
 
-                                </p>
-                                <p class="text__block review">
+                            </p>
+                            <p class="services__recieved">
 
-                                </p>
-                            </li>
+                            </p>
+                            <p class="text__block review">
 
-                            <li class="reviews__item">
-                                <img class="client__pic" src="" alt="#">
-                                <p class="client__name">
+                            </p>
+                        </li>
 
-                                </p>
-                                <p class="services__recieved">
+                        <li class="reviews__item">
+                            <img class="client__pic" src="" alt="#">
+                            <p class="client__name">
 
-                                </p>
-                                <p class="text__block review">
+                            </p>
+                            <p class="services__recieved">
 
-                                </p>
-                            </li>
-                        </ul>
+                            </p>
+                            <p class="text__block review">
 
-                    </section>
-                </div>
+                            </p>
+                        </li>
+                    </ul>
 
-                    
-                <div class="slogan container">
-                    <h1 class="slogan">
-                        SLOGAN TEXT
-                    </h1>
-                </div>
-           
+                </section>
+            </div>
 
-                <div class="container">
-                    <section class="importance">
-                        <h3 class="section__name">
-                            Для чого Вам персональний стиліст? 
-                        </h3>
 
-                        <ul class="importance__list">
-                            <li class="importance__item">
-                                <h4 class="importance__item__name">
-                                    Індивідуальність
-                                </h4>
-                                <p class="text__block importance__item__desc">
+            <div class="slogan container">
+                <h2 class="slogan">
+                    SLOGAN TEXT
+                </h2>
+            </div>
 
-                                </p>
-                            </li>
-                            <li class="importance__item">
-                                <h4 class="importance__item__name">
-                                    Користь
-                                </h4>
-                                <p class="text__block importance__item__desc">
-                                    
-                                </p>
-                            </li>
-                            <li class="importance__item">
-                                <h4 class="importance__item__name">
-                                    Образи
-                                </h4>
-                                <p class="text__block importance__item__desc">
-                                    
-                                </p>
-                            </li>
-                            <li class="importance__item">
-                                <h4 class="importance__item__name">
-                                    Впевненість
-                                </h4>
-                                <p class="text__block importance__item__desc">
-                                    
-                                </p>
-                            </li>
-                            <li class="importance__item">
-                                <h4 class="importance__item__name">
-                                    Тренди
-                                </h4>
-                                <p class="text__block importance__item__desc">
-                                    
-                                </p>
-                            </li>
-                            <li class="importance__item">
-                                <h4 class="importance__item__name">
-                                    Тип фігури
-                                </h4>
-                                <p class="text__block importance__item__desc">
-                                    
-                                </p>
-                            </li>
-                        </ul>    
 
-                    </section>
-                </div>
+            <div class="container">
+                <section class="importance">
+                    <h2 class="section__name">
+                        Для чого Вам персональний стиліст?
+                    </h2>
 
-                    
-                <div class="slogan container">
-                    <h1 class="slogan">
-                        SLOGAN TEXT
-                    </h1>
-                </div>
-               
+                    <ul class="importance__list">
+                        <li class="importance__item">
+                            <h4 class="importance__item__name">
+                                Індивідуальність
+                            </h4>
+                            <p class="text__block importance__item__desc">
 
-                <div class="container">
-                    <section class="telegram__chanel">
-                        <h3 class="section__name">
-                            Telegram-канал
-                        </h3>
-                        <p class="telegram__chanel__desc">
+                            </p>
+                        </li>
+                        <li class="importance__item">
+                            <h4 class="importance__item__name">
+                                Користь
+                            </h4>
+                            <p class="text__block importance__item__desc">
 
-                        </p>
-                        <a class="btn" href="#">
-                            Підпишись!
-                        </a>
+                            </p>
+                        </li>
+                        <li class="importance__item">
+                            <h4 class="importance__item__name">
+                                Образи
+                            </h4>
+                            <p class="text__block importance__item__desc">
 
-                    </section>
-                </div>
+                            </p>
+                        </li>
+                        <li class="importance__item">
+                            <h4 class="importance__item__name">
+                                Впевненість
+                            </h4>
+                            <p class="text__block importance__item__desc">
 
-                    
-                <div class="slogan container">
-                    <h1 class="slogan">
-                        SLOGAN TEXT
-                    </h1>
-                </div>
-               
-                <div class="container">
-                    <section class="shopping__tours">
-                        <h3 class="section__name">
-                            Шопінг-тури
-                        </h3>
-                        <p class="shopping__tour__desc">
+                            </p>
+                        </li>
+                        <li class="importance__item">
+                            <h4 class="importance__item__name">
+                                Тренди
+                            </h4>
+                            <p class="text__block importance__item__desc">
 
-                        </p>
+                            </p>
+                        </li>
+                        <li class="importance__item">
+                            <h4 class="importance__item__name">
+                                Тип фігури
+                            </h4>
+                            <p class="text__block importance__item__desc">
 
-                        <ul class="shopping__tours__list">
-                            <li class="shopping__tour__card">
-                                  <h3 class="shopping__tour__name">
-                                      Париж
-                                  </h3>
-                                  <img src="" alt="">
-                                  <p class="shopping__tour__desc">
+                            </p>
+                        </li>
+                    </ul>
 
-                                  </p>
-                                  <p class="shopping__tour__program">
-                                      <ol>
-                                          <li>
-                                              <p>
-                                                  День 1
-                                              </p>
-                                          </li>
-                                          <li>
-                                            <p>
-                                                День 2
-                                            </p>
-                                        </li>
-                                        <li>
-                                            <p>
-                                                День 3
-                                            </p>
-                                        </li>
-                                        <li>
-                                            <p>
-                                                День 4
-                                            </p>
-                                        </li>
-                                        <li>
-                                            <p>
-                                                День 5
-                                            </p>
-                                        </li>
+                </section>
+            </div>
 
-                                      </ol>
-                                  </p>
 
-                                  <span>Вартість:</span><span>10000</span><span>UAH</span>
-                                  <a class="btn" href="#">
-                                    Забронювати
-                                </a> 
-                            </li>
-                            <li class="shopping__tour__card">
-                                <h3 class="shopping__tour__name">
-                                    Мілан
-                                </h3>
-                                <img src="" alt="">
-                                <p class="shopping__tour__desc">
+            <div class="slogan container">
+                <h2 class="slogan">
+                    SLOGAN TEXT
+                </h2>
+            </div>
 
-                                </p>
-                                <p class="shopping__tour__program">
-                                    <ol>
-                                        <li>
-                                            <p>
-                                                День 1
-                                            </p>
-                                        </li>
-                                        <li>
-                                          <p>
-                                              День 2
-                                          </p>
-                                      </li>
-                                      <li>
-                                          <p>
-                                              День 3
-                                          </p>
-                                      </li>
-                                      <li>
-                                          <p>
-                                              День 4
-                                          </p>
-                                      </li>                               
 
-                                    </ol>
-                                </p>
+            <div class="container">
+                <section class="telegram__chanel">
+                    <h2 class="section__name">
+                        Telegram-канал
+                    </h2>
+                    <p class="telegram__chanel__desc">
 
-                                <span>Вартість:</span><span>20000</span><span>UAH</span>
-                                <a class="btn" href="#">
-                                  Забронювати
-                              </a> 
-                          </li>
-                        </ul>
-                        
+                    </p>
+                    <a class="btn" href="#">
+                        Підписатися
+                    </a>
 
-                    </section>
-                </div>
+                </section>
+            </div>
+
+
+            <div class="slogan container">
+                <h2 class="slogan">
+                    SLOGAN TEXT
+                </h2>
+            </div>
+
+            <div class="container">
+                <section class="shopping__tours">
+                    <h2 class="section__name">
+                        Шопінг-тури
+                    </h2>
+                    <p class="shopping__tour__desc">
+
+                    </p>
+
+                    <ul class="shopping__tours__list">
+                        <li class="shopping__tour__card">
+                            <h3 class="shopping__tour__name">
+                                Париж
+                            </h3>
+                            <img src="" alt="">
+                            <p class="shopping__tour__desc">
+
+                            </p>
+                            <p class="shopping__tour__program">
+                                <ol>
+                                    <li>
+                                        <p>
+                                            День 1
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            День 2
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            День 3
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            День 4
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            День 5
+                                        </p>
+                                    </li>
+
+                                </ol>
+                            </p>
+
+                            <span>Вартість:</span><span>10000</span><span>UAH</span>
+                            <a class="btn" href="#">
+                                Забронювати
+                            </a>
+                        </li>
+                        <li class="shopping__tour__card">
+                            <h3 class="shopping__tour__name">
+                                Мілан
+                            </h3>
+                            <img src="" alt="">
+                            <p class="shopping__tour__desc">
+
+                            </p>
+                            <p class="shopping__tour__program">
+                                <ol>
+                                    <li>
+                                        <p>
+                                            День 1
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            День 2
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            День 3
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            День 4
+                                        </p>
+                                    </li>
+
+                                </ol>
+                            </p>
+
+                            <span>Вартість:</span><span>20000</span><span>UAH</span>
+                            <a class="btn" href="#">
+                                Забронювати
+                            </a>
+                        </li>
+                    </ul>
+
+
+                </section>
+            </div>
 
         </main>
 
@@ -543,7 +575,7 @@
                         </a>
                     </li>
                     <li>
-                        <a class="social-link"  href="#">
+                        <a class="social-link" href="#">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                 class="bi bi-telegram" viewBox="0 0 16 16">
                                 <path
@@ -552,7 +584,7 @@
                         </a>
                     </li>
                     <li>
-                        <a class="social-link"  href="#">
+                        <a class="social-link" href="#">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                 class="bi bi-facebook" viewBox="0 0 16 16">
                                 <path
@@ -561,20 +593,56 @@
                         </a>
                     </li>
                     <li>
-                        <a class="social-link"  href="#">
+                        <a class="social-link" href="#">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                 class="bi bi-envelope-open-fill" viewBox="0 0 16 16">
                                 <path
-                                    d="M8.941.435a2 2 0 0 0-1.882 0l-6 3.2A2 2 0 0 0 0 5.4v.313l6.709 3.933L8 8.928l1.291.717L16 5.715V5.4a2 2 0 0 0-1.059-1.765l-6-3.2zM16 6.873l-5.693 3.337L16 13.372v-6.5zm-.059 7.611L8 10.072.059 14.484A2 2 0 0 0 2 16h12a2 2 0 0 0 1.941-1.516zM0 13.373l5.693-3.163L0 6.873v6.5z" />
+                                    d="M8.941.435a2 2 0 0 0-1.882 0l-6 3.2A2 2 0 0 0 0 5.4v.313l6.709 3.933L8 8.928l1.291.717L16 5.715V5.4a2 2 0 0 0-1.059-1.765l-6-3.2zM16 6.873l-5.693 3.337L16 13.372v-6.5zm-.059 7.611L8 10.072.059 14.484A2 2 0 0 0 2 16h22a2 2 0 0 0 1.941-1.516zM0 13.373l5.693-3.163L0 6.873v6.5z" />
                             </svg>
                         </a>
                     </li>
                 </ul>
             </div>
+            <div class="footer-center">
+
+                <div class="footer-logo-container">
+                    <a href="#">
+                        <img class="logo" src="#" alt="logo">
+                    </a>
+                </div>
+
+                <div class="footer-services-menu-container">
+                    <ul class="services-list">
+                        <li class="service-item">
+                            <a class="service-link" href="#"></a>
+                        </li>
+                        <li class="service-item">
+                            <a class="service-link" href="#"></a>
+                        </li>
+                        <li class="service-item">
+                            <a class="service-link" href="#"></a>
+                        </li>
+                        <li class="service-item">
+                            <a class="service-link" href="#"></a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="contacts">
+                    <p>Alina Stoliarova</p><br>
+                    <span>tel:</span>
+                    <a href="380967407500">+38(096)740-75-00</a>
+                    <span>email</span>
+                    <a href="mailtolink:alinka199@gmail.com">mail me</a>
+                </div>
+
+
+            </div>
             <div class="footer-bottom">
                 <p>Copyright Anton Stoliarov 2022</p> <span>|</span>
                 <p>Права на всі матеріали та курси належать Anton Stoliarov.
-                    Будь-яке використання без дозволу правовласника тягне у себе юридичну відповідальність.</p> <span>|</span>
+                    Будь-яке використання без дозволу правовласника тягне у себе юридичну відповідальність.</p>
+                <span>|</span>
                 <a href="#">Terms & Conditions</a> <span>|</span>
                 <a href="#">Політика обробки персональних даних</a> <span>|</span>
                 <a href="#">Фотогрвфії Anton Stoliarov</a> <span>|</span>
@@ -582,10 +650,22 @@
             </div>
         </footer>
 
-      
-        
+<div class="modal">
+        <div class="modal__dialog">
+            <div class="modal__content">
+                <form action="#">
+                    <div data-close class="modal__close">&times;</div>
+                    <div  class="modal__title">Мы свяжемся с вами как можно быстрее!</div>
+                    <input required placeholder="Ваше имя" name="name" type="text" class="modal__input">
+                    <input required placeholder="Ваш номер телефона" name="phone" type="phone" class="modal__input">
+                    <button class="btn btn_dark btn_min">Перезвонить мне</button>
+                </form>
+            </div>
+        </div>
+    </div>
 
-        
+
+
 
 
         <!-- <section class="slogan-bar first">
@@ -810,7 +890,7 @@
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                 class="bi bi-envelope-open-fill" viewBox="0 0 16 16">
                                 <path
-                                    d="M8.941.435a2 2 0 0 0-1.882 0l-6 3.2A2 2 0 0 0 0 5.4v.313l6.709 3.933L8 8.928l1.291.717L16 5.715V5.4a2 2 0 0 0-1.059-1.765l-6-3.2zM16 6.873l-5.693 3.337L16 13.372v-6.5zm-.059 7.611L8 10.072.059 14.484A2 2 0 0 0 2 16h12a2 2 0 0 0 1.941-1.516zM0 13.373l5.693-3.163L0 6.873v6.5z" />
+                                    d="M8.941.435a2 2 0 0 0-1.882 0l-6 3.2A2 2 0 0 0 0 5.4v.313l6.709 3.933L8 8.928l1.291.717L16 5.715V5.4a2 2 0 0 0-1.059-1.765l-6-3.2zM16 6.873l-5.693 3.337L16 13.372v-6.5zm-.059 7.611L8 10.072.059 14.484A2 2 0 0 0 2 16h22a2 2 0 0 0 1.941-1.516zM0 13.373l5.693-3.163L0 6.873v6.5z" />
                             </svg>
                         </a>
                     </li>
@@ -827,7 +907,19 @@
             </div>
 
         </footer> -->
-
+        <div class="modal">
+            <div class="modal__dialog">
+                <div class="modal__content">
+                    <form action="#">
+                        <div data-close class="modal__close">&times;</div>
+                        <div  class="modal__title">Ми скоро Вам передзвонимо !</div>
+                        <input required placeholder="Ваше ім'я" name="name" type="text" class="modal__input">
+                        <input required placeholder="Ваш номер телефона" name="phone" type="phone" class="modal__input">
+                        <button class="btn btn_dark btn_min">Передзвонити до мене</button>
+                    </form>
+                </div>
+            </div>
+        </div>
 
     </div>
 
