@@ -5,7 +5,7 @@ body{
     font-family: 'Courier New', Courier, monospace;
     font-size: 25px;
     line-height: 1.5;
-    letter-spacing: 3px;
+    letter-spacing: 1px;
 }
 
 h1,
@@ -27,19 +27,7 @@ nav{
     border-right:1px solid black;
 }
 
-.socials {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
- 
-}
 
-.socials a{
-    display: block;
-    margin: 0 20px;
-    transform: scale(3);
-    color:#f0aa7c  ;
-}
 
 .btn{
     display: flex;
@@ -315,25 +303,83 @@ section h2{
 }
 
 .service__item{
-    flex: 30%;
-    height: 360px;
+    flex: 25%;
+    height: 400px;
     width: 270px;
     padding:10px;   
     margin: 20px;
     border:3px solid rgba(255, 151, 82, 0.8);
-    border-radius: 15px 35px;
-    box-shadow: 0 0 30px  rgba(253, 135, 56, 0.5);;
+    border-radius: 15px/15px;
+    box-shadow: 0 0 30px  rgba(253, 135, 56, 0.5);
     text-align: center;
+}
+
+.slogan__container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 10px;
+    background: url("") no-repeat 50% 50%;
+    height:800px ;
+    border: 1px solid black;
+}
+
+h2.slogan {
+    display: block;
+    font-style: italic;
+    color: rgba(255, 151, 82, 0.8);
 }
 
 
 
+.hide{
+    display: none;
+}
 
+.show{
+    display: block;
+}
 
+.fade{
 
+}
 
+.footer{
+    display:block;
+    margin: 50px auto;
+    text-align: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, .2);
+}
 
+.footer-top,
+.footer-center,
+.footer-bottom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
 
+.socials {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 50px auto;
+}
+
+.social__link{
+    display: block;
+    margin: 0 50px;
+    transform: scale(3);
+    color:#f0aa7c  ;
+    transition: 0.5s;
+}
+
+.social__link:hover{
+    transform: scale(5) rotate(360deg);
+}
 
 
 
@@ -410,33 +456,6 @@ section h2{
 
 
 
-.hide{
-    display: none;
-}
-
-.show{
-    display: block;
-}
-
-.fade{
-
-}
-
-.footer{
-    display:block;
-    margin: 0 auto;
-    text-align: center;
-    align-items: center;
-}
-
-.footer-top,
-.footer-center,
-.footer-bottom{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0 auto;
-}
 
 @font-face {
     font-family: 'Balsamiq Sans'; 
