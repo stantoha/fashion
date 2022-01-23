@@ -14,16 +14,16 @@
             display: none;
         }
 
-        .burger {
-            visibility: visible;
-        }
-
         .title__container {
             flex: 70%;
         }
 
         .nav__container {
             flex: 30%;
+        }
+
+        .content__pic{
+            transform: scale(0.75);
         }
     }
 
@@ -40,10 +40,10 @@
         .menu {
             display: none;
         }
-
-        .burger {
-            visibility: visible;
+        .content__pic{
+            transform: scale(0.75);
         }
+
     }
 
     @media (max-width:992px) {
@@ -59,10 +59,10 @@
         .menu {
             display: none;
         }
-
-        .burger {
-            visibility: visible;
+        .content__pic{
+            transform: scale(0.5);
         }
+
     }
 
     @media (max-width:768px) {
@@ -78,10 +78,10 @@
         .menu {
             display: none;
         }
-
-        .burger {
-            visibility: visible;
+        .content__pic{
+            transform: scale(0.5);
         }
+
     }
 
     @media (max-width:622px) {
@@ -99,15 +99,16 @@
         }
 
         .burger {
-            visibility: visible;
+            display: flex;
+        }
+        .content__pic{
+            transform: scale(0.25);
         }
     }
 </style>
 
 <body>
-
     <div class="wrapper">
-
 
         <div class="header__container">
             <header class="header">
@@ -122,24 +123,8 @@
                     </p>
                 </div>
 
-                <div class="nav__container">
-                    <ul class="menu">
-                        <li class="menu__item">
-                            <a class="menu__link" href="#">про мене</a>
-                        </li>
-                        <li class="menu__item">
-                            <a class="menu__link" href="#">співпраця</a>
-                        </li>
-                        <li class="menu__item">
-                            <a class="menu__link" href="#">послуги</a>
-                        </li>
-                        <li class="menu__item">
-                            <a class="menu__link" href="#">відгуки</a>
-                        </li>
-                        <li class="menu__item">
-                            <a class="menu__link" href="#">контакти</a>
-                        </li>
-                    </ul>
+                <div class="nav__container hide">
+                    
                     <div class="burger">
                         <input id="nav-toggle" type="checkbox" />
                         <label class="nav-btn" for="nav-toggle">
@@ -150,7 +135,7 @@
                                 <a class="nav__link" href="#">про мене</a>
                             </li>
                             <li class="nav__item">
-                                <a class="nav__link" href="#">співпраця</a>
+                                <a class="nav__link" href="#">тури</a>
                             </li>
                             <li class="nav__item">
                                 <a class="nav__link" href="#">послуги</a>
@@ -163,85 +148,122 @@
                             </li>
                         </nav>
                     </div>
+                    
                 </div>
 
+                <div class="menu__container">
+                    <ul class="menu">
+                        <li class="menu__item">
+                            <a class="menu__link" href="#">про мене</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#">тури</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#">послуги</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#">відгуки</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#">контакти</a>
+                        </li>
+                    </ul>
+                </div>
             </header>
+          
         </div>
 
         <main class="main">
 
             <div class="container">
                 <section class="presentation">
-                    <div class="presentation__card">
-                        <h2 class="introduction">
-                            Привіт!
-                            Я Аліна-персональний стиліст та консультант Вашого індивідуального стилю та підбору
-                            гардеробу
-                        </h2>
-
-                        <p class="text__block short__desc">
+                    <h1 class="slidein introduction">
+                        Привіт!
+                        Я Аліна-персональний стиліст
+                    </h1>
+                    <figure class="presentation__card">
+                        <img class="content__pic" src="img/a.jpg" alt="#">
+                        <figcaption class="text__block short__desc">
                             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet illum praesentium harum
                             molestiae sequi aperiam consequatur inventore
                             adipisci tempora ipsam cum nesciunt atque quia pariatur repudiandae quasi maiores, ad
                             impedit?Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum voluptas numquam
                             nulla ex possimus maxime sapiente ipsam alias inventore molestias ab tenetur voluptatem,
                             quaerat quibusdam consequatur sed modi expedita facilis!
-                        </p>
-
-                        <img class="content__pic" src="img/a.jpg" alt="#">
-                    </div>
-                    <div class="presentation__card">
-                        <h2 class="introduction">
-                            Хто це-персональний стиліст?
-                        </h2>
-                        <img class="content__pic" src="img/alinka4.jpg" alt="#">
-                        <p class="text__block short__desc">
+                        </figcaption>
+                        
+                        
+                    </figure>
+                    <h1 class="slidein introduction">
+                        Хто це-персональний стиліст?
+                    </h1>
+                    <figure class="presentation__card">
+               
+                        <figcaption class="text__block short__desc">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem nisi cum, consequuntur
                             consequatur veniam quis sapiente, facere, culpa beatae
                             atque quos architecto iste? Nobis cumque, corporis architecto sequi aut eos?
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione porro maiores eveniet
                             exercitationem, suscipit consequatur ipsam eligendi in ipsum, officiis similique maxime vero
                             perspiciatis aspernatur, facere labore distinctio rerum ullam?
-                        </p>
 
-                    </div>
-                    <div class="presentation__card">
-                        <h2 class="introduction">
-                            Чого очікувати?
-                        </h2>
-                        <p class="text__block short__desc">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe molestias laboriosam aliquid
+                            pariatur cumque veniam reiciendis modi alias voluptate earum voluptatibus perspiciatis,
+                            quaerat atque aut? Voluptatem vel optio delectus fuga.
+                        </figcaption>
+         
+                        <img class="content__pic" src="img/alinka4.jpg" alt="#">
+                    </figure>
+                    <h1 class="slidein introduction">
+                        Чого очікувати?
+                    </h1>
+                    <figure class="presentation__card">
+                        <img class="content__pic" src="img/alinka1.jpg" alt="#">
+                        <figcaption class="text__block short__desc">
                             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto laborum assumenda magni cum,
                             inventore eum id, sunt ex nulla suscipit aut voluptates
                             ipsa. Consequatur velit enim, aspernatur obcaecati perferendis vel!
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste aut vitae perferendis
                             laboriosam quisquam eaque, illum architecto voluptatum vel aliquid assumenda ratione maxime
                             odio minus quod placeat provident eos suscipit.
-                        </p>
-                        <img class="content__pic" src="img/alinka1.jpg" alt="#">
-                    </div>
+                        </figcaption>
+                        
+                    </figure>
                 </section>
             </div>
-
-
             <div class="slogan__container">
-                <h2 class="slogan">
-                    SLOGAN TEXT
-                </h2>
+                <h1 class="slidein slogan">
+                    Підпишися, щоб бути в курсі останніх новин стилю та моди
+                </h1><br>
+                <form class="sign__up" action="get">
+
+                    <input type="text" name="name" class="name" id="name" value="your first name">
+                    <input type="submit" name="subscribe" class="subscribe" id="subscribe" value="subscribe">
+
+                    <input type="text" name="email" class="email" id="email" value="your email address">
+
+                </form>
+
             </div>
+
+
 
 
             <div class="container">
                 <section class="advantages">
-                    <h2 class="section__name">
+                    <h1 class="slidein section__name">
                         Переваги
-                    </h2>
+                    </h1>
                     <ul class="advantages__list">
                         <li class="advantages__item">
                             <h4 class="advantage__name">
                                 Перевага 1
                             </h4>
                             <p class="text__block advantage__desc">
-
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi voluptate saepe quia
+                                laboriosam? Earum provident, exercitationem atque pariatur eaque mollitia ducimus
+                                architecto totam dicta veritatis qui culpa voluptatum amet saepe?
                             </p>
                         </li>
                         <li class="advantages__item">
@@ -249,7 +271,9 @@
                                 Перевага 2
                             </h4>
                             <p class="text__block advantage__desc">
-
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint consequatur totam unde
+                                doloremque recusandae, repellat sequi natus provident dignissimos modi hic magni! Veniam
+                                tempore rem fugit beatae magnam earum dolor?
                             </p>
                         </li>
                         <li class="advantages__item">
@@ -257,7 +281,9 @@
                                 Перевага 3
                             </h4>
                             <p class="text__block advantage__desc">
-
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia rem laborum animi
+                                esse deserunt! Suscipit natus ea odit ipsam impedit, a consequatur, modi, vitae alias et
+                                eaque quidem distinctio illum.
                             </p>
                         </li>
                     </ul>
@@ -269,17 +295,20 @@
 
 
             <div class="slogan__container">
-                <h2 class="slogan">
-                    SLOGAN TEXT
-                </h2>
+                <h1 class="slidein slogan">
+                    <a class="consult__link" href="#">
+                        Давай познайомимся - <br>
+                        запишися до мене на консультацію!
+                    </a>
+                </h1>
             </div>
 
 
             <div class="container">
                 <section class="services">
-                    <h2 class="section__name">
+                    <h1 class="slidein section__name">
                         Мої послуги
-                    </h2>
+                    </h1>
                     <ul class="services__list">
                         <li class="service__item">
                             <a class="service__link" href="#">
@@ -328,16 +357,16 @@
 
 
             <div class="slogan__container">
-                <h2 class="slogan">
+                <h1 class="slidein slogan">
                     SLOGAN TEXT
-                </h2>
+                </h1>
             </div>
 
             <div class="container">
                 <section class="about__me">
-                    <h2 class="section__name">
+                    <h1 class="slidein section__name">
                         Про мене
-                    </h2>
+                    </h1>
                     <p class="">
                         Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                         Consectetur, rem tenetur.
@@ -356,9 +385,9 @@
 
 
             <div class="slogan__container">
-                <h2 class="slogan">
+                <h1 class="slidein slogan">
                     SLOGAN TEXT
-                </h2>
+                </h1>
             </div>
 
 
@@ -366,9 +395,9 @@
 
             <div class="container">
                 <section class="clients__reviews">
-                    <h2 class="section__name">
+                    <h1 class="slidein section__name">
                         Відгуки
-                    </h2>
+                    </h1>
                     <ul class="reviews__list">
                         <li class="reviews__item">
                             <img class="client__pic" src="" alt="#">
@@ -417,17 +446,17 @@
 
 
             <div class="slogan__container">
-                <h2 class="slogan">
+                <h1 class="slidein slogan">
                     SLOGAN TEXT
-                </h2>
+                </h1>
             </div>
 
 
             <div class="container">
                 <section class="importance">
-                    <h2 class="section__name">
+                    <h1 class="slidein section__name">
                         Для чого Вам персональний стиліст?
-                    </h2>
+                    </h1>
 
                     <ul class="importance__list">
                         <li class="importance__item">
@@ -435,17 +464,14 @@
                                 Індивідуальність
                             </h4>
                             <p class="text__block importance__item__desc">
-                           Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus praesentium voluptas
-                                mollitia placeat, repellendus pariatur eaque quaerat sed ab, quo dolore harum saepe
-                                fugiat quam quia atque veniam? Maiores, tempore. </p>
+
+                            </p>
                         </li>
                         <li class="importance__item">
                             <h4 class="importance__item__name">
                                 Користь
                             </h4>
-                            <p class="text__block importance__item__desc"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus praesentium voluptas
-                                mollitia placeat, repellendus pariatur eaque quaerat sed ab, quo dolore harum saepe
-                                fugiat quam quia atque veniam? Maiores, tempore.
+                            <p class="text__block importance__item__desc">
 
                             </p>
                         </li>
@@ -453,9 +479,7 @@
                             <h4 class="importance__item__name">
                                 Образи
                             </h4>
-                            <p class="text__block importance__item__desc"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus praesentium voluptas
-                                mollitia placeat, repellendus pariatur eaque quaerat sed ab, quo dolore harum saepe
-                                fugiat quam quia atque veniam? Maiores, tempore.
+                            <p class="text__block importance__item__desc">
 
                             </p>
                         </li>
@@ -463,9 +487,7 @@
                             <h4 class="importance__item__name">
                                 Впевненість
                             </h4>
-                            <p class="text__block importance__item__desc"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus praesentium voluptas
-                                mollitia placeat, repellendus pariatur eaque quaerat sed ab, quo dolore harum saepe
-                                fugiat quam quia atque veniam? Maiores, tempore.
+                            <p class="text__block importance__item__desc">
 
                             </p>
                         </li>
@@ -473,9 +495,7 @@
                             <h4 class="importance__item__name">
                                 Тренди
                             </h4>
-                            <p class="text__block importance__item__desc"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus praesentium voluptas
-                                mollitia placeat, repellendus pariatur eaque quaerat sed ab, quo dolore harum saepe
-                                fugiat quam quia atque veniam? Maiores, tempore.
+                            <p class="text__block importance__item__desc">
 
                             </p>
                         </li>
@@ -483,9 +503,7 @@
                             <h4 class="importance__item__name">
                                 Тип фігури
                             </h4>
-                            <p class="text__block importance__item__desc"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus praesentium voluptas
-                                mollitia placeat, repellendus pariatur eaque quaerat sed ab, quo dolore harum saepe
-                                fugiat quam quia atque veniam? Maiores, tempore.
+                            <p class="text__block importance__item__desc">
 
                             </p>
                         </li>
@@ -496,17 +514,17 @@
 
 
             <div class="slogan__container">
-                <h2 class="slogan">
+                <h1 class="slidein slogan">
                     SLOGAN TEXT
-                </h2>
+                </h1>
             </div>
 
 
             <div class="container">
                 <section class="telegram__chanel">
-                    <h2 class="section__name">
+                    <h1 class="slidein section__name">
                         Telegram-канал
-                    </h2>
+                    </h1>
                     <p class="telegram__chanel__desc">
 
                     </p>
@@ -519,16 +537,16 @@
 
 
             <div class="slogan__container">
-                <h2 class="slogan">
+                <h1 class="slidein slogan">
                     SLOGAN TEXT
-                </h2>
+                </h1>
             </div>
 
             <div class="container">
                 <section class="shopping__tours">
-                    <h2 class="section__name">
+                    <h1 class="slidein section__name">
                         Шопінг-тури
-                    </h2>
+                    </h1>
                     <p class="shopping__tour__desc">
 
                     </p>
@@ -718,264 +736,7 @@
                 <div class="modal__content">
                     <form action="#">
                         <div data-close class="modal__close">&times;</div>
-                        <div class="modal__title">Мы свяжемся с вами как можно быстрее!</div>
-                        <input required placeholder="Ваше имя" name="name" type="text" class="modal__input">
-                        <input required placeholder="Ваш номер телефона" name="phone" type="phone" class="modal__input">
-                        <button class="btn btn_dark btn_min">Перезвонить мне</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-
-
-
-
-
-        <!-- <section class="slogan-bar first">
-
-            <h2 class="slogan">You have style</h2>
-            <i>
-                <p class="round-font">and it's time to show it</p>
-            </i>
-
-
-        </section>
-
-
-        <section class="services ">
-
-            <p class="round-font">Sign Up For The Latest Stylist Tips</p>
-
-            <form class="sign-up" action="get">
-
-                <input type="text" name="name" class="name" id="name" value="your first name">
-
-                <input type="text" name="email" class="email" id="email" value="your email address">
-
-                <input type="submit" name="subscribe" class="subscribe" id="subscribe" value="subscribe">
-            </form>
-
-
-            <div class="intro">
-
-                <article>
-                    <h3>ARE YOU READY TO HAVE YOUR WARDROBE SAY "ON TREND, POLISHED, AND EFFORTLESSLY STYLED"?</h3>
-                    <p class="round-font">Are you ready to work with a stylist to update your wardrobe and to take you
-                        shopping to all of the right places?</p>
-                    <p>You are in the perfect place if you struggle with feeling like your wardrobe is a time capsule of
-                        the past, or if you struggle with not knowing what to wear and hate looking at your clothes.</p>
-                    <p>Let's stop letting the stories in your head strip you of your power to feel amazing!</p>
-
-                    <ul>
-
-                        <li>I understand that there is power in breaking down your walls, and I want to support you in
-                            doing that.</li>
-                        <li>I know that more does not equal better.</li>
-                        <li>I want you to feel free to get rid of the clothes that aren't making you feel 100%!</li>
-                        <li>I know that confidence can change your personal and professional life and become a
-                            competitive advantage and connection point for others.</li>
-
-                    </ul>
-                </article>
-
-                <img src="img\a.jpg" alt="Alinka">
-
-            </div><br>
-
-
-            <h3 class="enter-word">ARE YOU READY TO TAKE YOUR WARDROBE TO THE NEXT LEVEL?
-                GREAT! LET'S DO IT!</h3>
-
-
-            <ul class="services-list">
-                <li class="service-item">
-                    <a href="#">
-                        <h4>personal styling</h4><img src="img\1.jpg" alt="">
-                    </a>
-                </li>
-
-                <li class="service-item">
-                    <a href="#">
-                        <h4>consultation</h4><img src="img\2.jpg" alt="">
-                    </a>
-                </li>
-
-                <li class="service-item">
-                    <a href="#">
-                        <h4>parsing the wardrobe</h4><img src="" alt="">
-                    </a>
-                </li>
-
-                <li class="service-item">
-                    <a href="#">
-                        <h4>shopping</h4><img src="" alt="">
-                    </a>
-                </li>
-
-                <li class="service-item">
-                    <a href="#">
-                        <h4>photoshoot & event styling</h4><img src="" alt="">
-                    </a>
-                </li>
-
-                <li class="service-item">
-                    <a href="#">
-                        <h4>vip styling</h4><img src="" alt="">
-                    </a>
-                </li>
-            </ul>
-
-            <div class="hire-me">
-
-                <h3 class="enter-word"><a href="#" class="hire-link">interested in hiring me-click here!</a></h3>
-            </div>
-        </section>
-
-
-        <section class="slogan-bar second">
-
-            <h2 class="slogan">You are more than ordinary</h2>
-            <i>
-                <p class="round-font">and it's time to look extraordinary!</p>
-            </i>
-
-        </section>
-
-
-        <section class="about-me">
-
-            <img src="img\3.jpg" alt="Alina" width="375" height="475">
-
-            <article>
-                <h3>HI, I'M ALINA</h3>
-                <p>After working in the fashion industry as VP of Sales & Marketing for a clothing company, I was then
-                    able to work as a fashion designer. I learned the ins-and-outs of behind the scenes fashion...from
-                    styling to design to trade shows to fashion weeks. I was also lucky to have an amazing opportunity
-                    to become a full time professional makeup artist where I worked with models, designers, brides, and
-                    more.</p>
-                <p class="round-font">What I love the most and what fulfills me, is helping people to truly discover
-                    their image and allow it to shine. I am ready to do that for you as YOUR Professional Stylist &
-                    Image Consultant.</p>
-                <a href="">LEARN MORE ></a>
-            </article>
-
-        </section>
-
-
-        <section class="slogan-bar third">
-
-
-            <h2 class="slogan">You are amazing</h2>
-            <i>
-                <p class="round-font">and you can dress like it!</p>
-            </i>
-
-        </section>
-
-
-        <section class="schedule-consultation">
-
-            <article>
-
-                <p class="round-font">I am a personal stylist & image consultant,
-                    and I am excited to partner with you on your style & wardrobe.</p>
-
-                <h4>WHAT DOES THAT MEAN?</h4>
-                <p>It means that before I ever look at your wardrobe, we get to chat about your dreams and ideas for how
-                    you would love to look and what will bring you the most confidence. Whether it's a focus on your
-                    professional wardrobe, personal wardrobe, or both!
-                </p>
-
-
-                <h4>WHAT CAN YOU EXPECT?</h4>
-                <p>You can expect to feel immediate relief and joy right after our first session! I will help you look
-                    through your wardrobe and decide what should stay and what should go. We will maximize the potential
-                    in your current wardrobe. I will expertly decide what needs adjustments and I will take you to the
-                    tailor to make sure it's perfect! We will go shopping to complete your looks - usually with only
-                    5-10 NEW items! Then you will get your own personal look book - with every outfit that I designed
-                    for you!
-                </p>
-
-                <h4>WE ARE GOING TO HAVE SO MUCH FUN!</h4>
-                <p>There will be laughs, sighs of relief, and major confidence boosts. We will work together to
-                    determine what your style truly is and I will give you tools to make sure that it shines through and
-                    that your confidence radiates for all to see.
-                </p>
-
-                <P class="round-font">Are you ready for a brand new confidence? A confidence that can change the world
-                    and transform your life?</P>
-
-            </article>
-
-            <div class="consult-link">
-                <a href="#">
-                    schedule a consultation
-                </a>
-            </div>
-
-        </section>
-
-
-        <footer class="footer">
-
-            <div class="footer-top">
-
-                <ul class="social">
-                    <li>
-                        <a class="social-link" href="#">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                class="bi bi-instagram" viewBox="0 0 16 16">
-                                <path
-                                    d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
-                            </svg>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="social-link"  href="#">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                class="bi bi-telegram" viewBox="0 0 16 16">
-                                <path
-                                    d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.287 5.906c-.778.324-2.334.994-4.666 2.01-.378.15-.577.298-.595.442-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294.26.006.549-.1.868-.32 2.179-1.471 3.304-2.214 3.374-2.23.05-.012.12-.026.166.016.047.041.042.12.037.141-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8.154 8.154 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629.093.06.183.125.27.187.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.426 1.426 0 0 0-.013-.315.337.337 0 0 0-.114-.217.526.526 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09z" />
-                            </svg>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="social-link"  href="#">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                class="bi bi-facebook" viewBox="0 0 16 16">
-                                <path
-                                    d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
-                            </svg>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="social-link"  href="#">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                class="bi bi-envelope-open-fill" viewBox="0 0 16 16">
-                                <path
-                                    d="M8.941.435a2 2 0 0 0-1.882 0l-6 3.2A2 2 0 0 0 0 5.4v.313l6.709 3.933L8 8.928l1.291.717L16 5.715V5.4a2 2 0 0 0-1.059-1.765l-6-3.2zM16 6.873l-5.693 3.337L16 13.372v-6.5zm-.059 7.611L8 10.072.059 14.484A2 2 0 0 0 2 16h22a2 2 0 0 0 1.941-1.516zM0 13.373l5.693-3.163L0 6.873v6.5z" />
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="footer-bottom">
-                <p>Copyright Taylor Made Coaching, LLC 2017</p> <span>|</span>
-                <p>All Rights Reserved</p> <span>|</span>
-                <a href="#">Terms & Conditions</a> <span>|</span>
-                <a href="#">Privacy Policy</a> <span>|</span>
-                <a href="#">Photography by Carla Coulson & Rachael Rubin</a> <span>|</span>
-                <a href="#">Web Design by Outlaw Creative</a>
-            </div>
-
-        </footer> -->
-        <div class="modal">
-            <div class="modal__dialog">
-                <div class="modal__content">
-                    <form action="#">
-                        <div data-close class="modal__close">&times;</div>
-                        <div class="modal__title">Ми скоро Вам передзвонимо !</div>
+                        <div class="modal__title">Ми скоро Вам передзвонимо!</div>
                         <input required placeholder="Ваше ім'я" name="name" type="text" class="modal__input">
                         <input required placeholder="Ваш номер телефона" name="phone" type="phone" class="modal__input">
                         <button class="btn btn_dark btn_min">Передзвонити до мене</button>

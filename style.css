@@ -3,9 +3,9 @@ body{
     padding: 0;
     width: 100%;
     font-family: 'Courier New', Courier, monospace;
-    font-size: 25px;
+    font-size: 1em;
     line-height: 1.5;
-    letter-spacing: 1px;
+    overflow: visible;
 }
 
 h1,
@@ -21,20 +21,17 @@ nav{
 
 .wrapper{
     display: block;
-    margin: 0 15vw;
+    margin: 0 5vw;
     position: relative;
     border-left:1px solid black;
     border-right:1px solid black;
 }
-
-
 
 .btn{
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 20px;
-    border: 3px solid black;
     border-radius: 10px/10px;
     text-align: center;
     max-width: 250px;
@@ -49,48 +46,49 @@ a.btn{
     font-size: 30px;
     text-transform: uppercase;
 } 
-
  /* HEADER */
 
 .header__container{
-    background: url("img/4.jpg") no-repeat 50% top;
-    min-height: 700px;
+  /*   background: url("img/a.jpg") no-repeat 50% top; */
+    height: 130px;
     background-color:#efede8;
-    margin: 10px auto 0;
+    margin: 20px auto;
     padding-bottom:10px ;
 }
 
 .header{
     position: absolute;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: rgba(0, 0, 0, .4);
+    justify-content: space-around;
+/*     align-items: center;
+ */    background-color: rgba(0, 0, 0, .4);
     align-self: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     width:100% ;
 }
 
+
+
 .title__container,
-.nav__container{ 
+.menu__container{ 
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
+    
 }
 
 .title__container{
     flex-direction: column;
-    flex: 35%;
+    flex:40%;
 }
-
-.nav__container{
-    flex:60%;
+.menu__container{
+    flex:40%;
 }
 
 .menu{
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
     list-style: none;
 }
@@ -110,12 +108,11 @@ a.btn{
 .nav__link{
     color: white;
     text-decoration: none;
-    border-bottom: 2px solid rgba(255, 255, 255, 0.5);
-    border-top: 2px solid rgba(255, 255, 255, 0.5);
+    
     transition: all 0.3s;
 }
 
-.title:hover,
+
 .menu__link:hover,
 .nav__link:hover{
     color:#f0aa7c;
@@ -126,15 +123,22 @@ a.btn{
 }
 
 .title{
-    margin: 30px auto 0;
+    margin: 35px auto 0;
+    font-size: 25px;
+    border-bottom: 4px solid rgba(255, 255, 255, 0.5);
+    border-top: 4px solid rgba(255, 255, 255, 0.5);
+}
+.title:hover{
+    color:#f0aa7c;
 }
 
 .sub__title{
-    margin: 0 auto 20px;
+    margin: 5px auto 20px;
+    color:#cfcbc4 ;
+    font-size: 14px;
 }
 
 .burger{
-    visibility: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -207,19 +211,18 @@ a.btn{
     left: 0;
   } 
 
-  #nav-toggle:checked ~ .nav-btnl >img {
+  /* #nav-toggle:checked ~ .nav-btnl >img {
       position: absolute;
     transform: translateX(-100px) rotate(360deg);
-  }
+  } */
 
-/* MAIN */
+/*MAIN*/
 
-/* .main{
-    display: flex;
-    flex-direction: column;
+ .main{
+    display:block;
     align-items: center;
-    padding: 20px;
-} */
+    padding: 10px;
+} 
 
 .container{
     display: block;
@@ -228,7 +231,7 @@ a.btn{
     padding:20px 50px ;
 }
 
-.container:nth-of-type(4n){
+.container:nth-of-type(2n){
     background-color: #cfcbc4;
 }
 
@@ -239,6 +242,7 @@ a.btn{
 section{
     display: block;
     align-items: center;
+    padding: 5px;
     margin: 0 auto;
     width: 100%;
 }
@@ -249,7 +253,6 @@ section{
 .service__name,
 .advantage__name{
     display: block;
-    border: 1px solid black;
     text-align: center;
     padding: 30px;
     margin: 0 auto;
@@ -264,30 +267,68 @@ section ul{
 
 .presentation__card{
     display: flex;
-    align-items: center;
     flex-wrap: wrap;
 }
 
-.text__block{
-    padding: 5px;
-    margin: 0 50px;
+
+.slidein {
+    animation-duration: 1s;
+    animation-name: slidein;
+  }
+  
+  @keyframes slidein {
+    from {
+        opacity: 0;
+      margin-left: 100%;
+      width: 300%;
+    }
+  
+    to {
+        opacity: 1;
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+
+h1.introduction{
+   flex: 100%;
+   display: block;
+   font-size: 2.5em;
+   text-align: center;
+   align-self: center;
 }
 
-.text__block,
-.content__pic{
-    flex:45%;
+.text__block{
+    text-align:start ;
+    flex:55%;
+    padding: 50px;
+    margin: 0 5px;
 }
+
+/* .content__pic{
+    flex:32%;
+    margin: 40px;
+    transition: all 0.5s;
+} */
 
 section h2{
     flex: 100%;
     margin: 50px 100px;
-    font-family: 'Balsamiq Sans', cursive;
+    font-family: 'Balsamiq Sans';
+    text-align: center;
+}
+
+.advantages__list{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
     text-align: center;
 }
 
 .advantages__item{
+    flex: 40%;
     display: block;
-    padding: 30px;
+    padding: 10px;
     margin: 0 10px; 
 }
 
@@ -316,20 +357,61 @@ section h2{
 
 .slogan__container{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 0 auto;
+    margin: 100px auto;
     padding: 10px;
-    background: url("") no-repeat 50% 50%;
-    height:800px ;
-    border: 1px solid black;
+
 }
 
-h2.slogan {
+h1.slogan {
     display: block;
     font-style: italic;
     color: rgba(255, 151, 82, 0.8);
+    width:50%;
+    margin: 0 auto;
+    padding: 5px;
+    text-align: center;
 }
+
+.sign__up{
+    display: flex;
+    width: 30%;
+    justify-content: space-around;
+    flex-direction: row;
+    margin: 0 auto;
+}
+
+.sign__up input{
+    display: block;
+    padding: 10px;
+    margin: 10px;
+    text-align:center ;
+}
+.sign__up input.subscribe,
+.consult__link,
+a.btn{
+    text-decoration: none;
+    color: white;
+/*     display: inline-block; */
+    padding: 20px 60px;
+    background-color: rgba(255, 151, 82, 0.8);
+    border-radius: 15px 15px;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -342,7 +424,10 @@ h2.slogan {
 }
 
 .fade{
-
+    animation-name: fade;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-fill-mode: both;
 }
 
 .footer{
@@ -457,12 +542,12 @@ h2.slogan {
 
 
 
-@font-face {
+/* @font-face {
     font-family: 'Balsamiq Sans'; 
     src: url("fonts/Balsamiq_Sans/BalsamiqSans-Italic.ttf") format("truetype"); 
     font-style: cursive; 
     font-weight: normal; 
-    } 
+    }  */
     
 
 
