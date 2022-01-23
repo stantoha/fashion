@@ -1,4 +1,6 @@
-    //Modal
+  window.addEventListener('DOMContentLoaded',()=>{
+
+ //Modal
 
     const modal = document.querySelector('.modal'),
         modalTrigger = document.querySelectorAll('[data-modal]'),
@@ -53,5 +55,5 @@
 
       
 
-
+});
 
