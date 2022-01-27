@@ -61,14 +61,26 @@ nav{
 
 .divider{
     display: block;
-    width: 50%;
+    width: 20vw;
+    clear: both;
     height: 1px;
-    margin: 30px auto;
+    margin: 10vh auto;
     background-color: rgba(0, 0, 0, 0.5);
+}
+
+.vert__divider{
+    display: block;
+    height: 20vh;
+    clear: both;
+    width:  1px;
+    border-left:1px solid rgba(0, 0, 0, 0.3);
+    margin:auto 30px ;
+    background-color: rgba(0, 0, 0, 0.3);
 }
  /* HEADER */
 
 .header__container{
+    width: 100%;
         height: 130px;
     margin: 20px auto;
     padding-bottom:10px ;
@@ -265,11 +277,11 @@ nav{
 }
 
 .container:nth-of-type(2n){
-    background-color: #cfcbc4;
+    background-color:#efede8;
 }
 
 .container:nth-of-type(3n){
-    background-color:#efede8;
+  background-color: #cfcbc4;
 }
 
 section{
@@ -392,41 +404,50 @@ section h1{
 
 .services__container {
     display: flex;
-    min-height:100vh ;
+    height: auto;
     margin: 0 auto;
+    
 /*     box-shadow: 0 4px 30px rgba(0, 0, 0, .25) */
 }
 
 .service{
-    width: 80%;
+    width: 85%;
     position: relative;
-
+    padding: 5px;
+    height: 100%;
 }
 
 .service__descr {
-    position: absolute;
+   /*  position: absolute; */
     clear: both;
     top: 5vh;
     left: 5vw;
-    width: 70%;
+    width: 80%;
     height: auto;
     background: rgba(255, 255, 255, 0.5);
     padding: 10px;
     font-size: 1em;
     font-weight: 300;
-    color: rgba(0, 0, 0, .7)
+    color: rgba(0, 0, 0, .7);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, .25)
 }
 
 .service__descr img {
    /*  margin-left: 15vw; */
    float: right;
     width: 300px;
-    height: auto;
+    height:400px;
     object-fit: cover;
-    margin: 50px;
+    margin: 30px 50px;
     border-radius: 15px/15px;
 }
 
+
+.descr__block{
+    max-width: 900px;
+    height: auto;
+    margin: 10px 20px;
+}
 .service__steps__list{
     list-style:circle ;
 }
@@ -434,14 +455,14 @@ section h1{
 .order{
     width: 150px;
     position: absolute;
-    bottom: 20px;
-    right: 130px;
+    bottom: -150px;
+    right: -240px;
     transition: all 0.5s;
 }
 
 
 .services__menu {
-    width: 15%;
+    width: 20%;
     padding: 10px;
     background-color: #fff
 }
@@ -455,13 +476,13 @@ h3.service__name {
 
 .services__list {
     margin-top: 35px;
-    padding-left: 30px;
+    padding-left: 20px;
     border-left: 3px solid rgba(0, 0, 0, .2)
 }
 
 .service__item {
     font-weight: 700;
-    font-size: 25px;
+    font-size: 22px;
     margin-top: 10px;
     color: rgba(0, 0, 0, .6);
     cursor: pointer;
@@ -473,6 +494,25 @@ h3.service__name {
     font-size: 25px;
     font-weight: 900
 }
+
+
+.reviews__list{
+    
+}
+
+
+
+.review__item{
+display: inline-block;
+margin: 0 auto;
+min-height: 100px;
+padding: 10px;
+border-left: 3px solid rgba(0, 0, 0, .2)
+
+}
+
+
+
 
 .slogan__container{
     display: flex;
@@ -494,7 +534,7 @@ h3.service__name {
 .sign__up input{
     display: block;
     padding: 10px;
-    margin: 10px;
+    margin: 10px 30px;
     text-align:center ;
 }
 
@@ -507,8 +547,8 @@ h1.slogan {
     text-align: center;
 }
 
-.sign__up input.subscribe,
-.consult__link{
+.sign__up button.subscribe ,
+a.consult__link{
     text-decoration: none;
     color: white;
     padding: 20px;
@@ -516,7 +556,11 @@ h1.slogan {
     border-radius: 15px 15px;
     font-size: 20px;
     text-transform: uppercase;
+    margin: 0 50px;
+    transition: all 0.5s;
 }
+
+
 
 .shopping__tours__list{
     display: flex;
@@ -584,7 +628,7 @@ h1.slogan {
     background-color: rgba(0, 0, 0, .2);
 }
 
-.footer-top{
+.footer__top{
     display:block;
 }
 .socials {
@@ -611,23 +655,72 @@ a.social__link:hover{
     transform: scale(5) rotate(720deg);
 }
 
-.footer-center{
-    display: flex;
+
+
+.footer__center{
+    display:flex;
+    align-self: center;
     justify-content: space-between;
     align-items: center;
+    border-left: 5px solid rgba(0, 0, 0, .2);
+    border-right: 5px solid rgba(0, 0, 0, .2);
+    margin: 30px;
     flex-wrap: wrap;
 }
 
-.footer-logo-container,
- .footer-services-menu-container,
-.contacts{
-    flex: 30%;
+.footer__center .divider{
+    flex: 100%;
+    height: 2px;
 }
 
-.footer-bottom{
-     display: block;
-     margin: 0 30vw;
-     text-align: center;
+.footer__logo__container{
+     flex: 40%;
+   display: flex;
+   margin: 0 auto;
+   justify-content:space-between;
+   align-items: center;
+   padding: 10px;
+}
+
+.contacts__container{
+    flex: 40%;
+    display: block;
+}
+.footer__logo__container{
+    transition: all 0.5s;
+}
+
+.logo{
+display: block;
+margin: 0 auto;
+text-align: center;
+align-content: center;
+}
+
+.footer__logo__container img{
+border-radius: 50%;
+}
+
+.footer__logo__container a:hover{
+    transform: scale(1.5);
+    }
+    
+.services-list{
+    padding: 50px;
+}
+.service-item{
+    display: inline-block;
+    text-align: start;
+    padding: 5px;
+    margin: 5px;
+}
+
+.footer__bottom{
+  flex: 100%;
+     margin: 0 auto;
+     text-align: center; 
+     border-top: 5px solid rgba(0, 0, 0, .2);
+     border-bottom: 5px solid rgba(0, 0, 0, .2);
 }
 
 
