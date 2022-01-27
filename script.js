@@ -1,51 +1,62 @@
-window.addEventListener('DOMContentLoaded', ()=>{
- 
-    //Modal
-
+window.addEventListener('DOMContentLoaded', () => {
     const modal = document.querySelector('.modal'),
         modalTrigger = document.querySelectorAll('[data-modal]'),
-        modalClosebtn = document.querySelector('[data-close]');
-        
-        function hideTabContent(){
-            tabsContent.forEach(item=>{
-                item.classList.add('hide');
-                item.classList.remove('show','fade');
-            });
-            tabs.forEach(item=>{
-               item.classList.remove('tabheader__link__active');
-            });
-        }
-       
-       function showTabContent(i=0){
-           tabsContent[i].classList.add('show','fade');
-           tabsContent[i].classList.remove('hide');
-           tabs[i].classList.add('tabheader__link__active');
-       }
-       
-       hideTabContent();
-       showTabContent();
-    
-        titleLink.addEventListener('click',()=>{
-            hideTabContent();
-            showTabContent(0);
+        modalClosebtn = document.querySelector('[data-close]'),
+
+        tabsList = document.querySelector('.services__list'),
+        tabs = document.querySelectorAll('.service__link'),
+        tabsContent = document.querySelectorAll('.service__item'),
+        titleLink = document.querySelector('.title');
+
+
+    /* upButton = document.querySelector('.up__button'),
+    sliedeIn = document.querySelectorAll('.slidein') */
+    ;
+
+    function hideTabContent() {
+        tabsContent.forEach(item => {
+            item.classList.add('hide');
+            item.classList.remove('show', 'fade');
         });
-    
-        tabs.forEach(item=>{
-            item.addEventListener('click',(event)=>{
-                const target=event.target;
-                if(target && target.classList.contains('tabheader__link')){
-                    tabs.forEach((item,i)=>{
-                         if(target==item){
-                            hideTabContent();
-                            showTabContent(i);
-                         }
-                    });
+
+
+        tabs.forEach(item => {
+            item.classList.remove('active');
+        });
+    }
+
+    function showTabContent(i = 0) {
+        tabsContent[i].classList.add('show', 'fade');
+        tabsContent[i].classList.remove('hide');
+        tabs[i].classList.remove('active');
+    }
+
+    hideTabContent();
+    showTabContent();
+
+    tabsList.addEventListener('click', (event) => {
+        const target = event.target;
+        if (target && target.classList.contains('service__link')) {
+            tabs.forEach((item, i) => {
+                if (target == item) {
+                    hideTabContent();
+                    showTabContent(i);
                 }
             });
-        });
-/* 
+        }
+    });
+
+
+    titleLink.addEventListener('click', () => {
+        hideTabContent();
+        showTabContent(0);
+    });
+
+    //Modal
+
+
     function openModal() {
-        modal.classList.add('show','fade'); //или modal.classList.toggle('show);
+        modal.classList.add('show', 'fade'); //или modal.classList.toggle('show);
         modal.classList.remove('hide');
         document.body.style.overflow = 'hidden';
         clearInterval(modalTimerId);
@@ -56,7 +67,7 @@ window.addEventListener('DOMContentLoaded', ()=>{
     });
 
     function closeModal() {
-        modal.classList.remove('show','fade'); //или modal.classList.toggle('show);
+        modal.classList.remove('show', 'fade'); //или modal.classList.toggle('show);
         modal.classList.add('hide');
         document.body.style.overflow = '';
     }
@@ -75,7 +86,7 @@ window.addEventListener('DOMContentLoaded', ()=>{
         }
     });
 
-      const modalTimerId=setTimeout(openModal,3000);
+    const modalTimerId = setTimeout(openModal, 3000);
 
 
     function showModalByScroll() {
@@ -85,16 +96,14 @@ window.addEventListener('DOMContentLoaded', ()=>{
         }
     }
 
-    window.addEventListener('scroll', showModalByScroll); */
-    
+    window.addEventListener('scroll', showModalByScroll);
 
 
+   /*  window.addEventListener("resize", getSizes, false);
 
+    function getSizes() {
+        let body = document.body;
+        console.log(body.clientWidth + "px x " + body.clientHeight + "px");
+    }
+ */
 });
-/* window.addEventListener("resize", getSizes, false);
-        
-function getSizes(){
-  let body = document.body;
-  console.log(body.clientWidth +"px x "+ body.clientHeight + "px");
-} */
-

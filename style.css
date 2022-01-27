@@ -44,7 +44,6 @@ nav{
     max-width: 250px;
     margin: 0 auto;
     text-decoration: none;
-    background-color:#f0a780 ;
 }
 
 a.btn{
@@ -65,7 +64,7 @@ a.btn{
     position: absolute;
     display: flex;
     justify-content: space-around;
-    background-color:#fee9d9;
+    background-color:rgba(0, 0, 0, 0.5);
     align-self: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     width:100% ;
@@ -97,6 +96,17 @@ a.btn{
     align-items: center;
     flex:25%;
 }
+
+.title{
+    margin: 35px auto 0;
+    font-size: 25px;
+    border-bottom: 4px solid rgba(255, 255, 255, 0.5);
+    border-top: 4px solid rgba(255, 255, 255, 0.5);
+}
+.title:hover{
+    color:#f0aa7c;
+}
+
 .menu__container{
     flex:35%;
 }
@@ -136,15 +146,7 @@ a.btn{
     border-top: 2px solid #f0aa7c;
 }
 
-.title{
-    margin: 35px auto 0;
-    font-size: 25px;
-    border-bottom: 4px solid rgba(255, 255, 255, 0.5);
-    border-top: 4px solid rgba(255, 255, 255, 0.5);
-}
-.title:hover{
-    color:#f0aa7c;
-}
+
 
 .sub__title{
     margin: 5px auto 20px;
@@ -195,12 +197,12 @@ a.btn{
     visibility: hidden;
     top: 0;
     left: -100%;
-    width: 10vw;
+    width: 15vw;
     height: 100%;
     margin: 0;
     padding: 150px 0;
     list-style: none;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.5);
     box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
     transition-duration: .25s;
   }
@@ -225,12 +227,13 @@ a.btn{
     left: 0;
   } 
 
-  /* #nav-toggle:checked ~ .nav-btnl >img {
-      position: absolute;
-    transform: translateX(-100px) rotate(360deg);
-  } */
 
 /*MAIN*/
+
+.content{
+    display: block;
+    margin: 0 auto;
+}
 
  .main{
     display:block;
@@ -261,15 +264,16 @@ section{
     width: 100%;
 }
 
-.section__name,
+
 .shopping__tour__name,
-.importance__name,
-.service__name,
+.importance__item__name,
 .advantage__name{
     display: block;
     text-align: center;
     padding: 30px;
     margin: 0 auto;
+    border: 3px solid black;
+    border-radius: 15px/15px;
 }
 
 section ul{
@@ -295,6 +299,7 @@ section ul{
         opacity: 0;
       margin-left: 100%;
       width: 300%;
+      border: none;
     }
   
     to {
@@ -319,17 +324,15 @@ h1.introduction{
     margin: 0 5px;
 }
 
-/* .content__pic{
-    flex:32%;
-    margin: 40px;
-    transition: all 0.5s;
-} */
-
-section h2{
+section h1{
     flex: 100%;
     margin: 50px 100px;
     font-family: 'Balsamiq Sans';
     text-align: center;
+}
+
+.importance__name{
+    
 }
 
 .advantages__list{
@@ -350,23 +353,99 @@ section h2{
     font-size: 30px;
 }
 
+.services__list{
+    display: block;
+    height: 100px;
+
+}
+
 .service__link{
+    display: inline-block;
+    width: 270px;
+    align-items: center;
+    margin: 50px auto;
+    padding: 20px 50px;
+    border:3px solid rgba(255, 151, 82, 0.8);
+    border-radius: 20px/20px;
+    box-shadow: 0 0 30px  rgba(253, 135, 56, 0.5);
+    transition: all 0.5s;
+    opacity: 0.5;
+}
+
+.service__link a{
     text-decoration: none;
-    color:#f0aa7c ;
+    margin: 10px;
+    text-align: center;  
+    color: rgba(0, 0, 0, 0.5);
+}
+
+
+.service__block{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 300px;
+    height: 90%;
+    position: relative;
+    border: 3px solid rgba(0, 0, 0, 0.5);
+    border-radius: 15px/15px;  
+}
+
+.service__block img{
+    margin: auto;
+    width: 250px;
+    height: 250px;
+    border-radius: 15px/15px;
+    z-index: 5;
+    opacity: 0.5;
+    transition: all 0.5s;
+}
+
+.service__name{
+    position: absolute;
     text-transform: uppercase;
-    color: black;
+    color:#f0aa7c;  
+    font-weight: bold;
+    letter-spacing: 5px;
+    width: 150px;
+    top: 50%;
+    left: 25%;
+    transition: all 0.5s;
+    z-index: 10;
+}
+
+.more__details{
+    text-transform: uppercase;
+    position: absolute;
+    width: 150px;
+    font-weight: normal;
+    font-size: 0.8em;
+    padding: 5px;
+    top: 80%;
+    left: 25%;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.service__link:hover .service__name,
+.service__link:hover img,
+.service__link:hover{
+    color:rgba(255, 151, 82, 1);
+    text-transform: uppercase;
+    border-radius: 90px/90px;
+    opacity: 1;
+}
+
+a.service__link:first-of-type,
+div.service__item:first-of-type{
+    display: none;
 }
 
 .service__item{
-    flex: 25%;
-    height: 400px;
-    width: 270px;
-    padding:10px;   
-    margin: 20px;
-    border:3px solid rgba(255, 151, 82, 0.8);
-    border-radius: 15px/15px;
-    box-shadow: 0 0 30px  rgba(253, 135, 56, 0.5);
-    text-align: center;
+    display: block;
+    width: 100%;
+    align-items: center;
 }
 
 .slogan__container{
@@ -376,7 +455,6 @@ section h2{
     align-items: center;
     margin: 100px auto;
     padding: 10px;
-
 }
 
 h1.slogan {
