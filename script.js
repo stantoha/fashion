@@ -2,24 +2,52 @@ window.addEventListener('DOMContentLoaded', () => {
     const modal = document.querySelector('.modal'),
         modalTrigger = document.querySelectorAll('[data-modal]'),
         modalClosebtn = document.querySelector('[data-close]'),
-
-        tabsList = document.querySelector('.services__list'),
-        tabs = document.querySelectorAll('.service__link'),
-        tabsContent = document.querySelectorAll('.service__item'),
-        titleLink = document.querySelector('.title');
-
+        titleLink = document.querySelector('.title'),
+        tabs = document.querySelectorAll('.service__item'),
+        tabsContent = document.querySelectorAll('.service'),
+        tabParent = document.querySelector('.services__list');
+        
+            function hideTabContent() {
+                tabsContent.forEach(item => {
+                    item.classList.add('hide');
+                    item.classList.remove('show', 'fade');
+                });
+                tabs.forEach(item => {
+                    item.classList.remove('active');
+                });
+            }
+        
+        
+            function showTabContent(i = 0) {
+                tabsContent[i].classList.add('show', 'fade');
+                tabsContent[i].classList.remove('hide');
+                tabs[i].classList.add('active');
+            }
+        
+            hideTabContent();
+            showTabContent();
+        
+            tabParent.addEventListener('click', (event) => {
+                const target = event.target;
+                if (target && target.classList.contains('service__item')) {
+                    tabs.forEach((item, i) => {
+                        if (target == item) {
+                            hideTabContent();
+                            showTabContent(i);
+                        }
+                    });
+                }
+            });
 
     /* upButton = document.querySelector('.up__button'),
     sliedeIn = document.querySelectorAll('.slidein') */
-    ;
+    
 
-    function hideTabContent() {
+   /*  function hideTabContent() {
         tabsContent.forEach(item => {
             item.classList.add('hide');
             item.classList.remove('show', 'fade');
         });
-
-
         tabs.forEach(item => {
             item.classList.remove('active');
         });
@@ -28,7 +56,7 @@ window.addEventListener('DOMContentLoaded', () => {
     function showTabContent(i = 0) {
         tabsContent[i].classList.add('show', 'fade');
         tabsContent[i].classList.remove('hide');
-        tabs[i].classList.remove('active');
+        tabs[i].classList.add('active');
     }
 
     hideTabContent();
@@ -39,6 +67,7 @@ window.addEventListener('DOMContentLoaded', () => {
         if (target && target.classList.contains('service__link')) {
             tabs.forEach((item, i) => {
                 if (target == item) {
+                    console.log('CIAO');
                     hideTabContent();
                     showTabContent(i);
                 }
@@ -50,7 +79,7 @@ window.addEventListener('DOMContentLoaded', () => {
     titleLink.addEventListener('click', () => {
         hideTabContent();
         showTabContent(0);
-    });
+    }); */
 
     //Modal
 
@@ -99,11 +128,5 @@ window.addEventListener('DOMContentLoaded', () => {
     window.addEventListener('scroll', showModalByScroll);
 
 
-   /*  window.addEventListener("resize", getSizes, false);
-
-    function getSizes() {
-        let body = document.body;
-        console.log(body.clientWidth + "px x " + body.clientHeight + "px");
-    }
- */
+   
 });

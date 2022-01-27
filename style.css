@@ -2,7 +2,7 @@ body{
     margin: 0 auto;
     padding: 0;
     width: 100%;
-    font-family: 'Courier New', Courier, monospace;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 1em;
     line-height: 1.5;
 }
@@ -28,7 +28,7 @@ nav{
 
 .wrapper{
     display: block;
-    margin: 0 5vw;
+    margin: 0 15vw;
     position: relative;
     border-left:1px solid black;
     border-right:1px solid black;
@@ -38,20 +38,34 @@ nav{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px;
-    border-radius: 10px/10px;
     text-align: center;
-    max-width: 250px;
+    width: 250px;
     margin: 0 auto;
     text-decoration: none;
-}
-
-a.btn{
+    background-color: rgba(255, 151, 82, 0.8);
+    padding: 20px;
+    border: 1px solid rgba(0, 0, 0, .5);
+    border-radius: 30px/30px;
+    transition: all 0.5s;
     color:white;
     font-weight: 700;
-    font-size: 30px;
-    text-transform: uppercase;
+    font-size: 25px;
+    letter-spacing: 2px;
+    text-shadow:1px 0 0 rgba(0, 0, 0, .5);
+
 } 
+
+.btn:hover{
+    transform:scale(1.2) ;
+}
+
+.divider{
+    display: block;
+    width: 50%;
+    height: 1px;
+    margin: 30px auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
  /* HEADER */
 
 .header__container{
@@ -149,9 +163,9 @@ a.btn{
 
 
 .sub__title{
-    margin: 5px auto 20px;
+    margin: 5px auto 10px;
     color:#cfcbc4 ;
-    font-size: 14px;
+    font-size: 24px;
 }
 
 .burger{
@@ -246,6 +260,8 @@ a.btn{
     margin: 20px ;
     border: 1px solid black;
     padding:20px 50px ;
+    border-radius: 30px/30px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, .25)
 }
 
 .container:nth-of-type(2n){
@@ -262,18 +278,7 @@ section{
     padding: 5px;
     margin: 0 auto;
     width: 100%;
-}
-
-
-.shopping__tour__name,
-.importance__item__name,
-.advantage__name{
-    display: block;
-    text-align: center;
-    padding: 30px;
-    margin: 0 auto;
-    border: 3px solid black;
-    border-radius: 15px/15px;
+   
 }
 
 section ul{
@@ -284,10 +289,21 @@ section ul{
 }
 
 .presentation__card{
-    display: flex;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+  margin: 30px auto;
+  padding: 20px;
 }
 
+.presentation__card img{
+    flex: 20%;
+    margin: 30px;
+}
+
+figcaption.text__block{
+    flex: 50%;
+    margin: 30px;
+}
 
 .slidein {
     animation-duration: 1s;
@@ -311,141 +327,151 @@ section ul{
 
 h1.introduction{
    flex: 100%;
-   display: block;
-   font-size: 2.5em;
-   text-align: center;
-   align-self: center;
-}
-
-.text__block{
-    text-align:start ;
-    flex:55%;
-    padding: 50px;
-    margin: 0 5px;
 }
 
 section h1{
-    flex: 100%;
-    margin: 50px 100px;
+    display: block;
+    margin: 20px auto;
     font-family: 'Balsamiq Sans';
     text-align: center;
+   font-size: 2.5em;
+   align-self: center;
 }
 
-.importance__name{
-    
+.importance__list{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+.shopping__tour__name,
+.advantage__name,
+.importance__item{
+    display:block;
+    text-align: center;
+    padding: 20px;
+    border: 3px solid black;
+    border-radius: 15px/15px;
+}
+
+.importance__item{
+    font-size: 25px;
+    width: 300px;
+    margin: 30px;
 }
 
 .advantages__list{
     display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    text-align: center;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
 }
 
 .advantages__item{
-    flex: 40%;
     display: block;
-    padding: 10px;
-    margin: 0 10px; 
+    width:260px ;
+    padding: 5px;
+    margin: 0 auto; 
+    height:auto;
 }
 
 .advantage__name{
     font-size: 30px;
-}
-
-.services__list{
-    display: block;
-    height: 100px;
-
-}
-
-.service__link{
-    display: inline-block;
-    width: 270px;
-    align-items: center;
-    margin: 50px auto;
-    padding: 20px 50px;
-    border:3px solid rgba(255, 151, 82, 0.8);
-    border-radius: 20px/20px;
-    box-shadow: 0 0 30px  rgba(253, 135, 56, 0.5);
-    transition: all 0.5s;
-    opacity: 0.5;
-}
-
-.service__link a{
-    text-decoration: none;
-    margin: 10px;
-    text-align: center;  
-    color: rgba(0, 0, 0, 0.5);
-}
-
-
-.service__block{
-    display: flex;
-    justify-content: center;
     text-align: center;
-    align-items: center;
-    width: 300px;
-    height: 90%;
+}
+
+
+.services{
+   position: relative;
+    width:100%;
+    margin: 0 auto;
+ /*    box-shadow: 0 4px 30px rgba(0, 0, 0, .25) */
+}
+
+.services__container {
+    display: flex;
+    min-height:100vh ;
+    margin: 0 auto;
+/*     box-shadow: 0 4px 30px rgba(0, 0, 0, .25) */
+}
+
+.service{
+    width: 80%;
     position: relative;
-    border: 3px solid rgba(0, 0, 0, 0.5);
-    border-radius: 15px/15px;  
+
 }
 
-.service__block img{
-    margin: auto;
-    width: 250px;
-    height: 250px;
+.service__descr {
+    position: absolute;
+    clear: both;
+    top: 5vh;
+    left: 5vw;
+    width: 70%;
+    height: auto;
+    background: rgba(255, 255, 255, 0.5);
+    padding: 10px;
+    font-size: 1em;
+    font-weight: 300;
+    color: rgba(0, 0, 0, .7)
+}
+
+.service__descr img {
+   /*  margin-left: 15vw; */
+   float: right;
+    width: 300px;
+    height: auto;
+    object-fit: cover;
+    margin: 50px;
     border-radius: 15px/15px;
-    z-index: 5;
-    opacity: 0.5;
+}
+
+.service__steps__list{
+    list-style:circle ;
+}
+
+.order{
+    width: 150px;
+    position: absolute;
+    bottom: 20px;
+    right: 130px;
     transition: all 0.5s;
 }
 
-.service__name{
-    position: absolute;
-    text-transform: uppercase;
-    color:#f0aa7c;  
-    font-weight: bold;
-    letter-spacing: 5px;
-    width: 150px;
-    top: 50%;
-    left: 25%;
-    transition: all 0.5s;
-    z-index: 10;
+
+.services__menu {
+    width: 15%;
+    padding: 10px;
+    background-color: #fff
 }
 
-.more__details{
-    text-transform: uppercase;
-    position: absolute;
-    width: 150px;
-    font-weight: normal;
-    font-size: 0.8em;
-    padding: 5px;
-    top: 80%;
-    left: 25%;
-    text-transform: uppercase;
-    color: rgba(0, 0, 0, 0.5);
+h3.service__name {
+    font-weight: 700;
+    font-size: 30px;
+    margin: 20px 0 30px 0;
 }
 
-.service__link:hover .service__name,
-.service__link:hover img,
-.service__link:hover{
-    color:rgba(255, 151, 82, 1);
-    text-transform: uppercase;
-    border-radius: 90px/90px;
-    opacity: 1;
+
+.services__list {
+    margin-top: 35px;
+    padding-left: 30px;
+    border-left: 3px solid rgba(0, 0, 0, .2)
 }
 
-a.service__link:first-of-type,
-div.service__item:first-of-type{
-    display: none;
+.service__item {
+    font-weight: 700;
+    font-size: 25px;
+    margin-top: 10px;
+    color: rgba(0, 0, 0, .6);
+    cursor: pointer;
+    transition: .3s all
 }
 
-.service__item{
-    display: block;
-    width: 100%;
-    align-items: center;
+.active {
+    color: rgba(255, 151, 82, 0.8);
+    font-size: 25px;
+    font-weight: 900
 }
 
 .slogan__container{
@@ -455,16 +481,6 @@ div.service__item:first-of-type{
     align-items: center;
     margin: 100px auto;
     padding: 10px;
-}
-
-h1.slogan {
-    display: block;
-    font-style: italic;
-    color: rgba(255, 151, 82, 0.8);
-    width:50%;
-    margin: 0 auto;
-    padding: 5px;
-    text-align: center;
 }
 
 .sign__up{
@@ -481,23 +497,64 @@ h1.slogan {
     margin: 10px;
     text-align:center ;
 }
+
+h1.slogan {
+    display: block;
+    font-style: italic;
+    color: rgba(255, 151, 82, 0.8);
+    margin: 0 auto;
+    padding: 5px;
+    text-align: center;
+}
+
 .sign__up input.subscribe,
-.consult__link,
-a.btn{
+.consult__link{
     text-decoration: none;
     color: white;
-/*     display: inline-block; */
-    padding: 20px 60px;
+    padding: 20px;
     background-color: rgba(255, 151, 82, 0.8);
     border-radius: 15px 15px;
     font-size: 20px;
     text-transform: uppercase;
 }
 
+.shopping__tours__list{
+    display: flex;
+    flex-direction: column;
+    align-items:baseline;
+    flex-wrap: nowrap;
+}
 
+.day__descr{
+    margin: 0 5vw;
+}
 
+.shopping__tour__desc{
+    align-items: center;
+    margin: 10px auto;
+    padding: 20px;
+    text-align: center;
+}
 
+.shopping__tour__name{
+    width: 30%;
+}
 
+.shopping__tour__card{
+   margin: 30px;
+}
+
+.shopping__tour__program{
+    margin: 30px auto;
+}
+
+.tour__price,
+.price{
+    align-self: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 30px auto;
+}
 
 
 
@@ -637,13 +694,6 @@ a.social__link:hover{
     outline: 0
 }
 
-.modal .btn {
-    display: block;
-    width: 280px;
-    margin: 0 auto
-}
-
-
 .hide{
     display: none;
 }
@@ -661,12 +711,12 @@ a.social__link:hover{
 
 
 
-/* @font-face {
+@font-face {
     font-family: 'Balsamiq Sans'; 
     src: url("fonts/Balsamiq_Sans/BalsamiqSans-Italic.ttf") format("truetype"); 
     font-style: cursive; 
     font-weight: normal; 
-    }  */
+    } 
     
 
 
@@ -677,421 +727,3 @@ a.social__link:hover{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* .nav__link {
-    display: block;
-    padding: 12px 24px;
-    color: white;
-    font-family: 'Roboto', sans-serif;
-    font-size: 50px;
-    margin: 0;
-    font-weight: 700;
-    text-decoration: none;
-    transition-duration: .75s;
-  }
-  .nav__link:hover {
-    background-color: rgba(30, 75, 115, 1);
-    transform: translateX(40px) scale(1.4);
-    border-radius: 5px/5px;
-    letter-spacing: 1px;
-    padding: 9px 18px;
-  }
-  .nav__link:active{
-    color:#e76f1f;
-    transform: translateX(40px) scale(1.2);
-  } */
-/* body{
-    line-height: 1.5;
-    min-height: 100vh;
-    margin: 0;
-    padding: 0;
-    font-family: 'Courier New', Courier, monospace;   
-    background-color: none;
-}
-
-.wrapper{
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
-    align-items: center;
-    max-width: 1280px;
-}
-
-header,
-footer,
-section{
-    margin: 0 auto;
-    padding: 20px;
-}
-
-section:nth-child(even){
-    max-width: 1000px;
-    padding: 100px 15px;
-}
-
-nav,
-ul{
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-.header,
-.footer{
-    display: flex;
-    justify-self: stretch;
-    width: 1280px;
-}
-
-.header{
-    position: absolute;
-    z-index: 1000;
-    background-color:rgba(90, 86, 81, 0.5);
-    height: 120px;
-    justify-content: space-between;
-}
-
-.header-background{
-    position: relative;
-    display: block;
-    margin: 0 auto;
-    width: 1280px;
-    height: 660px;
-    background: url("img\4.jpg") no-repeat 100% 100%;
-    
-}
-
-.title-container,
-.nav-container{
-    flex: 50%;
-    display: block;
-}
-
-.title-container{
-    margin: 20px 0 20px 70px;
-    align-self: center;
-}
-
-.header a,
-.header p{
-    text-decoration: none;
-    text-transform: uppercase;
-    color: white;
-    font-size: 15px;
-    text-align: start
-    ;
-}
-
-.header h2{
-    color: rgba(255, 151, 82, 1);
-    font-weight: 400;
-    font-size: 25px;
-    margin-top: 5px;
-}
-
-.nav-container{
-    margin: 35px 70px 35px 70px ;
-     justify-self: center;
-    align-self: center;
-}
-
-.nav-container a{
-    font-size: 10px;
-    border: 5px solid transparent;
-    padding:2px ;
-}
-
-.nav{
-    display: flex;
-    justify-content: space-between;
-    align-self: center;
-    margin-left:  150px  ;
-    text-align: center;
-}
-
-.nav__item {
-    
-}
-
-.profession{
-    font-size: 20px;
-}
-.slogan-bar{
-    display: block;
-    width: 1280px;
-    height: 540px;
-    text-align: center;
-    padding-top: 190px;
-    color: white;
-}
-
-.first{
-    position: absolute;
-    top: 120px;
-}
-
-
-.second,
-.third{
-    background-color: rgb(206, 206, 206);
-
-}
-.slogan-bar p{
-    color: rgba(255, 151, 82, 1);
-    font-size: 25px;
-}
-
-.round-font{
-    text-align: center;
-    font-family: cursive;
-    font-size: 20px;
-    margin: 70px 100px ;
-}
-
-.intro .round-font,
-.about-me .round-font{
-    text-align: start;
-    margin:30px 0;
-}
-
-
-.sign-up{
-    display: flex;
-    justify-content: space-around;
-    margin: 0 80px;
-}
-
-.subscribe{
-    display: inline-block;
-    background-color: rgba(255, 151, 82, 0.8);
-    border-radius: 10px 10px;
-    padding: 15px 60px;
-    text-align: center;
-}
-
-input[type="text"]{
-    text-align: center;
-}
-
-.services ul{
-    padding: 0;
-}
-.services a{
-    text-decoration: none;
-    text-transform: uppercase;
-    color: black;
-}
-.services-list,
-.intro{
-    display: flex;
-    justify-content: space-between;
-    margin: 80px auto;
-}
-
-.intro img,
-.intro article{
-    display: block;
-    width: 460px;
-}
-
-.services-list{
-    flex-wrap: wrap;
-
-}
-
-.services-list li{
-    height: 360px;
-    width: 270px;
-    padding:10px;   
-    margin: 20px;
-    border:3px solid rgba(255, 151, 82, 0.8);
-    border-radius: 15px 35px;
-    box-shadow: 0 0 30px  rgba(253, 135, 56, 0.5);;
-
-}
-
-.service-item{
-    text-align: center;
-}
-
-
-.hire-me a,
-.service-item a{
-    color: rgba(255, 151, 82, 0.8);
-}
-
-.hire-me{
-    text-align: center;
-    font-size: 30px;
-
-}
-
-.about-me{
-    display: flex;
-    justify-content: space-between;
-}
-
-h3{
-    margin: 30px 0;
-}
-
-.enter-word{
-    text-align: center;
-    margin: 80px;
-}
-
-.about-me p{   
-    text-align: start;  
-}
-
-.about-me article{
-    padding: 10px;
-    margin: 10px;
-}
-
-.about-me a{
-    text-decoration: none;
-    font-weight: 300;
-    font-size: 20px;
-    color: black;
-    float: right;
-    margin-top: 30px;
-}
-
-.consult-link{
-    display: block;
-    margin: 50px auto;
-    text-align: center;
-}
-
-.consult-link a{
-    text-decoration: none;
-    color: white;
-    display: inline-block;
-    padding: 20px 60px;
-    background-color: rgba(255, 151, 82, 0.8);
-    border-radius: 15px 15px;
-    font-size: 20px;
-    text-transform: uppercase;
-}
-
-.footer{
-    flex-direction: column;
-}
-
-.footer-top{
-    display: block;
-    margin: 170px auto 35px; 
-}
-
-ul.social{
-    max-width: 500px;
-    display: flex;
-    justify-content: space-around;
-}
-
-
-
-.social li{
-    display: inline-block;
-    margin: 10px;
-}
-a.social-link svg{
-
-    transition: all 0.3s;
-}
-a:hover.social-link svg{
-    color:rgba(255, 151, 82, 0.8) ;
-    transform:  scale(1.5) rotate(360deg);
-} 
-
-.footer-bottom{
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    padding: 20px;
-}
-
-.footer-bottom span{
-    margin: 0 10px;
-}
-
-.footer a{
-    color: black;
-}
-
-.footer a:hover{
-    color:rgba(255, 151, 82, 0.8) ;
-} */

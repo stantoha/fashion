@@ -11,11 +11,24 @@
 <style>
     @media (min-width: 1440px) {}
 
-    @media (min-width: 1024px) and (max-width:1439px) {}
+    @media (min-width: 1024px) and (max-width:1439px) {
+        .wrapper {
+            margin: 0 auto;
+        }
+        .presentation__card{
+            flex-wrap: wrap;
+        }
+        .presentation__card img{
+            transform: scale(0.8);
+        }
+    }
 
     @media (min-width: 768px) and (max-width: 1023px) {
         .wrapper {
             margin: 0 auto;
+        }
+        .presentation__card{
+            flex-wrap: wrap;
         }
     }
 
@@ -23,11 +36,17 @@
         .wrapper {
             margin: 0 auto;
         }
+        .presentation__card{
+            flex-wrap: wrap;
+        }
     }
 
     @media (min-width:375px) and (max-width: 424px) {
         .wrapper {
             margin: 0 auto;
+        }
+        .presentation__card{
+            flex-wrap: wrap;
         }
     }
 
@@ -35,11 +54,17 @@
         .wrapper {
             margin: 0 auto;
         }
+        .presentation__card{
+            flex-wrap: wrap;
+        }
     }
 
     @media (max-width: 319px) {
         .wrapper {
             margin: 0 auto;
+        }
+        .presentation__card{
+            flex-wrap: wrap;
         }
     }
 </style>
@@ -128,7 +153,7 @@
                     </h1>
                     <figure class="presentation__card">
                         <img class="content__pic" src="img/a.jpg" alt="#">
-                        <figcaption class="text__block short__desc">
+                        <figcaption class="text__block">
                             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet illum praesentium harum
                             molestiae sequi aperiam consequatur inventore
                             adipisci tempora ipsam cum nesciunt atque quia pariatur repudiandae quasi maiores, ad
@@ -137,14 +162,16 @@
                             quaerat quibusdam consequatur sed modi expedita facilis!
                         </figcaption>
 
-
+                       
+                        <div class="divider"></div>
                     </figure>
+                    <div class="divider"></div>
                     <h1 class="slidein introduction">
                         Хто це-персональний стиліст?
                     </h1>
                     <figure class="presentation__card">
-
-                        <figcaption class="text__block short__desc">
+                        <div class="divider"></div>
+                        <figcaption class="text__block">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem nisi cum, consequuntur
                             consequatur veniam quis sapiente, facere, culpa beatae
                             atque quos architecto iste? Nobis cumque, corporis architecto sequi aut eos?
@@ -159,12 +186,15 @@
 
                         <img class="content__pic" src="img/alinka4.jpg" alt="#">
                     </figure>
+
+                    <div class="divider"></div>
+
                     <h1 class="slidein introduction">
                         Чого очікувати?
                     </h1>
                     <figure class="presentation__card">
                         <img class="content__pic" src="img/alinka1.jpg" alt="#">
-                        <figcaption class="text__block short__desc">
+                        <figcaption class="text__block">
                             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto laborum assumenda magni cum,
                             inventore eum id, sunt ex nulla suscipit aut voluptates
                             ipsa. Consequatur velit enim, aspernatur obcaecati perferendis vel!
@@ -172,12 +202,13 @@
                             laboriosam quisquam eaque, illum architecto voluptatum vel aliquid assumenda ratione maxime
                             odio minus quod placeat provident eos suscipit.
                         </figcaption>
-
+                        <div class="divider"></div>
                     </figure>
                 </section>
             </div>
 
-
+            <div class="divider"></div>
+            
             <div class="slogan__container">
                 <h1 class="slidein slogan">
                     Підпишися, щоб бути в курсі останніх новин стилю та моди
@@ -185,7 +216,7 @@
                 <form class="sign__up" action="get">
 
                     <input type="text" name="name" class="name" id="name" value="your first name">
-                    <input type="submit" name="subscribe" class="subscribe" id="subscribe" value="subscribe">
+                    <button type="submit" name="subscribe" class="subscribe btn" id="subscribe" value="Підписатися">Підписатися</button>
 
                     <input type="text" name="email" class="email" id="email" value="your email address">
 
@@ -193,13 +224,13 @@
 
             </div>
 
-
+            <div class="divider"></div>
             <div class="container">
                 <section class="importance">
                     <h1 class="slidein section__name">
                         Для чого Вам персональний стиліст?
                     </h1>
-
+                    <div class="divider"></div>
                     <ul class="importance__list">
                         <li class="importance__item">
                             <h4 class="importance__item__name">
@@ -253,7 +284,7 @@
 
                 </section>
             </div>
-
+            <div class="divider"></div>
 
             <div class="slogan__container">
                 <h1 class="slidein slogan">
@@ -267,6 +298,7 @@
                     <h1 class="slidein section__name">
                         Про мене
                     </h1>
+                    <div class="divider"></div>
                     <p class="">
                         Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                         Consectetur, rem tenetur.
@@ -282,7 +314,7 @@
 
                 </section>
             </div>
-
+            <div class="divider"></div>
 
             <div class="slogan__container">
                 <h1 class="slidein slogan">
@@ -295,328 +327,318 @@
                     <h1 class="slidein section__name">
                         Мої послуги
                     </h1>
-
-
-                    <div class="services__list">
-                        <div class="service__link">
-                            <a href="#">
-                                <h3>Розбір гардеробу</h3>   
-                            </a>
+                    <div class="divider"></div>
+                    <div class="services__container">
+                        <div class="service">
+                            <h3 class="service__name">Розбір гардеробу</h3>
+                           
+                            <figure class="service__descr">
+                                <img src="img/1.jpg" alt="#">
+                          
+                                        <figcaption">
+                                          
+                                            <div class="descr__block">
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit placeat eos odio
+                                                    asperiores animi perspiciatis, repellat dignissimos, aperiam blanditiis facilis
+                                                    ullam? Quidem dolore perferendis ratione debitis possimus in sequi obcaecati?</p>
+                                                <ul class="service__steps__list">
+                                                    <li class="step__name">
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                    </li>
+                                                    <li class="step__name">
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                    </li>
+                                                    <li class="step__name">
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                    </li>
+                                                    <li class="step__name">
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                    </li>
+                                                </ul>
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus cum libero,
+                                                    ipsum at in excepturi explicabo numquam illum unde consequatur? Voluptatibus
+                                                    deleniti at ullam, consequuntur porro eaque doloremque impedit nesciunt?</p>
+                                                <br>
+                                                <div class="price">
+                                                    <span>ціна:</span>
+                                                    <span>10000</span>
+                                                    <span>грн</span>
+                                                </div>
+                                               
+                                            </div>
+                                            <a class="order btn" href="#">
+                                                Замовити
+                                            </a>
+                                        </figcaption>
+                                    </figure>
+                                   
+                              
                         </div>
 
-                        <div class="service__link">
-                            <a href="#">                                              
-                                <h3>Шопінг</h3>
-                            </a>
+                        <div class="service">
+                            <h3 class="service__name">Шопінг</h3>
+                           
+                            <figure class="service__descr">
+                                <img src="img/2.jpg" alt="#">
+                          
+                                        <figcaption">
+                                          
+                                            <div class="descr__block">
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit placeat eos odio
+                                                    asperiores animi perspiciatis, repellat dignissimos, aperiam blanditiis facilis
+                                                    ullam? Quidem dolore perferendis ratione debitis possimus in sequi obcaecati?</p>
+                                                <ul class="service__steps__list">
+                                                    <li class="step__name">
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                    </li>
+                                                    <li class="step__name">
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                    </li>
+                                                    <li class="step__name">
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                    </li>
+                                                    <li class="step__name">
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                    </li>
+                                                </ul>
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus cum libero,
+                                                    ipsum at in excepturi explicabo numquam illum unde consequatur? Voluptatibus
+                                                    deleniti at ullam, consequuntur porro eaque doloremque impedit nesciunt?</p>
+                                                <br>
+                                                <div class="price">
+                                                    <span>ціна:</span>
+                                                    <span>10000</span>
+                                                    <span>грн</span>
+                                                </div>
+                                               
+                                            </div>
+                                            <a class="order btn" href="#">
+                                                Замовити
+                                            </a>
+                                        </figcaption>
+                                    </figure>
+                                   
+                              
                         </div>
 
-                        <div class="service__link">
-                            <a href="#">
-                                <h3>Капсула</h3>
-                            </a>
+                        <div class="service">
+                            <h3 class="service__name">Підбір образу під подію</h3>
+                           
+                            <figure class="service__descr">
+                                <img src="img/2.jpg" alt="#">
+                          
+                                        <figcaption">
+                                          
+                                            <div class="descr__block">
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit placeat eos odio
+                                                    asperiores animi perspiciatis, repellat dignissimos, aperiam blanditiis facilis
+                                                    ullam? Quidem dolore perferendis ratione debitis possimus in sequi obcaecati?</p>
+                                                <ul class="service__steps__list">
+                                                    <li class="step__name">
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                    </li>
+                                                    <li class="step__name">
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                    </li>
+                                                    <li class="step__name">
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                    </li>
+                                                    <li class="step__name">
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                    </li>
+                                                </ul>
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus cum libero,
+                                                    ipsum at in excepturi explicabo numquam illum unde consequatur? Voluptatibus
+                                                    deleniti at ullam, consequuntur porro eaque doloremque impedit nesciunt?</p>
+                                                <br>
+                                                <div class="price">
+                                                    <span>ціна:</span>
+                                                    <span>10000</span>
+                                                    <span>грн</span>
+                                                </div>
+                                               
+                                            </div>
+                                            <a class="order btn" href="#">
+                                                Замовити
+                                            </a>
+                                        </figcaption>
+                                    </figure>
+                                   
+                              
                         </div>
 
-                        <div class="service__link">
-                            <a href="#">
-                                <h3>Підбір</h3>
-                            </a>
+                        <div class="service">
+                            <h3 class="service__name">Капсула</h3>
+                           
+                            <figure class="service__descr">
+                                <img src="img/2.jpg" alt="#">
+                          
+                                        <figcaption">
+                                          
+                                            <div class="descr__block">
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit placeat eos odio
+                                                    asperiores animi perspiciatis, repellat dignissimos, aperiam blanditiis facilis
+                                                    ullam? Quidem dolore perferendis ratione debitis possimus in sequi obcaecati?</p>
+                                                <ul class="service__steps__list">
+                                                    <li class="step__name">
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                    </li>
+                                                    <li class="step__name">
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                    </li>
+                                                    <li class="step__name">
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                    </li>
+                                                    <li class="step__name">
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                    </li>
+                                                </ul>
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus cum libero,
+                                                    ipsum at in excepturi explicabo numquam illum unde consequatur? Voluptatibus
+                                                    deleniti at ullam, consequuntur porro eaque doloremque impedit nesciunt?</p>
+                                                <br>
+                                                <div class="price">
+                                                    <span>ціна:</span>
+                                                    <span>10000</span>
+                                                    <span>грн</span>
+                                                </div>
+                                               
+                                            </div>
+                                            <a class="order btn" href="#">
+                                                Замовити
+                                            </a>
+                                        </figcaption>
+                                    </figure>
+                                   
+                              
                         </div>
 
-                        <div class="service__link">
-                            <a href="#">                             
-                                <h3>Шопінг-тури</h3>
-                            </a>
+                        <div class="service">
+                            <h3 class="service__name">Консультація</h3>
+                           
+                            <figure class="service__descr">
+                                <img src="img/2.jpg" alt="#">
+                          
+                                        <figcaption">
+                                          
+                                            <div class="descr__block">
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit placeat eos odio
+                                                    asperiores animi perspiciatis, repellat dignissimos, aperiam blanditiis facilis
+                                                    ullam? Quidem dolore perferendis ratione debitis possimus in sequi obcaecati?</p>
+                                                <ul class="service__steps__list">
+                                                    <li class="step__name">
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                    </li>
+                                                    <li class="step__name">
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                    </li>
+                                                    <li class="step__name">
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                    </li>
+                                                    <li class="step__name">
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                    </li>
+                                                </ul>
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus cum libero,
+                                                    ipsum at in excepturi explicabo numquam illum unde consequatur? Voluptatibus
+                                                    deleniti at ullam, consequuntur porro eaque doloremque impedit nesciunt?</p>
+                                                <br>
+                                                <div class="price">
+                                                    <span>ціна:</span>
+                                                    <span>10000</span>
+                                                    <span>грн</span>
+                                                </div>
+                                               
+                                            </div>
+                                            <a class="order btn" href="#">
+                                                Замовити
+                                            </a>
+                                        </figcaption>
+                                    </figure>
+                                   
+                              
                         </div>
 
-                        <div class="service__link">
-                            <a href="#">
-                                <h3>Консультація</h3>      
-                            </a>
+                        <div class="service">
+                            <h3 class="service__name">Шопінг-тури</h3>
+                           
+                            <figure class="service__descr">
+                                <img src="img/2.jpg" alt="#">
+                          
+                                        <figcaption">
+                                          
+                                            <div class="descr__block">
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit placeat eos odio
+                                                    asperiores animi perspiciatis, repellat dignissimos, aperiam blanditiis facilis
+                                                    ullam? Quidem dolore perferendis ratione debitis possimus in sequi obcaecati?</p>
+                                                <ul class="service__steps__list">
+                                                    <li class="step__name">
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                    </li>
+                                                    <li class="step__name">
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                    </li>
+                                                    <li class="step__name">
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                    </li>
+                                                    <li class="step__name">
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                    </li>
+                                                </ul>
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus cum libero,
+                                                    ipsum at in excepturi explicabo numquam illum unde consequatur? Voluptatibus
+                                                    deleniti at ullam, consequuntur porro eaque doloremque impedit nesciunt?</p>
+                                                <br>
+                                                <div class="price">
+                                                    <span>ціна:</span>
+                                                    <span>10000</span>
+                                                    <span>грн</span>
+                                                </div>
+                                               
+                                            </div>
+                                            <a class="order btn" href="#">
+                                                Замовити
+                                            </a>
+                                        </figcaption>
+                                    </figure>
+                                   
+                              
                         </div>
-                      
-
-                    </div>
-
-                    <div class="service__item ">
-                        <figure class="service__block">
-                                    <h4 class="service__name"></h4>
-                                    <img src="img/2.jpg" alt="#">
-                                    <figcaption class="more__details">Дізнатися більше</figcaption>
-                                </figure>
-                        <div class="service__descr ">
-                            <h3>Розбір гардеробу</h3>
-                            
-                            <div class="descr__block">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit placeat eos odio asperiores animi perspiciatis, repellat dignissimos, aperiam blanditiis facilis ullam? Quidem dolore perferendis ratione debitis possimus in sequi obcaecati?</p>
-                                <ul class="service__steps__list">
-                                    <li class="step__name">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                                    </li>
-                                    <li class="step__name">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                                    </li>
-                                    <li class="step__name">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                                    </li>
-                                    <li class="step__name">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                                    </li>
-                                </ul>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus cum libero, ipsum at in excepturi explicabo numquam illum unde consequatur? Voluptatibus deleniti at ullam, consequuntur porro eaque doloremque impedit nesciunt?</p>
-                                <br>
-                                <span>ціна:</span>
-                                <span>10000</span>
-                                <span>грн</span>
+                        
+                        <div class="services__menu">
+                          
+                            <div class="services__list">
+                                
+                                <div class="service__item active">Розбір гардеробу</div>
+                                <div class="service__item">Шопінг</div>
+                                <div class="service__item">Підбір образу під подію</div>
+                                <div class="service__item">Капсула</div>
+                                <div class="service__item">Консультація</div>
+                                <div class="service__item">Шопінг-тури</div>
                             </div>
-                            <a class="order btn" href="#">
-                                Замовити
-                            </a>
                         </div>
-                    </div>
-
-                    <div class="service__item ">
-                        <figure class="service__block">
-                            <h4 class="service__name"></h4>
-                            <img src="img/1.jpg" alt="#">
-                            <figcaption class="more__details">Дізнатися більше</figcaption>
-                        </figure>
-
-                        <div class="service__descr">              
-                            <h3>Шопінг</h3>
-
-                            <div class="descr__block">
-                                <p>Description</p>
-                                <ul class="service__steps__list">
-                                    <li class="step__name">
-                                        sometext
-                                    </li>
-                                    <li class="step__name">
-                                        sometext
-                                    </li>
-                                    <li class="step__name">
-                                        sometext
-                                    </li>
-                                    <li class="step__name">
-                                        sometext
-                                    </li>
-                                </ul>
-                                <span>ціна</span>
-                                <span>10000</span>
-                                <span>грн</span>
-                            </div>
-                            <a class="order btn" href="#">
-                                Замовити
-                            </a>
-                        </div>
+                       
                     </div>
 
                     
 
-                    <div class="service__item ">
-                        <figure class="service__block">
-                                    <h4 class="service__name"></h4>
-                                    <img src="" alt="">
-                                    <figcaption class="more__details">Дізнатися більше</figcaption>
-                                </figure>
-                        <div class="service__descr ">
-                            <h3>Капсула</h3>
-                            
-                            <div class="descr__block">
-                                <p>Description</p>
-                                <ul class="service__steps__list">
-                                    <li class="step__name">
-                                        sometext
-                                    </li>
-                                    <li class="step__name">
-                                        sometext
-                                    </li>
-                                    <li class="step__name">
-                                        sometext
-                                    </li>
-                                    <li class="step__name">
-                                        sometext
-                                    </li>
-                                </ul>
-                                <span>ціна</span>
-                                <span>10000</span>
-                                <span>грн</span>
-                            </div>
-                            <a class="order btn" href="#">
-                                Замовити
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="service__item ">
-                        <figure class="service__block">
-                                    <h4 class="service__name"></h4>
-                                    <img src="" alt="">
-                                    <figcaption class="more__details">Дізнатися більше</figcaption>
-                                </figure>
-                        <div class="service__descr ">
-                            <h3>Підбір</h3>
-                            
-                            <div class="descr__block">
-                                <p>Description</p>
-                                <ul class="service__steps__list">
-                                    <li class="step__name">
-                                        sometext
-                                    </li>
-                                    <li class="step__name">
-                                        sometext
-                                    </li>
-                                    <li class="step__name">
-                                        sometext
-                                    </li>
-                                    <li class="step__name">
-                                        sometext
-                                    </li>
-                                </ul>
-                                <span>ціна</span>
-                                <span>10000</span>
-                                <span>грн</span>
-                            </div>
-                            <a class="order btn" href="#">
-                                Замовити
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="service__item ">
-                        <figure class="service__block">
-                                    <h4 class="service__name"></h4>
-                                    <img src="" alt="">
-                                    <figcaption class="more__details">Дізнатися більше</figcaption>
-                                </figure>
-                        <div class="service__descr ">
-                            <h3>Шопінг-тури</h3>
-                            
-                            <div class="descr__block">
-                                <p>Description</p>
-                                <ul class="service__steps__list">
-                                    <li class="step__name">
-                                        sometext
-                                    </li>
-                                    <li class="step__name">
-                                        sometext
-                                    </li>
-                                    <li class="step__name">
-                                        sometext
-                                    </li>
-                                    <li class="step__name">
-                                        sometext
-                                    </li>
-                                </ul>
-                                <span>ціна</span>
-                                <span>10000</span>
-                                <span>грн</span>
-                            </div>
-                            <a class="order btn" href="#">
-                                Замовити
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="service__item ">
-                        <figure class="service__block">
-                                    <h4 class="service__name"></h4>
-                                    <img src="" alt="">
-                                    <figcaption class="more__details">Дізнатися більше</figcaption>
-                                </figure>
-                        <div class="service__descr ">
-                            <h3>Консультація</h3>
-                            
-                            <div class="descr__block">
-                                <p>Description</p>
-                                <ul class="service__steps__list">
-                                    <li class="step__name">
-                                        sometext
-                                    </li>
-                                    <li class="step__name">
-                                        sometext
-                                    </li>
-                                    <li class="step__name">
-                                        sometext
-                                    </li>
-                                    <li class="step__name">
-                                        sometext
-                                    </li>
-                                </ul>
-                                <span>ціна</span>
-                                <span>10000</span>
-                                <span>грн</span>
-                            </div>
-                            <a class="order btn" href="#">
-                                Замовити
-                            </a>
-                        </div>
-                    </div>
-
                 </section>
             </div>
-            <!--          <div class="tabcontainer">
-                <div class="tabheader">
-                    <h3>choose</h3>
-                    <div class="services__list">
-                        <div class="service__link">1</div>
-                        <div class="service__link">2</div>
-                        <div class="service__link">3</div>
-                        <div class="service__link">4</div>
-                        <div class="service__link">5</div>
-                        <div class="service__link">6</div>
-                    </div>
-                </div>
-                <div class="service__item hide">
-                    <img src="" alt="">
-                    <div class="service__descr">
-                       text
-                    </div>
-                </div>
-                <div class="service__item hide">
-                    <img src="" alt="">
-                    <div class="service__descr">
-                        text
-                    </div>
-                </div> 
-                <div class="service__item hide">
-                    <img src="" alt="">
-                    <div class="service__descr">
-                        text
-                    </div>
-                </div>
-                <div class="service__item hide">
-                    <img src="" alt="">
-                    <div class="service__descr">
-                        text
-                    </div>
-                </div> 
-                <div class="service__item hide">
-                    <img src="" alt="">
-                    <div class="service__descr">
-                        text
-                    </div>
-                </div>
-                <div class="service__item hide">
-                    <img src="" alt="">
-                    <div class="service__descr">
-                        text
-                    </div>
-                </div> 
-                
-            </div> -->
 
+            <div class="divider"></div>
             <div class="slogan__container">
                 <h1 class="slidein slogan">
                     SLOGAN TEXT
                 </h1>
             </div>
 
-
+           
             <div class="container">
                 <section class="advantages">
                     <h1 class="slidein section__name">
                         Переваги
                     </h1>
+                    <div class="divider"></div>
                     <ul class="advantages__list">
                         <li class="advantages__item">
                             <h4 class="advantage__name">
@@ -653,13 +675,12 @@
 
                 </section>
             </div>
-
+            <div class="divider"></div>
 
             <div class="slogan__container">
                 <h1 class="slidein slogan">
                     <a class="consult__link" href="#">
-                        Давай познайомимся - <br>
-                        запишися до мене на консультацію!
+                        Давай познайомимся -запишися до мене на консультацію!
                     </a>
                 </h1>
             </div>
@@ -670,6 +691,7 @@
                     <h1 class="slidein section__name">
                         Відгуки
                     </h1>
+                    <div class="divider"></div>
                     <ul class="reviews__list">
                         <li class="reviews__item">
                             <img class="client__pic" src="" alt="#">
@@ -715,35 +737,18 @@
 
                 </section>
             </div>
-
-
-            <div class="slogan__container">
-                <h1 class="slidein slogan">
-                    SLOGAN TEXT
-                </h1>
-            </div>
-
-
-            <div class="container">
-                <section class="telegram__chanel">
-                    <h1 class="slidein section__name">
-                        Telegram-канал
-                    </h1>
-                    <p class="telegram__chanel__desc">
-
-                    </p>
-                    <a class="btn" href="#">
-                        Підписатися
-                    </a>
-
-                </section>
-            </div>
-
+            <div class="divider"></div>
 
             <div class="slogan__container">
                 <h1 class="slidein slogan">
-                    SLOGAN TEXT
+                    Telegram-канал
                 </h1>
+                <p class="telegram__chanel__desc">
+
+                </p>
+                <a class="btn" href="#">
+                    Підписатися
+                </a>
             </div>
 
             <div class="container">
@@ -751,100 +756,182 @@
                     <h1 class="slidein section__name">
                         Шопінг-тури
                     </h1>
-                    <p class="shopping__tour__desc">
-
-                    </p>
+                    <div class="divider"></div>
 
                     <ul class="shopping__tours__list">
                         <li class="shopping__tour__card">
                             <h3 class="shopping__tour__name">
                                 Париж
                             </h3>
-                            <img src="" alt="">
-                            <p class="shopping__tour__desc">
 
-                            </p>
-                            <p class="shopping__tour__program">
-                                <ol>
-
+                            <figure class="shopping__tour__desc">
+                                <img src="img/paris.jpg" alt="#">
+                                <figcaption>
                                     <p>
-                                        День 1
+                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi nesciunt
+                                        aliquid,
+                                        dolorem officia laudantium dolore in omnis impedit corporis? In, ipsa
+                                        blanditiis.
+                                        Corporis, excepturi. Tempora tenetur sequi ipsum praesentium necessitatibus.
                                     </p>
-                        </li>
-                        <li>
-                            <p>
-                                День 2
-                            </p>
-                        </li>
-                        <li>
-                            <p>
-                                День 3
-                            </p>
-                        </li>
-                        <li>
-                            <p>
-                                День 4
-                            </p>
-                        </li>
-                        <li>
-                            <p>
-                                День 5
-                            </p>
-                        </li>
+                                </figcaption>
+                            </figure>
 
-                        </ol>
-                        </p>
-
-                        <span>Вартість:</span><span>10000</span><span>UAH</span>
-                        <a class="btn" href="#">
-                            Забронювати
-                        </a>
-                        </li>
-                        <li class="shopping__tour__card">
-                            <h3 class="shopping__tour__name">
-                                Мілан
-                            </h3>
-                            <img src="" alt="">
-                            <p class="shopping__tour__desc">
-
-                            </p>
-                            <p class="shopping__tour__program">
+                            <div class="shopping__tour__program">
                                 <ol>
                                     <li>
-                                        <p>
+                                        <h4>
                                             День 1
+                                        </h4>
+                                        <p class="day__descr">
+                                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium fugit
+                                            unde aliquam? Optio, beatae esse numquam libero illum delectus amet laborum
+                                            tenetur quis voluptatibus quod laboriosam repellendus unde iure eveniet!
                                         </p>
                                     </li>
                                     <li>
-                                        <p>
+                                        <h4>
                                             День 2
+                                        </h4>
+                                        <p class="day__descr">
+                                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium fugit
+                                            unde aliquam? Optio, beatae esse numquam libero illum delectus amet laborum
+                                            tenetur quis voluptatibus quod laboriosam repellendus unde iure eveniet!
                                         </p>
                                     </li>
                                     <li>
-                                        <p>
+                                        <h4>
                                             День 3
+                                        </h4>
+                                        <p class="day__descr">
+                                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium fugit
+                                            unde aliquam? Optio, beatae esse numquam libero illum delectus amet laborum
+                                            tenetur quis voluptatibus quod laboriosam repellendus unde iure eveniet!
                                         </p>
                                     </li>
                                     <li>
-                                        <p>
+                                        <h4>
                                             День 4
+                                        </h4>
+                                        <p class="day__descr">
+                                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium fugit
+                                            unde aliquam? Optio, beatae esse numquam libero illum delectus amet laborum
+                                            tenetur quis voluptatibus quod laboriosam repellendus unde iure eveniet!
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <h4>
+                                            День 5
+                                        </h4>
+                                        <p class="day__descr">
+                                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium fugit
+                                            unde aliquam? Optio, beatae esse numquam libero illum delectus amet laborum
+                                            tenetur quis voluptatibus quod laboriosam repellendus unde iure eveniet!
                                         </p>
                                     </li>
 
                                 </ol>
-                            </p>
+                            </div>
 
-                            <span>Вартість:</span><span>20000</span><span>UAH</span>
+                            <div class="tour__price">
+                                <span>Вартість:</span><span>10000</span><span>UAH</span>                     
+                            </div>
+
                             <a class="btn" href="#">
                                 Забронювати
                             </a>
+
+                        </li>
+
+                        <div class="divider"></div>
+
+                        <li class="shopping__tour__card">
+                            <h3 class="shopping__tour__name">
+                                Мілан
+                            </h3>
+                            <figure class="shopping__tour__desc">
+                                <img src="img/Milan.jpg" alt="#">
+                                <figcaption>
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi nesciunt
+                                        aliquid,
+                                        dolorem officia laudantium dolore in omnis impedit corporis? In, ipsa
+                                        blanditiis.
+                                        Corporis, excepturi. Tempora tenetur sequi ipsum praesentium necessitatibus.
+                                    </p>
+                                </figcaption>
+                            </figure>
+
+                            <div class="shopping__tour__program">
+                                <ol>
+                                    <li>
+                                        <h4>
+                                            День 1
+                                        </h4>
+                                        <p class="day__descr">
+                                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium fugit
+                                            unde aliquam? Optio, beatae esse numquam libero illum delectus amet laborum
+                                            tenetur quis voluptatibus quod laboriosam repellendus unde iure eveniet!
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <h4>
+                                            День 2
+                                        </h4>
+                                        <p class="day__descr">
+                                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium fugit
+                                            unde aliquam? Optio, beatae esse numquam libero illum delectus amet laborum
+                                            tenetur quis voluptatibus quod laboriosam repellendus unde iure eveniet!
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <h4>
+                                            День 3
+                                        </h4>
+                                        <p class="day__descr">
+                                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium fugit
+                                            unde aliquam? Optio, beatae esse numquam libero illum delectus amet laborum
+                                            tenetur quis voluptatibus quod laboriosam repellendus unde iure eveniet!
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <h4>
+                                            День 4
+                                        </h4>
+                                        <p class="day__descr">
+                                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium fugit
+                                            unde aliquam? Optio, beatae esse numquam libero illum delectus amet laborum
+                                            tenetur quis voluptatibus quod laboriosam repellendus unde iure eveniet!
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <h4>
+                                            День 5
+                                        </h4>
+                                        <p class="day__descr">
+                                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium fugit
+                                            unde aliquam? Optio, beatae esse numquam libero illum delectus amet laborum
+                                            tenetur quis voluptatibus quod laboriosam repellendus unde iure eveniet!
+                                        </p>
+                                    </li>
+
+                                </ol>
+                            </div>
+<div class="tour__price">
+                                <span>Вартість:</span><span>10000</span><span>UAH</span>                     
+                            </div>
+
+                            <a class="btn" href="#">
+                                Забронювати
+                            </a>
+                            
                         </li>
                     </ul>
 
 
                 </section>
             </div>
-
+            <div class="divider"></div>
         </main>
 
         <footer class="footer">
@@ -944,10 +1031,10 @@
                 <div class="modal__content">
                     <form action="#">
                         <div data-close class="modal__close">&times;</div>
-                        <div class="modal__title">Ми скоро Вам передзвонимо!</div>
+                        <div class="modal__title">Ми скоро передзвонимо!</div>
                         <input required placeholder="Ваше ім'я" name="name" type="text" class="modal__input">
                         <input required placeholder="Ваш номер телефона" name="phone" type="phone" class="modal__input">
-                        <button class="btn btn_dark btn_min">Передзвонити до мене</button>
+                        <button class="modal__btn btn">Передзвонити</button>
                     </form>
                 </div>
             </div>
