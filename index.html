@@ -33,6 +33,16 @@
             justify-self: stretch;
         }
 
+        .menu__container{
+            display: none;
+            position: absolute;
+        }
+
+        .hidden{
+            display: flex;
+            position:relative;
+        }
+
         .presentation__card {
             flex-wrap: wrap;
         }
@@ -47,6 +57,16 @@
             margin: 0;
             min-width: 100vw;
             justify-self: stretch;
+        }
+
+        .menu__container{
+            display: none;
+            position: absolute;
+        }
+
+         .hidden{
+            display: flex;
+            position:relative;
         }
 
         .presentation__card {
@@ -64,6 +84,16 @@
             min-width: 100vw;
         }
 
+        .menu__container{
+            display: none;
+            position: absolute;
+        }
+
+         .hidden{
+            display: flex;
+            position:relative;
+        }
+
         .presentation__card {
             flex-wrap: wrap;
         }
@@ -79,6 +109,16 @@
             min-width: 100vw;
         }
 
+        .menu__container{
+            display: none;
+            position: absolute;
+        }
+
+         .hidden{
+            display: flex;
+            position:relative;
+        }
+
         .presentation__card {
             flex-wrap: wrap;
         }
@@ -92,6 +132,16 @@
         .wrapper {
             margin: 0;
             min-width: 100vw;
+        }
+
+        .menu__container{
+            display: none;
+            position: absolute;
+        }
+
+         .hidden{
+            display: flex;
+            position:relative;
         }
 
         .presentation__card {
@@ -112,7 +162,7 @@
                 <div class="logo__container">
 
                     <a href="#" class="logo">
-                        <img src="img/logo.jpg" alt="#">
+                        <img src="img/icons/logo.jpg" alt="#">
 
                     </a>
 
@@ -127,7 +177,7 @@
                     </p>
                 </div>
 
-                <div class="nav__container hide">
+                <div class="nav__container  hidden">
 
                     <div class="burger">
                         <input id="nav-toggle" type="checkbox" />
@@ -259,7 +309,8 @@
             <div class="slogan__container">
                 <h1 class="slidein slogan">
                     Підпишися, щоб бути в курсі останніх новин стилю та моди
-                </h1><br>
+                </h1>
+                <br>
                 <form class="sign__up" action="get">
 
                     <input type="text" name="name" class="name" id="name" value="your first name">
@@ -345,23 +396,31 @@
                         Про мене
                     </h1>
                     <div class="divider"></div>
-                    <p class="column">
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                        Consectetur, rem tenetur.
-                        Maiores sequi similique nesciunt ab iste facere ratione molestias eum magnam fugit modi omnis
-                        enim nostrum, quam quisquam numquam. Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                        Omnis debitis commodi repellendus quidem, totam nihil possimus. Sapiente iusto, sequi obcaecati
-                        reprehenderit sunt esse mollitia sint! Sint rerum corporis esse recusandae!
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa enim corrupti pariatur quia
-                        saepe, porro repellendus explicabo nemo eligendi omnis esse autem inventore rem aspernatur
-                        repudiandae earum consequuntur neque ex.
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                        Fugiat voluptate earum sint exercitationem ullam dolores dolore at, enim harum eaque perferendis
-                        repudiandae ad cupiditate pariatur debitis deleniti consequatur voluptates praesentium.
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Quis consequatur dolorem doloremque quia voluptatum cumque delectus similique ea! Ullam
-                        recusandae blanditiis corrupti autem error perspiciatis similique eos cupiditate, rerum ad!
-                    </p>
+<figure>
+    <img class="content__pic" src="img/alinka.jpg" alt="Alinka">
+
+<figcaption>
+    <p class=" column">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+        Consectetur, rem tenetur.
+        Maiores sequi similique nesciunt ab iste facere ratione molestias eum magnam fugit modi omnis
+        enim nostrum, quam quisquam numquam. Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+        Omnis debitis commodi repellendus quidem, totam nihil possimus. Sapiente iusto, sequi obcaecati
+        reprehenderit sunt esse mollitia sint! Sint rerum corporis esse recusandae!
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa enim corrupti pariatur quia
+        saepe, porro repellendus explicabo nemo eligendi omnis esse autem inventore rem aspernatur
+        repudiandae earum consequuntur neque ex.
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+        Fugiat voluptate earum sint exercitationem ullam dolores dolore at, enim harum eaque perferendis
+        repudiandae ad cupiditate pariatur debitis deleniti consequatur voluptates praesentium.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Quis consequatur dolorem doloremque quia voluptatum cumque delectus similique ea! Ullam
+        recusandae blanditiis corrupti autem error perspiciatis similique eos cupiditate, rerum ad!
+    </p>
+</figcaption>
+                    
+
+                </figure>
                     <div class="divider"></div>
                 </section>
             </div>
@@ -977,7 +1036,7 @@
                             </figure>
 
                             <div class="shopping__tour__program">
-                                <ol>
+                                <ol  class="column">
                                     <li>
                                         <h4>
                                             День 1
@@ -1090,8 +1149,6 @@
                     </li>
                 </ul>
             </div>
-
-
             <div class="footer__center">
 
                 <div class="contacts__container">
@@ -1110,7 +1167,7 @@
 
                 <div class="footer__logo__container ">
                     <a class="logo" href="#">
-                        <img src="img/logo.jpg" alt="logo">
+                        <img src="img/icons/logo.jpg" alt="logo">
                     </a>
                 </div>
 
@@ -1148,12 +1205,9 @@
                 <a href="#">Фотогрвфії Anton Stoliarov</a><span>|</span><br>
                 <a href="#">Web Design by Anton Stoliarov</a>
             </div>
-
-
-
-    </div>
-
     </footer>
+
+
 
     <div class="modal">
         <div class="modal__dialog">

@@ -5,7 +5,40 @@ window.addEventListener('DOMContentLoaded', () => {
         titleLink = document.querySelector('.title'),
         tabs = document.querySelectorAll('.service__item'),
         tabsContent = document.querySelectorAll('.service'),
-        tabParent = document.querySelector('.services__list');
+        tabParent = document.querySelector('.services__list'),
+        burgerNav=document.querySelector('.nav__container'),
+        menu=document.querySelector('.menu__container'),
+        windWidth=document.documentElement.offsetWidth;
+        
+/* console.log(windWidth);
+
+        function hideMenuShowNav(){
+            if(!burgerNav.classList.contains('hide')){
+                burgerNav.classList.add('hide');
+                menu.classList.remove('hide');
+            }
+           
+        }
+        
+        function showNavHideMenu(){
+            menu.classList.add('hide');
+            burgerNav.classList.remove('hide');
+        }
+
+        hideMenuShowNav();
+
+        function changeNav(item){
+            if(item<=1023 && item>0){
+                hideMenuShowNav();
+            }
+            else{
+                showNavHideMenu();
+            }
+        }
+
+       changeNav(windWidth); */
+
+
         
             function hideTabContent() {
                 tabsContent.forEach(item => {
