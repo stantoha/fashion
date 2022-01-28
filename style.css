@@ -52,16 +52,19 @@ nav{
     font-size: 25px;
     letter-spacing: 2px;
     text-shadow:1px 0 0 rgba(0, 0, 0, .5);
-
+    box-shadow: 0 4px 30px rgba(0, 0, 0, .25)
 } 
 
 .btn:hover{
-    transform:scale(1.2) ;
+    width:300px ;
+    border-left: 5px solid rgba(0, 0, 0, .2);
+    border-right: 5px solid rgba(0, 0, 0, .2);
+
 }
 
 .divider{
     display: block;
-    width: 20vw;
+    width: 10vw;
     clear: both;
     height: 1px;
     margin: 10vh auto;
@@ -70,12 +73,12 @@ nav{
 
 .vert__divider{
     display: block;
-    height: 20vh;
+    height: 10vh;
     clear: both;
     width:  1px;
-    border-left:1px solid rgba(0, 0, 0, 0.3);
-    margin:auto 30px ;
-    background-color: rgba(0, 0, 0, 0.3);
+    border-left:1px solid rgba(255, 255, 255, 0.5);
+    margin:auto 10px ;
+    background-color: rgba(255, 255, 255, 0.5);
 }
  /* HEADER */
 
@@ -175,9 +178,9 @@ nav{
 
 
 .sub__title{
-    margin: 5px auto 10px;
+    margin: 5px auto 20px;
     color:#cfcbc4 ;
-    font-size: 24px;
+    font-size: 18px;
 }
 
 .burger{
@@ -287,7 +290,6 @@ nav{
 section{
     display: block;
     align-items: center;
-    padding: 5px;
     margin: 0 auto;
     width: 100%;
    
@@ -308,14 +310,21 @@ section ul{
 }
 
 .presentation__card img{
-    flex: 20%;
-    margin: 30px;
+    width:280px ;
+    margin: 20px;
 }
 
-figcaption.text__block{
+figcaption .text__block{
     flex: 50%;
-    margin: 30px;
+    margin: 20px;
 }
+
+.column {
+    column-width: 200px;
+    column-count: 2;
+    column-gap: 40px;
+    column-rule: 1px solid #ccc;
+   }
 
 .slidein {
     animation-duration: 1s;
@@ -454,7 +463,6 @@ section h1{
 
 .order{
     width: 150px;
-    position: absolute;
     bottom: -150px;
     right: -240px;
     transition: all 0.5s;
@@ -497,21 +505,44 @@ h3.service__name {
 
 
 .reviews__list{
-    
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+
 }
 
 
 
 .review__item{
-display: inline-block;
-margin: 0 auto;
+   flex: 40%;
+display: block;
+margin: 0 10px;
 min-height: 100px;
 padding: 10px;
-border-left: 3px solid rgba(0, 0, 0, .2)
-
+border: 3px solid rgba(0, 0, 0, .2);
+box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
 }
 
+.review__item span{
+    opacity: 0.5;
+    color: grey;
+    font-size: smaller;
+    line-height: 1;
+}
 
+.review__item figure{
+    float: right;
+}
+
+.review__item .text__block{
+    margin-left: 10px;
+    
+}
+
+.review__item figcaption{
+    display:flex;
+    justify-content: space-between;
+}
 
 
 .slogan__container{
@@ -525,7 +556,7 @@ border-left: 3px solid rgba(0, 0, 0, .2)
 
 .sign__up{
     display: flex;
-    width: 30%;
+    width: auto;
     justify-content: space-around;
     flex-direction: row;
     margin: 0 auto;
@@ -534,7 +565,7 @@ border-left: 3px solid rgba(0, 0, 0, .2)
 .sign__up input{
     display: block;
     padding: 10px;
-    margin: 10px 30px;
+    margin: 10px;
     text-align:center ;
 }
 
@@ -576,16 +607,21 @@ a.consult__link{
 .shopping__tour__desc{
     align-items: center;
     margin: 10px auto;
-    padding: 20px;
+    padding: 10px;
     text-align: center;
 }
 
 .shopping__tour__name{
+    color: rgba(255, 151, 82, 0.8);
     width: 30%;
+    font-size: 200%;
+    margin: 0 auto;
 }
 
 .shopping__tour__card{
    margin: 30px;
+   box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+   padding: 20px 40px;
 }
 
 .shopping__tour__program{
@@ -666,6 +702,7 @@ a.social__link:hover{
     border-right: 5px solid rgba(0, 0, 0, .2);
     margin: 30px;
     flex-wrap: wrap;
+    padding: 0 50px;
 }
 
 .footer__center .divider{
@@ -674,7 +711,7 @@ a.social__link:hover{
 }
 
 .footer__logo__container{
-     flex: 40%;
+     flex: 30%;
    display: flex;
    margin: 0 auto;
    justify-content:space-between;
@@ -683,8 +720,15 @@ a.social__link:hover{
 }
 
 .contacts__container{
-    flex: 40%;
+    flex: 30%;
     display: block;
+    text-align: left;
+ 
+}
+
+.contacts__container a,
+.footer__services__menu__container a{
+    color: white;
 }
 .footer__logo__container{
     transition: all 0.5s;
@@ -704,12 +748,18 @@ border-radius: 50%;
 .footer__logo__container a:hover{
     transform: scale(1.5);
     }
-    
-.services-list{
-    padding: 50px;
+
+    .footer__services__menu__container{
+        flex: 30%;
+        display: block;
+   
+    }
+
+  .services-list{
+    display: block;
+    padding: 10px;
 }
 .service-item{
-    display: inline-block;
     text-align: start;
     padding: 5px;
     margin: 5px;

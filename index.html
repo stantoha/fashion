@@ -9,24 +9,19 @@
     <title>stylist</title>
 </head>
 <style>
-@media handheld and (max-width:768px){
-     .wrapper{
-margin:0;
-width:100%;
-}
-}
     @media (min-width: 1440px) {}
 
     @media (min-width: 1024px) and (max-width:1439px) {
         .wrapper {
             margin: 0 auto;
+
         }
 
         .presentation__card {
             flex-wrap: wrap;
         }
 
-        .presentation__card img {
+        .content__pic {
             transform: scale(0.8);
         }
     }
@@ -34,50 +29,77 @@ width:100%;
     @media (min-width: 768px) and (max-width: 1023px) {
         .wrapper {
             margin: 0 auto;
+            min-width: 100vw;
+            justify-self: stretch;
         }
 
         .presentation__card {
             flex-wrap: wrap;
+        }
+
+        .content__pic {
+            transform: scale(0.8);
         }
     }
 
     @media (min-width:425px) and (max-width: 767px) {
         .wrapper {
-            margin: 0 auto;
+            margin: 0;
+            min-width: 100vw;
+            justify-self: stretch;
         }
 
         .presentation__card {
             flex-wrap: wrap;
+        }
+
+        .content__pic {
+            transform: scale(0.6);
         }
     }
 
     @media (min-width:375px) and (max-width: 424px) {
         .wrapper {
-            margin: 0 auto;
+            margin: 0;
+            min-width: 100vw;
         }
 
         .presentation__card {
             flex-wrap: wrap;
+        }
+
+        .content__pic {
+            transform: scale(0.6);
         }
     }
 
     @media (min-width:320px) and (max-width: 374px) {
         .wrapper {
-            margin: 0 auto;
+            margin: 0;
+            min-width: 100vw;
         }
 
         .presentation__card {
             flex-wrap: wrap;
+        }
+
+        .content__pic {
+            transform: scale(0.4);
         }
     }
 
     @media (max-width: 319px) {
         .wrapper {
-            margin: 0 auto;
+            margin: 0;
+            min-width: 100vw;
         }
 
         .presentation__card {
             flex-wrap: wrap;
+        }
+
+        .content__pic {
+            transform: scale(0.4);
         }
     }
 </style>
@@ -168,12 +190,16 @@ width:100%;
                         <img class="content__pic" src="img/a.jpg" alt="#">
                         <div class="vert__divider"></div>
                         <figcaption class="text__block">
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet illum praesentium harum
-                            molestiae sequi aperiam consequatur inventore
-                            adipisci tempora ipsam cum nesciunt atque quia pariatur repudiandae quasi maiores, ad
-                            impedit?Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum voluptas numquam
-                            nulla ex possimus maxime sapiente ipsam alias inventore molestias ab tenetur voluptatem,
-                            quaerat quibusdam consequatur sed modi expedita facilis!
+                            <p class="column">
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet illum praesentium
+                                harum
+                                molestiae sequi aperiam consequatur inventore
+                                adipisci tempora ipsam cum nesciunt atque quia pariatur repudiandae quasi maiores, ad
+                                impedit?Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum voluptas numquam
+                                nulla ex possimus maxime sapiente ipsam alias inventore molestias ab tenetur voluptatem,
+                                quaerat quibusdam consequatur sed modi expedita facilis!
+                            </p>
+
                         </figcaption>
 
 
@@ -186,16 +212,21 @@ width:100%;
                     <figure class="presentation__card">
 
                         <figcaption class="text__block">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem nisi cum, consequuntur
-                            consequatur veniam quis sapiente, facere, culpa beatae
-                            atque quos architecto iste? Nobis cumque, corporis architecto sequi aut eos?
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione porro maiores eveniet
-                            exercitationem, suscipit consequatur ipsam eligendi in ipsum, officiis similique maxime vero
-                            perspiciatis aspernatur, facere labore distinctio rerum ullam?
+                            <p class="column">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem nisi cum, consequuntur
+                                consequatur veniam quis sapiente, facere, culpa beatae
+                                atque quos architecto iste? Nobis cumque, corporis architecto sequi aut eos?
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione porro maiores eveniet
+                                exercitationem, suscipit consequatur ipsam eligendi in ipsum, officiis similique maxime
+                                vero
+                                perspiciatis aspernatur, facere labore distinctio rerum ullam?
 
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe molestias laboriosam aliquid
-                            pariatur cumque veniam reiciendis modi alias voluptate earum voluptatibus perspiciatis,
-                            quaerat atque aut? Voluptatem vel optio delectus fuga.
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe molestias laboriosam
+                                aliquid
+                                pariatur cumque veniam reiciendis modi alias voluptate earum voluptatibus perspiciatis,
+                                quaerat atque aut? Voluptatem vel optio delectus fuga.
+                            </p>
+
                         </figcaption>
                         <div class="vert__divider"></div>
                         <img class="content__pic" src="img/alinka4.jpg" alt="#">
@@ -210,17 +241,21 @@ width:100%;
                         <img class="content__pic" src="img/alinka1.jpg" alt="#">
                         <div class="vert__divider"></div>
                         <figcaption class="text__block">
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto laborum assumenda magni cum,
-                            inventore eum id, sunt ex nulla suscipit aut voluptates
-                            ipsa. Consequatur velit enim, aspernatur obcaecati perferendis vel!
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste aut vitae perferendis
-                            laboriosam quisquam eaque, illum architecto voluptatum vel aliquid assumenda ratione maxime
-                            odio minus quod placeat provident eos suscipit.
+                            <p class="column">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto laborum
+                                assumenda magni cum,
+                                inventore eum id, sunt ex nulla suscipit aut voluptates
+                                ipsa. Consequatur velit enim, aspernatur obcaecati perferendis vel!
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste aut vitae perferendis
+                                laboriosam quisquam eaque, illum architecto voluptatum vel aliquid assumenda ratione
+                                maxime
+                                odio minus quod placeat provident eos suscipit.</p>
+
                         </figcaption>
 
                     </figure>
                 </section>
             </div>
+
             <div class="slogan__container">
                 <h1 class="slidein slogan">
                     Підпишися, щоб бути в курсі останніх новин стилю та моди
@@ -234,7 +269,6 @@ width:100%;
                     <input type="text" name="email" class="email" id="email" value="your email address">
 
                 </form>
-
             </div>
 
 
@@ -297,6 +331,7 @@ width:100%;
                     <div class="divider"></div>
                 </section>
             </div>
+
             <div class="slogan__container">
                 <h1 class="slidein slogan">
                     SLOGAN TEXT
@@ -310,11 +345,16 @@ width:100%;
                         Про мене
                     </h1>
                     <div class="divider"></div>
-                    <p class="">
+                    <p class="column">
                         Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                         Consectetur, rem tenetur.
                         Maiores sequi similique nesciunt ab iste facere ratione molestias eum magnam fugit modi omnis
-                        enim nostrum, quam quisquam numquam.
+                        enim nostrum, quam quisquam numquam. Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                        Omnis debitis commodi repellendus quidem, totam nihil possimus. Sapiente iusto, sequi obcaecati
+                        reprehenderit sunt esse mollitia sint! Sint rerum corporis esse recusandae!
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa enim corrupti pariatur quia
+                        saepe, porro repellendus explicabo nemo eligendi omnis esse autem inventore rem aspernatur
+                        repudiandae earum consequuntur neque ex.
                         Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                         Fugiat voluptate earum sint exercitationem ullam dolores dolore at, enim harum eaque perferendis
                         repudiandae ad cupiditate pariatur debitis deleniti consequatur voluptates praesentium.
@@ -325,6 +365,8 @@ width:100%;
                     <div class="divider"></div>
                 </section>
             </div>
+
+
             <div class="slogan__container">
                 <h1 class="slidein slogan">
                     SLOGAN TEXT
@@ -737,7 +779,7 @@ width:100%;
             <div class="slogan__container">
                 <h1 class="slidein slogan">
                     <a class="consult__link" href="#">
-                        Давай познайомимся - запишися до мене на консультацію!
+                        Давай познайомимося - запишися до мене на консультацію!
                     </a>
                 </h1>
             </div>
@@ -752,30 +794,55 @@ width:100%;
                     <ul class="reviews__list">
 
                         <li class="review__item">
-                            <img class="client__pic" src="img/style.jpg" alt="#">
-                            <p class="client__name">
-                                Даздраперма
-                            </p>
-                            <p class="services__recieved">
-                                Розбір гармидару
-                            </p>
-                            <p class="text__block review">
+                            <figure>
+                                <img class="client__pic" src="img/style.jpg" alt="#">
+
+                                <figcaption>
+                                    <p class="client__name">
+                                        <b>Даздраперма</b>
+                                        <br>
+                                        <i><span>клієнтка</span></i>
+                                    </p>
+
+
+                                    <p class="services__recieved">
+                                        Розбір гармидару<br>
+                                        <i><span>замовлена послуга</span></i>
+                                    </p>
+
+
+                                </figcaption>
+                            </figure>
+
+                            <p class="text__block column">
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium nulla illum ea quis
                                 magnam eum incidunt consequuntur porro debitis quae voluptas obcaecati tenetur nam sunt
                                 sequi quaerat, nostrum ad accusamus!
                             </p>
-
                         </li>
-                        <div class="vert__divider"></div>
                         <li class="review__item">
-                            <img class="client__pic" src="img/style1.jpg" alt="#">
-                            <p class="client__name">
-                                Василина
-                            </p>
-                            <p class="services__recieved">
-                                Розбір гармидару
-                            </p>
-                            <p class="text__block review">
+
+                            <figure>
+                                <img class="client__pic" src="img/style1.jpg" alt="#">
+
+                                <figcaption>
+                                    <p class="client__name">
+                                        <b>Василина</b>
+                                        <br>
+                                        <i><span>клієнтка</span></i>
+                                    </p>
+
+
+                                    <p class="services__recieved">
+                                        Розбір гармидару<br>
+                                        <i><span>замовлена послуга</span></i>
+                                    </p>
+
+
+                                </figcaption>
+
+                            </figure>
+                            <p class="text__block column">
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium nulla illum ea quis
                                 magnam eum incidunt consequuntur porro debitis quae voluptas obcaecati tenetur nam sunt
                                 sequi quaerat, nostrum ad accusamus!
@@ -825,12 +892,12 @@ width:100%;
                             </figure>
 
                             <div class="shopping__tour__program">
-                                <ol>
+                                <ol class="column">
                                     <li>
                                         <h4>
                                             День 1
                                         </h4>
-                                        <p class="day__descr">
+                                        <p class="day__descr column">
                                             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium fugit
                                             unde aliquam? Optio, beatae esse numquam libero illum delectus amet laborum
                                             tenetur quis voluptatibus quod laboriosam repellendus unde iure eveniet!
@@ -897,7 +964,7 @@ width:100%;
                                 Мілан
                             </h3>
                             <figure class="shopping__tour__desc">
-                                <img src="img/" alt="#">
+                                <img src="img/Milan.jpg" alt="#">
                                 <figcaption>
                                     <p>
                                         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi nesciunt
@@ -978,6 +1045,7 @@ width:100%;
 
                 </section>
             </div>
+
             <div class="divider"></div>
         </main>
 
@@ -1022,30 +1090,29 @@ width:100%;
                     </li>
                 </ul>
             </div>
-              <div class="footer__center">
 
 
-    <div class="footer__logo__container ">
-        <a  class="logo" href="#">
-            <img src="img/logo.jpg" alt="logo">
-        </a>
-    </div>
-   
-    <div class="contacts__container">
-        <p>Alina Stoliarova</p>
-        <br>
+            <div class="footer__center">
 
-        <span>tel:</span>
-        <a href="380967407500">+38(096)740-75-00</a>
-        <br>
+                <div class="contacts__container">
+                    <p>Alina Stoliarova</p>
+                    <br>
 
-        <span>email:</span>
-        <a href="mailtolink:alinka199@gmail.com">mail me</a>
-        <br>
+                    <span>tel:</span>
+                    <a href="380967407500">+38(096)740-75-00</a>
+                    <br>
 
-    </div>
+                    <span>email:</span>
+                    <a href="mailtolink:alinka199@gmail.com">mail me</a>
+                    <br>
 
-               <div class="divider"></div>
+                </div>
+
+                <div class="footer__logo__container ">
+                    <a class="logo" href="#">
+                        <img src="img/logo.jpg" alt="logo">
+                    </a>
+                </div>
 
                 <div class="footer__services__menu__container">
 
@@ -1070,37 +1137,37 @@ width:100%;
                         </li>
                     </ul>
                 </div>
-              
-              </div>
-                <div class="footer__bottom">
-                    <p>Copyright Anton Stoliarov 2022</p><span>|</span><br>
-                    <p>Права на всі матеріали та курси належать Anton Stoliarov.Будь-яке використання без дозволу
-                        правовласника тягне у себе юридичну відповідальність.</p><span>|</span><br>
-                    <a href="#">Terms & Conditions</a> <span>|</span><br>
-                    <a href="#">Політика обробки персональних даних</a><span>|</span><br>
-                    <a href="#">Фотогрвфії Anton Stoliarov</a><span>|</span><br>
-                    <a href="#">Web Design by Anton Stoliarov</a>
-                </div>
-
-
 
             </div>
+            <div class="footer__bottom">
+                <p>Copyright Anton Stoliarov 2022</p><span>|</span><br>
+                <p>Права на всі матеріали та курси належать Anton Stoliarov.Будь-яке використання без дозволу
+                    правовласника тягне у себе юридичну відповідальність.</p><span>|</span><br>
+                <a href="#">Terms & Conditions</a> <span>|</span><br>
+                <a href="#">Політика обробки персональних даних</a><span>|</span><br>
+                <a href="#">Фотогрвфії Anton Stoliarov</a><span>|</span><br>
+                <a href="#">Web Design by Anton Stoliarov</a>
+            </div>
 
-        </footer>
 
-        <div class="modal">
-            <div class="modal__dialog">
-                <div class="modal__content">
-                    <form action="#">
-                        <div data-close class="modal__close">&times;</div>
-                        <div class="modal__title">Ми скоро передзвонимо!</div>
-                        <input required placeholder="Ваше ім'я" name="name" type="text" class="modal__input">
-                        <input required placeholder="Ваш номер телефона" name="phone" type="phone" class="modal__input">
-                        <button class="modal__btn btn">Передзвонити</button>
-                    </form>
-                </div>
+
+    </div>
+
+    </footer>
+
+    <div class="modal">
+        <div class="modal__dialog">
+            <div class="modal__content">
+                <form action="#">
+                    <div data-close class="modal__close">&times;</div>
+                    <div class="modal__title">Ми скоро передзвонимо!</div>
+                    <input required placeholder="Ваше ім'я" name="name" type="text" class="modal__input">
+                    <input required placeholder="Ваш номер телефона" name="phone" type="phone" class="modal__input">
+                    <button class="modal__btn btn">Передзвонити</button>
+                </form>
             </div>
         </div>
+    </div>
 
     </div>
     <script src="script.js"></script>
