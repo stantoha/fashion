@@ -485,12 +485,10 @@ section h1{
 }
 
 .service__descr img {
-   /*  margin-left: 15vw; */
+   
    float: right;
-    width: 300px;
-    height:400px;
     object-fit: cover;
-    margin: 50px;
+    margin: 50px auto;
    border-radius: 15px/15px;
     box-shadow: 0 0 35px rgba(0, 0, 0, .25)
 }
@@ -528,6 +526,9 @@ h3.service__name {
 
 
 .services__list {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
     margin-top: 35px;
     padding-left: 20px;
 
@@ -613,7 +614,6 @@ box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
     justify-content: space-around;
     flex-direction: row;
     margin: 0 auto;
-    flex-wrap: wrap;
 }
 
 .sign__up input{
@@ -866,7 +866,7 @@ border-radius: 50%;
 .modal__content {
     position: relative;
     width: 100%;
-    padding: 40px;
+    padding: 20px;
     background-color: #fff;
     border: 1px solid rgba(0, 0, 0, .2);
     border-radius: 15px 15px;
