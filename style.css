@@ -1,19 +1,11 @@
 body{
-    margin: 0;
     padding: 0;
-   width: 100%;
+    margin: 0 auto;
+    width: 100vw;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 1em;
     line-height: 1.5;
 }
-
-/*colors:
-#B67A58    
-#EFA681    buttons
-#B67A58    bg head foot
-#EFA681    block bg
-#EFA681    bg light             */
-
 
 h1,
 h2,
@@ -26,13 +18,7 @@ nav{
     list-style: none;
 }
 
-.wrapper{
-    display: block;
-margin: 0 10vw;
-background-color:rgba(200, 200, 200, 0.1) ;
-   /*  border-left:1px solid black;
-    border-right:1px solid black; */
-}
+
 
 .btn{
     display: flex;
@@ -61,15 +47,6 @@ background-color:rgba(200, 200, 200, 0.1) ;
 
 }
 
-.wrapper img.content__pic{
-    display: block;
-    border-radius: 15px/15px;
-    max-width:480px;
-   height: auto ;
-    margin:0  10px;
-    padding: 20px auto;
-}
-
 .divider{
     display: block;
     width: 25vw;
@@ -88,6 +65,23 @@ background-color:rgba(200, 200, 200, 0.1) ;
     margin:auto 10px ;
     background-color: rgba(255, 255, 255, 0.5);
 }
+.wrapper{
+    display: block;
+    justify-self:stretch;
+    margin: 0 10vw;
+    background-color:rgba(200, 200, 200, 0.1) ;
+   /*  border-left:1px solid black;
+    border-right:1px solid black; */
+}
+
+.wrapper img.content__pic{
+    display: block;
+    border-radius: 15px/15px;
+    max-width:480px;
+    max-height: 720px;
+    margin:0 auto;
+}
+
  /* HEADER */
 
 .header__container{
@@ -104,7 +98,8 @@ background-color:rgba(200, 200, 200, 0.1) ;
     background-color:rgba(0, 0, 0, 0.5);
     align-self: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    width:79vw ;
+    width:auto ;
+    height: 130px;
 }
 
 .nav__container,
@@ -447,7 +442,11 @@ section h1{
     flex: 40%;
     padding: 20px;
 }
-
+.about__me figcaption span{
+    color: rgba(255, 151, 82, 1);
+    text-align: center;
+    margin: 0 30px;
+}
 
 .services{
    position: relative;

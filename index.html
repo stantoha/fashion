@@ -9,28 +9,46 @@
     <title>stylist</title>
 </head>
 <style>
-    @media (min-width: 1440px) {}
+    @media (min-width: 1440px) {
+
+    }
 
     @media (min-width: 1024px) and (max-width:1439px) {
-        .wrapper {
+        
+        body {
             margin: 0 auto;
-
         }
+
+        .wrapper {
+            margin: 0;
+        }
+        
 
         .presentation__card {
             flex-wrap: wrap;
         }
 
-        .content__pic {
-            transform: scale(0.9);
-        }
     }
 
     @media (min-width: 768px) and (max-width: 1023px) {
-        .wrapper {
+        
+        body {
             margin: 0 auto;
-            min-width: 100vw;
-            justify-self: stretch;
+        }
+
+        .title{
+         margin: 10px auto ;
+         font-size: 20px;
+}
+        .wrapper {
+            margin: 0;
+        }
+       
+        .presentation__card,
+        .main,
+        .container{
+            padding: 0;
+            margin: 0; 
         }
 
         .menu__container{
@@ -47,18 +65,28 @@
             flex-wrap: wrap;
         }
 
-        .content__pic {
-            transform: scale(0.9);
+        .wrapper img.content__pic {
+            max-width:480px;
+            max-height:720px ;
         }
     }
 
     @media (min-width:425px) and (max-width: 767px) {
-        .wrapper {
-            margin: 0;
-            min-width: 100vw;
-            justify-self: stretch;
+        
+        body {
+            margin: 0 auto;
         }
 
+        .wrapper {
+            margin: 0;
+        }
+        
+        .presentation__card,
+        .main,
+        .container{
+            padding: 0;
+            margin: 0; 
+        }
         .menu__container{
             display: none;
             position: absolute;
@@ -73,17 +101,28 @@
             flex-wrap: wrap;
         }
 
-        .content__pic {
-            transform: scale(0.8);
+        .wrapper img.content__pic {
+            max-width:400px;
+            max-height:600px ;
         }
     }
 
     @media (min-width:375px) and (max-width: 424px) {
-        .wrapper {
-            margin: 0;
-            min-width: 100vw;
+        
+        body {
+            margin: 0 auto;
         }
 
+        .wrapper {
+            margin: 0;
+        }
+        
+        .presentation__card ,
+        .main,
+        .container{
+            padding: 0;
+            margin: 0; 
+        }
         .menu__container{
             display: none;
             position: absolute;
@@ -98,17 +137,27 @@
             flex-wrap: wrap;
         }
 
-        .content__pic {
-            transform: scale(0.7);
+        .wrapper img.content__pic {
+            max-width:320px;
+            max-height:480px ;
         }
     }
 
     @media (min-width:320px) and (max-width: 374px) {
-        .wrapper {
-            margin: 0;
-            min-width: 100vw;
+        
+        body {
+        margin: 0 auto;
         }
 
+        .wrapper {
+            margin: 0;
+        }
+        .presentation__card ,
+        .main,
+        .container{
+            padding: 0;
+            margin: 0; 
+        }
         .menu__container{
             display: none;
             position: absolute;
@@ -123,17 +172,28 @@
             flex-wrap: wrap;
         }
 
-        .content__pic {
-            transform: scale(0.7);
+        .wrapper img.content__pic {
+            max-width:300px;
+            max-height:450px ;
         }
     }
 
     @media (max-width: 319px) {
-        .wrapper {
+        
+        body{
+            width:100%;
             margin: 0;
-            min-width: 100vw;
         }
-
+        .wrapper {
+            margin: 0; 
+        }
+        
+        .presentation__card ,
+        .main,
+        .container{
+            padding: 0;
+            margin: 0; 
+        }
         .menu__container{
             display: none;
             position: absolute;
@@ -148,8 +208,9 @@
             flex-wrap: wrap;
         }
 
-        .content__pic {
-            transform: scale(0.6);
+        .wrapper img.content__pic {
+            max-width:240px;
+            max-height:360px ;
         }
     }
 </style>
@@ -404,8 +465,9 @@
     <img class="content__pic" src="img/alinka.jpg" alt="Alinka">
 
 <figcaption>
-    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-    Consectetur, rem tenetur.
+    <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+        Consectetur, rem tenetur.</span>
+    
     <p class=" column">
         Lorem ipsum, dolor sit amet consectetur adipisicing elit.
         Consectetur, rem tenetur.
