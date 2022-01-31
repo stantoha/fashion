@@ -299,7 +299,7 @@ a:hover.logo{
     border: 1px solid black;
     padding: 25px ;
     border-radius: 15px/15px;
-    box-shadow: 0 0 30px rgba(255, 255, 255, 0.7);    
+    box-shadow:0px 0px 20px rgba(0, 0, 0, .5);
 }
 
 .container:nth-of-type(2n){
@@ -415,15 +415,27 @@ section h1{
 .advantages__item{
     display: block;
     width:260px ;
-    padding: 5px;
+    padding: 15px;
     margin: 0 auto; 
     height:auto;
+    border-radius: 15px/15px;
     background-color: rgba(255, 151, 82, 0.2);
+    box-shadow: 0 0  35px rgba(255, 255, 255, 0.7);
+    transition:all 0.5s;
+}
+
+.advantages__item:hover{
+    transform: scale(2) ;
+    box-shadow: 0 0 35px rgba(0, 0, 0, .25);
+
 }
 
 .advantage__name{
+    background-color: rgba(255, 151, 82, 0.3);
+    color: white;
     font-size: 30px;
     text-align: center;
+    margin: 10px;
 }
 
 .about__me figure{
@@ -482,6 +494,7 @@ section h1{
     left: 5vw;
     height: auto;
     background: rgba(255, 255, 255, 0.5);
+    border-radius: 15px/15px;
     padding: 25px 50px;
     font-size: 1em;
     font-weight: 300;
@@ -493,6 +506,7 @@ section h1{
 .service__descr img {
   /*  float: right;
     object-fit: cover; */
+    transform: scale(0.8);
     margin: 10px;
     box-shadow: 0 0 35px rgba(0, 0, 0, .25)
 }
@@ -501,6 +515,7 @@ section h1{
 .descr__block{
     max-width: 900px;
     height: auto;
+    padding-top: 50px;
 }
 .service__steps__list{
     list-style:circle ;
@@ -610,9 +625,10 @@ box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 100px auto;
-    padding: 10px;
-}
+    margin: 50px auto;
+    padding: 20px;
+/*     box-shadow: 0 0 30px rgba(0, 0, 0, .35);
+ */}
 
 .sign__up{
     display: flex;
@@ -651,6 +667,10 @@ a.consult__link{
     transition: all 0.5s;
 }
 
+a:hover.consult__link{
+    letter-spacing: 2px;
+    text-decoration: underline;
+}
 
 
 .shopping__tours__list{
