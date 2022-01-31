@@ -448,6 +448,9 @@ section h1{
     margin: 0 30px;
 }
 
+
+
+
 .services{
    position: relative;
     width:100%;
@@ -460,36 +463,37 @@ section h1{
     height: auto;
     margin: 0 auto;
     padding: 10px;
+    align-items: center;
     flex-wrap: wrap;
+    flex-direction: column-reverse;
 }
 
 .service{
-    width: 90%;
+    width: auto;
     position: relative;
     padding: 25px;
     height: 100%;
-
 }
 
-
 .service__descr {
+    display: flex;
+    justify-content: space-between;
     top: 5vh;
     left: 5vw;
     height: auto;
     background: rgba(255, 255, 255, 0.5);
-    padding: 25px;
+    padding: 25px 50px;
     font-size: 1em;
     font-weight: 300;
     color: rgba(0, 0, 0, .7);
- 
+    box-shadow: 0 0 35px rgba(0, 0, 0, .25)
+
 }
 
 .service__descr img {
-   
-   float: right;
-    object-fit: cover;
-    margin: 50px auto;
-   border-radius: 15px/15px;
+  /*  float: right;
+    object-fit: cover; */
+    margin: 10px;
     box-shadow: 0 0 35px rgba(0, 0, 0, .25)
 }
 
@@ -497,7 +501,6 @@ section h1{
 .descr__block{
     max-width: 900px;
     height: auto;
-    margin: 10px 20px;
 }
 .service__steps__list{
     list-style:circle ;
@@ -512,45 +515,48 @@ section h1{
 
 
 .services__menu {
-    width: 20%;
-    padding: 25px;
-    border-left: 3px solid rgba(0, 0, 0, .2);
-    background-color: #fff
+    display: block;
+    width: auto;
 }
 
 h3.service__name {
+    display: block;
     font-weight: 700;
-    font-size: 30px;
-    margin: 20px 30px;
+    font-size: 1.4em;
+    margin: 0 auto;
+    text-align: center;
 }
 
 
 .services__list {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    margin-top: 35px;
-    padding-left: 20px;
-
-  
+    display: block;
+    margin:0 auto;
 }
 
 .service__item {
+    display: inline-block;
     font-weight: 700;
-    font-size: 22px;
-    margin-top: 10px;
+    text-align: center;
+    border-radius: 15px/15px;
+    width: 150px;
+    font-size: 1.2em;
+    margin: 15px;
     color: rgba(0, 0, 0, .6);
     cursor: pointer;
+    padding: 10px;
+    background-color: #fff;
     transition: .3s all
 }
 
 .service__item:hover {
     color: rgba(255, 151, 82, 0.5);
+    box-shadow: 0 0 35px rgba(0, 0, 0, .25);
+    transform: scale(1.2);
 }
 
 .active {
     color: rgba(255, 151, 82, 1);
-    font-size: 25px;
+    font-size: 1.5em;
     font-weight: 900
 }
 
