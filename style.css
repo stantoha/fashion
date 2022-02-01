@@ -1,7 +1,8 @@
 body{
     padding: 0;
-    margin: 0 auto;
-    width: 100vw;
+    
+    margin: 0 10vw;
+  
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 1em;
     line-height: 1.5;
@@ -18,76 +19,24 @@ nav{
     list-style: none;
 }
 
-
-
-.btn{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    width: 250px;
-    margin: 0 auto;
-    text-decoration: none;
-    background-color: rgba(255, 151, 82, 1);
-    padding: 20px;
-    border: 1px solid rgba(0, 0, 0, .5);
-    border-radius: 15px/15px;
-    transition: all 0.5s;
-    color:white;
-    font-weight: 500;
-    font-size: 25px;
-    text-shadow:1px 0 0 rgba(0, 0, 0, .5);
-    box-shadow: 0 4px 30px rgba(0, 0, 0, .25)
-} 
-
-.btn:hover{
-    width:300px ;
-    border-left: 5px solid rgba(0, 0, 0, .2);
-    border-right: 5px solid rgba(0, 0, 0, .2);
-
-}
-
-.divider{
-    display: block;
-    width: 25vw;
-    clear: both;
-    height: 1px;
-    margin: 7vh auto;
-    background-color: rgba(0, 0, 0, 0.5);
-}
-
-.vert__divider{
-    display: block;
-    height: 10vh;
-    clear: both;
-    width:  1px;
-    border-left:1px solid rgba(255, 255, 255, 0.5);
-    margin:auto 10px ;
-    background-color: rgba(255, 255, 255, 0.5);
-}
 .wrapper{
-    display: block;
     justify-self:stretch;
-    margin: 0 10vw;
+    margin: 0 auto;
+    width: 100%;
     background-color:rgba(200, 200, 200, 0.1) ;
-   /*  border-left:1px solid black;
-    border-right:1px solid black; */
+
 }
 
-.wrapper img.content__pic{
-    display: block;
-    border-radius: 15px/15px;
-    max-width:480px;
-    max-height: 720px;
-    margin:0 auto;
-}
 
  /* HEADER */
 
 .header__container{
+    position: fixed;
     display: block;
-    width: auto;
-    height: 130px;
+    width: 80vw;
+    left: 0;
+    right:  0;
+    height: 100px;
     margin: 0 auto;
    
 }
@@ -95,11 +44,11 @@ nav{
 .header{
     display: flex;
     justify-content: space-around;
-    background-color:rgba(0, 0, 0, 0.5);
+    background-color:rgba(0, 0, 0, 0.2);
     align-self: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     width:auto ;
-    height: 130px;
+   /*  height: 130px; */
 }
 
 .nav__container,
@@ -151,6 +100,10 @@ a:hover.logo{
 }
 .title:hover{
     color:#f0aa7c;
+    font-size: 27px;
+
+    border-bottom: 5px solid #f0aa7c;
+    border-top: 5px solid #f0aa7c;
 }
 
 .nav__container,
@@ -289,7 +242,7 @@ a:hover.logo{
  .main{
     display:block;
     align-items: center;
-    padding: 10px 40px ;
+    padding: 100px 40px ;
     margin: 0 auto;
 } 
 
@@ -425,7 +378,7 @@ section h1{
 }
 
 .advantages__item:hover{
-    transform: scale(2) ;
+    transform: scale(1.3) ;
     box-shadow: 0 0 35px rgba(0, 0, 0, .25);
 
 }
@@ -954,6 +907,70 @@ border-radius: 50%;
     position: absolute;
 }
 
+.up__button img{
+    box-shadow: 0 0 10px rgba(0, 0, 0, .25);
+    background-color:rgba(0, 0, 0, .25); 
+    position: fixed;
+    transform: scale(1.3);
+    bottom: 300px;
+    right: 100px;
+    border-radius: 50%;
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 250px;
+    margin: 0 auto;
+    text-decoration: none;
+    background-color: rgba(255, 151, 82, 1);
+    padding: 20px;
+    border: 1px solid rgba(0, 0, 0, .5);
+    border-radius: 15px/15px;
+    transition: all 0.5s;
+    color:white;
+    font-weight: 500;
+    font-size: 25px;
+    text-shadow:1px 0 0 rgba(0, 0, 0, .5);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, .25)
+} 
+
+.btn:hover{
+    width:300px ;
+    border-left: 5px solid rgba(0, 0, 0, .2);
+    border-right: 5px solid rgba(0, 0, 0, .2);
+
+}
+
+.divider{
+    display: block;
+    width: 25vw;
+    clear: both;
+    height: 1px;
+    margin: 7vh auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.vert__divider{
+    display: block;
+    height: 10vh;
+    clear: both;
+    width:  1px;
+    border-left:1px solid rgba(255, 255, 255, 0.5);
+    margin:auto 10px ;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+
+.wrapper img.content__pic{
+    display: block;
+    border-radius: 15px/15px;
+    max-width:480px;
+    max-height: 720px;
+    margin:0 auto;
+}
 @font-face {
     font-family: 'Balsamiq Sans'; 
     src: url("fonts/Balsamiq_Sans/BalsamiqSans-Italic.ttf") format("truetype"); 

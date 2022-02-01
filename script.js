@@ -3,43 +3,14 @@ window.addEventListener('DOMContentLoaded', () => {
         modalTrigger = document.querySelectorAll('[data-modal]'),
         modalClosebtn = document.querySelector('[data-close]'),
         titleLink = document.querySelector('.title'),
+        logoLink = document.querySelector('.logo'),
         tabs = document.querySelectorAll('.service__item'),
         tabsContent = document.querySelectorAll('.service'),
         tabParent = document.querySelector('.services__list'),
-        burgerNav=document.querySelector('.nav__container'),
-        menu=document.querySelector('.menu__container'),
-        windWidth=document.documentElement.offsetWidth;
-        
-/* console.log(windWidth);
+        upButton=document.querySelector('.up__button');
 
-        function hideMenuShowNav(){
-            if(!burgerNav.classList.contains('hide')){
-                burgerNav.classList.add('hide');
-                menu.classList.remove('hide');
-            }
-           
-        }
-        
-        function showNavHideMenu(){
-            menu.classList.add('hide');
-            burgerNav.classList.remove('hide');
-        }
+     //SHOW-HIDE CONTENT
 
-        hideMenuShowNav();
-
-        function changeNav(item){
-            if(item<=1023 && item>0){
-                hideMenuShowNav();
-            }
-            else{
-                showNavHideMenu();
-            }
-        }
-
-       changeNav(windWidth); */
-
-
-        
             function hideTabContent() {
                 tabsContent.forEach(item => {
                     item.classList.add('hide');
@@ -49,7 +20,6 @@ window.addEventListener('DOMContentLoaded', () => {
                     item.classList.remove('active');
                 });
             }
-        
         
             function showTabContent(i = 0) {
                 tabsContent[i].classList.add('show', 'fade');
@@ -72,50 +42,19 @@ window.addEventListener('DOMContentLoaded', () => {
                 }
             });
 
-    /* upButton = document.querySelector('.up__button'),
-    sliedeIn = document.querySelectorAll('.slidein') */
-    
 
-   /*  function hideTabContent() {
-        tabsContent.forEach(item => {
-            item.classList.add('hide');
-            item.classList.remove('show', 'fade');
-        });
-        tabs.forEach(item => {
-            item.classList.remove('active');
-        });
-    }
-
-    function showTabContent(i = 0) {
-        tabsContent[i].classList.add('show', 'fade');
-        tabsContent[i].classList.remove('hide');
-        tabs[i].classList.add('active');
-    }
-
-    hideTabContent();
-    showTabContent();
-
-    tabsList.addEventListener('click', (event) => {
-        const target = event.target;
-        if (target && target.classList.contains('service__link')) {
-            tabs.forEach((item, i) => {
-                if (target == item) {
-                    console.log('CIAO');
-                    hideTabContent();
-                    showTabContent(i);
-                }
+            logoLink.addEventListener('click', () => {
+                hideTabContent();
+                showTabContent(0);
+            }); 
+        
+            titleLink.addEventListener('click', () => {
+                hideTabContent();
+                showTabContent(0);
             });
-        }
-    });
 
 
-    titleLink.addEventListener('click', () => {
-        hideTabContent();
-        showTabContent(0);
-    }); */
-
-    //Modal
-
+    //MODAL
 
     function openModal() {
         modal.classList.add('show', 'fade'); //или modal.classList.toggle('show);
@@ -148,8 +87,9 @@ window.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    const modalTimerId = setTimeout(openModal, 3000);
+    const modalTimerId = setTimeout(openModal, 30000);
 
+    
 
     function showModalByScroll() {
         if (window.pageYOffset + document.documentElement.clientHeight >= document.documentElement.scrollHeight) {
@@ -160,6 +100,19 @@ window.addEventListener('DOMContentLoaded', () => {
 
     window.addEventListener('scroll', showModalByScroll);
 
+   //UPBUTTON
+
+    window.onscroll = function () {
+        if (window.pageYOffset > 200) {
+            upButton.classList.remove('hidden');
+        } else {
+            upButton.classList.add('hidden');
+        }
+    };
+
+    upButton.onclick = function () {
+        window.scrollTo(0, 0);
+    };
 
    
 });
