@@ -293,9 +293,9 @@ section ul{
 
 .column {
 
-    column-width: 250px;
+    column-width: 280px;
     column-count: 2;
-    column-gap: 50px;
+    column-gap: 30px;
     column-rule: 1px solid #ccc;
    }
 
