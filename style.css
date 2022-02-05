@@ -136,12 +136,6 @@ a:hover.logo{
 }
 
 
-.sub__title{
-    margin: 5px auto 20px;
-    color:#cfcbc4 ;
-    font-size: 18px;
-}
-
 .burger{
     display: flex;
     justify-content:flex-end;
@@ -280,7 +274,7 @@ section ul{
 }
 
 
-.presentation__card figcaption.text__block{
+figcaption.text__block{
      align-self: center;
     margin: 50px;
     padding: 50px;
@@ -611,7 +605,7 @@ h1.slogan {
 }
 
 .sign__up button.subscribe ,
-a.consult__link{
+.consult__link{
     text-decoration: none;
     color: white;
     padding: 20px;
@@ -623,10 +617,6 @@ a.consult__link{
     transition: all 0.5s;
 }
 
-a:hover.consult__link{
-    letter-spacing: 2px;
-    text-decoration: underline;
-}
 
 
 .shopping__tours__list{
@@ -905,9 +895,30 @@ border-radius: 50%;
     animation-fill-mode: both;
 }
 
+@keyframes fade{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
 .hidden{
     display: none;
     position: absolute;
+}
+
+.sub__title{
+    transform: translate(0,120%);
+    transition: all 1s;
+    opacity: 0;
+}
+
+.sub__title__active{
+    transform: translate(0,0);
+    transition: all 1s;
+    opacity: 1;
 }
 
 .up__button img{
@@ -918,6 +929,7 @@ border-radius: 50%;
     bottom: 300px;
     right: 100px;
     border-radius: 50%;
+    transition: all 1s;
 }
 
 .btn{

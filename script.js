@@ -105,10 +105,12 @@ window.addEventListener('DOMContentLoaded', () => {
    //UPBUTTON
 
     window.onscroll = function () {
-        if (window.pageYOffset > 200) {
-            upButton.classList.remove('hidden');
+        if (window.pageYOffset > 300) {
+            upButton.classList.remove('hide');
+            upButton.classList.add('show','fade');
         } else {
-            upButton.classList.add('hidden');
+            upButton.classList.add('hide');
+            upButton.classList.remove('show','fade');
         }
     };
 
@@ -172,12 +174,25 @@ let navShow=function(){
     
 navShow();
 
+let subTitle=document.querySelectorAll('.sub__title');
+
+
+ 
+
+function slideinSubTitle(){
+    subTitle.forEach(item=>{
+        let  subTitleCoordY=subTitle.getBoundingClientRect().y;
+        window.onscroll = function () {
+            if (window.pageYOffset > subTitleCoordY) {
+                subTitle.classList.add('sub__title__active','fade');
+            } 
+        };
+      });
+    
+}
 
 
 
-
-
-        
          
           
                     
