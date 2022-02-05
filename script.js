@@ -9,6 +9,8 @@ window.addEventListener('DOMContentLoaded', () => {
         tabParent = document.querySelector('.services__list'),
         upButton=document.querySelector('.up__button');
 
+       
+
      //SHOW-HIDE CONTENT
 
             function hideTabContent() {
@@ -114,5 +116,79 @@ window.addEventListener('DOMContentLoaded', () => {
         window.scrollTo(0, 0);
     };
 
-   
+  
+    const navBlock=document.querySelectorAll('.nav__block'),
+          navButtons=document.querySelectorAll('.nav__button'),
+          shoppingButton=document.querySelector('.shopping__section__button'),
+          shoppingBlock=document.querySelector('.shopping__section');
+         
+          
+          shoppingButton.onclick=function(){
+            if(shoppingBlock.classList.contains('hide')){
+            shoppingBlock.classList.remove('hide');
+            shoppingBlock.classList.add('show','fade');}
+            else{
+            shoppingBlock.classList.add('hide');
+            shoppingBlock.classList.remove('show','fade');
+            }
+
+          };
+
+let navShow=function(){
+    for(let i=0;i<navButtons.length;i++){
+        navButtons[i].onclick=function(){
+            if(!navButtons[i].classList.contains('active')){
+                navButtons.forEach(item=>{
+                  item.classList.add('hide');
+                });
+
+               
+                navButtons[i].classList.remove('hide');  
+                navButtons[i].classList.add('show','active');  
+                let  navBlockCoord= navBlock[i].getBoundingClientRect(),
+                x=navBlockCoord.x,
+                y=navBlockCoord.y;
+                if(navButtons[i].classList.contains('vip')){
+                    navBlock[i].classList.remove('hide');
+                    navBlock[i].classList.add('show','fade');
+                }
+                window.scrollTo(x ,y);
+               /*  document.body.style.overflow = 'hidden'; */
+            }
+            else{
+                navButtons.forEach(item=>{
+                    item.classList.remove('hide');
+                  }); 
+                  if(!navButtons[i].classList.contains('vip')){
+                    navBlock[i].classList.add('hide');
+                    navBlock[i].classList.remove('show','fade');
+                }
+                navButtons[i].classList.remove('show','active');  
+                window.scrollTo(0, 0);
+            }
+          };
+    }
+};          
+    
+navShow();
+
+
+
+
+
+
+        
+         
+          
+                    
+              
+         
+
+
+
+
+
+
+
+
 });

@@ -33,82 +33,68 @@ nav{
 .header__container{
     position: fixed;
     display: block;
-    width: 80vw;
+    width: 100vw;
     left: 0;
     right:  0;
-    height: 100px;
+    height: auto;
     margin: 0 auto;
-   
 }
 
 .header{
     display: flex;
     justify-content: space-around;
-    background-color:rgba(0, 0, 0, 0.2);
+    background-color:rgba(0, 0, 0, 0.3);
     align-self: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Caveat', cursive;
     width:auto ;
-   /*  height: 130px; */
+    height: 100px;
 }
 
 .nav__container,
 .title__container,
-.menu__container{ 
+.logo__container/* ,
+.menu__container */{ 
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
 }
 
+
+.logo img,
 a.logo{
     border-radius: 50%;
-   
 transition: all 0.5s;
-    
 }
+
 a:hover.logo{
     transform: scale(1.2);
     border-radius: 50%;
-  
 }
 
-
-.logo img{
-    border-radius: 50%;
-  
-}
-
-.logo__container{
-    flex: 10%;
-    display: flex;
-    justify-content:center;
-    align-items: center;
-
-}
 .title__container{
     justify-content: center;
     flex-direction: column;
-    align-items: center;
-    flex:25%;
+    height: 100px;
 }
 
 .title{
-    margin: 30px auto ;
-    font-size: 25px;
-    border-bottom: 4px solid rgba(255, 255, 255, 0.5);
-    border-top: 4px solid rgba(255, 255, 255, 0.5);
+    margin: 0 auto ;
+    font-size: 35px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+    border-top: 2px solid rgba(255, 255, 255, 0.5);
 }
 .title:hover{
     color:#f0aa7c;
-    font-size: 27px;
-
-    border-bottom: 5px solid #f0aa7c;
-    border-top: 5px solid #f0aa7c;
+    letter-spacing: 2px;
+    border-bottom:2px solid rgba(255, 151, 82, 0.7);
+    border-top:2px solid rgba(255, 151, 82, 0.7);
 }
 
 .nav__container,
-.menu__container{
-    flex:35%;
+.logo__container,
+.title__container{
+    flex:30%;
 }
 
 .menu{
@@ -128,24 +114,26 @@ a:hover.logo{
     text-align: center;
 }
 
-.title,
-.menu__link,
-.nav__link{
+.title{
     color: #fefaf3;
     text-decoration: none;
     transition: all 0.3s;
 }
 
-
-.menu__link:hover,
-.nav__link:hover{
-    color: rgba(255, 151, 82, 0.8);
-    transform: scale(1.2);
-    padding:15px 0;
-    border-bottom: 2px solid  rgba(255, 151, 82, 1);
-    border-top: 2px solid  rgba(255, 151, 82, 1);
+.nav__button{
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all 0.3s;
 }
 
+.nav__button:hover{
+    transform: scale(1.2);
+}
+
+.active{
+   color: rgba(255, 151, 82, 1);
+   font-weight: 500;    
+}
 
 
 .sub__title{
@@ -158,47 +146,50 @@ a:hover.logo{
     display: flex;
     justify-content:flex-end;
     align-items:flex-end;
-    width: auto;
-    height: 50px;
+    width: 55px;
+    height: 55px;
 }
 
 .nav-btn{
     display: block;
     position: relative;
-    width: 43px;
-    height: 43px;
+    width: 55px;
+    height: 55px;
     cursor: pointer;
     z-index: 1;
-    margin-left: 150px;
-    
   }
   .nav-btn > span,
   .nav-btn > span::before,
   .nav-btn > span::after {
       display: block;
       position: absolute;
-      top: 18px;
-    width: 45px;
-    height: 9px;
+      top: 20px;
+    width: 55px;
+    height: 13px;
+    border-radius: 15px/15px;
     background-color: white;
-    transition-duration: .25s;
+    transition-duration: .20s;
   }
   .nav-btn > span::before {
     content: '';
-    top: -15px;
+    top: -20px;
   }
   .nav-btn > span::after {
     content: '';
-    top: 15px;
+    top: 20px;
   }
-  
+  .nav-btn:hover > span,
+  .nav-btn:hover > span::before,
+  .nav-btn:hover > span::after {
+      background-color: rgba(255, 151, 82, 1);
+  }
   .nav{
     display: block;
     position: fixed;
     visibility: hidden;
     top: 0;
     left: -100%;
-    width: 15vw;
+    width: 10vw;
     height: 100%;
     margin: 0;
     padding: 150px 0;
@@ -209,6 +200,9 @@ a:hover.logo{
   }
     
   #nav-toggle{
+      position: absolute;
+      padding: 0;
+      margin: 0;
     opacity: 0;
   }
    
@@ -248,6 +242,7 @@ a:hover.logo{
 
 .container{
     display: block;
+    align-content: center;
     margin: 20px ;
     border: 1px solid black;
     padding: 25px ;
@@ -281,7 +276,7 @@ section ul{
 .presentation__card{
   display: flex;
   justify-content: space-around;
-  padding: 20px;
+  margin: 0;
 }
 
 
@@ -293,9 +288,9 @@ section ul{
 
 .column {
 
-    column-width: 280px;
+    column-width: 250px;
     column-count: 2;
-    column-gap: 30px;
+    column-gap: 50px;
     column-rule: 1px solid #ccc;
    }
 
@@ -326,7 +321,8 @@ h1.introduction{
 section h1{
     display: block;
     margin: 20px auto;
-    font-family: 'Balsamiq Sans';
+    /* font-family: 'Balsamiq Sans'; */
+    font-family: 'Caveat', cursive;
     text-align: center;
    font-size: 2.5em;
    align-self: center;
@@ -427,8 +423,7 @@ section h1{
     height: auto;
     margin: 0 auto;
     padding: 10px;
-align-items:center;
-    align-content: center;
+    align-items: center;
     flex-wrap: wrap;
     flex-direction: column-reverse;
 }
@@ -436,21 +431,29 @@ align-items:center;
 .service{
     width: auto;
     position: relative;
-    padding: 25px;
     height: 100%;
 }
-Гггггг
+
+svg.service__icon{
+    text-align: center;
+    margin: 10px auto 0;
+    border-radius: 50%;
+}
+
 .service__descr {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    top: 5vh;
+    left: 5vw;
     height: auto;
-
+    background: rgba(255, 255, 255, 0.5);
     border-radius: 15px/15px;
-
+    padding: 25px 50px;
     font-size: 1em;
     font-weight: 300;
     color: rgba(0, 0, 0, .7);
     box-shadow: 0 0 35px rgba(0, 0, 0, .25)
+
 }
 
 .service__descr img {
@@ -480,7 +483,7 @@ align-items:center;
 
 
 .services__menu {
-    display: block;
+    margin: 0 auto;
     width: auto;
 }
 
@@ -494,8 +497,11 @@ h3.service__name {
 
 
 .services__list {
-    display: block;
+    display: flex;
     margin:0 auto;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .service__item {
@@ -528,21 +534,22 @@ h3.service__name {
 
 .reviews__list{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: baseline;
-
+    width: 100%;
 }
 
 
 
 .review__item{
    flex: 40%;
-display: block;
+display: flex;
+justify-content: space-around;
 margin: 0 10px;
 min-height: 100px;
 padding: 10px;
 border: 3px solid rgba(0, 0, 0, .2);
-
+flex-wrap: wrap;
 box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
 }
 
@@ -554,19 +561,18 @@ box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
 }
 
 .review__item figure{
-    float: right;
-    
+    display:flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.review__item figcaption{
+    margin: 5px;
 }
 
 
 .review__item .text__block{
-    margin-left: 10px;
-    
-}
-
-.review__item figcaption{
-    display:flex;
-    justify-content: space-between;
+    margin: 10px;
 }
 
 
@@ -919,7 +925,7 @@ border-radius: 50%;
     justify-content: center;
     align-items: center;
     text-align: center;
-    width: 250px;
+    max-width: 250px;
     margin: 0 auto;
     text-decoration: none;
     background-color: rgba(255, 151, 82, 1);
@@ -931,14 +937,14 @@ border-radius: 50%;
     font-weight: 500;
     font-size: 25px;
     text-shadow:1px 0 0 rgba(0, 0, 0, .5);
-    box-shadow: 0 4px 30px rgba(0, 0, 0, .25)
+    box-shadow: 0 0 30px rgba(0, 0, 0, .25)
 } 
 
 .btn:hover{
-    width:300px ;
-    border-left: 5px solid rgba(0, 0, 0, .2);
-    border-right: 5px solid rgba(0, 0, 0, .2);
-
+    max-width:300px ;
+    border-top: 5px solid rgba(0, 0, 0, .2);
+    border-bottom: 5px solid rgba(0, 0, 0, .2);
+    box-shadow: 0 0 30px rgba(255, 255, 255, .5)
 }
 
 .divider{
@@ -946,7 +952,7 @@ border-radius: 50%;
     width: 25vw;
     clear: both;
     height: 1px;
-    margin: 3vh auto;
+    margin: 5vh auto;
     background-color: rgba(0, 0, 0, 0.5);
 }
 
@@ -968,9 +974,9 @@ border-radius: 50%;
     max-height: 720px;
     margin:0 auto;
 }
-@font-face {
+/* @font-face {
     font-family: 'Balsamiq Sans'; 
     src: url("fonts/Balsamiq_Sans/BalsamiqSans-Italic.ttf") format("truetype"); 
     font-style: cursive; 
     font-weight: normal; 
-    } 
+    }  */
