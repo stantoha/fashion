@@ -109,19 +109,38 @@
         body {
             margin: 0 auto;
         }
-
+        .container,
         .wrapper {
-            width:100vw;
-            margin: 0;
+            width:100%;
+            margin: 0 auto;
+        }
+
+        a.logo{        
+        transform:scale(0.6);
+    }
+    
+        .title{
+            transform:scale(0.7);
+        }
+
+        .presentation__card {
+            flex-wrap: wrap;
         }
 
         .presentation__card,
         .main,
         .container,
         .modal__content {
-            padding: 0;
-            margin: 0;
+            padding: 5px;
+            margin:  5px;
         }
+        .wrapper img.content__pic {
+            max-width: 360px;
+            max-height: 540px;
+        }
+ 
+
+        
 .modal__content{
     border:none;
 }
@@ -132,8 +151,7 @@
 .service{
     max-width: 400px;
 }
-
-.service figure.service__descr {
+.service__descr {
             padding: 0;
             margin: 0;
             flex-wrap: wrap;
@@ -150,14 +168,7 @@
             align-content: center;
         }
 
-        .presentation__card {
-            flex-wrap: wrap;
-        }
-
-        .wrapper img.content__pic {
-            max-width: 400px;
-            max-height: 600px;
-        }
+        
     }
 
     @media (min-width:375px) and (max-width: 424px) {
@@ -171,9 +182,9 @@
             margin: 0;
         }
 
-        .service figure.service__descr {
+        .service figure.descr__card {
             padding: 0;
-            margin: 0;
+            margin: 10px auto;
             flex-wrap: wrap;
         }
         .presentation__card,
@@ -190,12 +201,7 @@
             display: none;
             position: absolute;
         }
-        .service{
-    max-width: 350px;
-}
-        .service__descr {
-            flex-wrap: wrap;
-        }
+    
 
         form.sign__up {
             flex-direction: column;
@@ -471,19 +477,22 @@
         </div>
 
         <main class="main">
-
+            
+            <div class="divider divider__transparent"></div>
+            <hr>
+           
             <div class="container">
                 <section class="presentation">
 
                     <figure  class="descr__card presentation__card">
                         <img class="content__pic" src="img/a.jpg" alt="#">
-
+                        <div class="vert__divider"></div>
                         <figcaption class="text__block">
                             <h1 class="introduction">
                                 Привіт!
                                 Я Аліна-персональний стиліст
                             </h1>
-                            <p class="column">
+                            <p class="column ">
                                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet illum praesentium
                                 harum
                                 molestiae sequi aperiam consequatur inventore
@@ -494,7 +503,7 @@
                             </p>
 
                         </figcaption>
-
+                        <div class="vert__divider"></div>
                     </figure>
 
                     <div class="divider"></div>
@@ -700,12 +709,11 @@
 
             <div class="slogan__container">
                 <h1 class="slogan">
-                    Давай познайомимося!?:)
-
-                    <button data-modal class="consult__link btn" type="button">
-                        Запишися
-                    </button>
-                    до мене на консультацію!:)
+                      Готова до змін?:)
+                    <a data-modal class="consult__link btn" href="#">
+                        Запишися до мене на консультацію!
+                    </a>
+                    
                 </h1>
             </div>
 
@@ -724,10 +732,10 @@
                             <figure  class="descr__card service__descr">
                                 <img class="content__pic" src="img/al1.JPG" alt="#">
 
-                                <figcaption class="text__block">
+                                <figcaption >
 
                                     <div class="descr__block">
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit placeat eos
+                                        <p class="text__block">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit placeat eos
                                             odio
                                             asperiores animi perspiciatis, repellat dignissimos, aperiam blanditiis
                                             facilis
@@ -778,10 +786,10 @@
                             <figure  class="descr__card service__descr">
                                 <img class="content__pic" src="img/al5.JPG" alt="#">
 
-                                <figcaption class="text__block">
+                                <figcaption >
 
                                     <div class="descr__block">
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit placeat eos
+                                        <p class="text__block">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit placeat eos
                                             odio
                                             asperiores animi perspiciatis, repellat dignissimos, aperiam blanditiis
                                             facilis
@@ -830,10 +838,10 @@
                             <figure  class="descr__card service__descr">
                                 <img class="content__pic" src="img/alinka2.jpg" alt="#">
 
-                                <figcaption class="text__block">
+                                <figcaption >
 
                                     <div class="descr__block">
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit placeat eos
+                                        <p class="text__block">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit placeat eos
                                             odio
                                             asperiores animi perspiciatis, repellat dignissimos, aperiam blanditiis
                                             facilis
@@ -883,10 +891,10 @@
                             <figure  class="descr__card service__descr">
                                 <img class="content__pic" src="img/IMG_1104.jpg" alt="#">
 
-                                <figcaption class="text__block">
+                                <figcaption >
                                     <div class="descr__block">
                                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit placeat eos
-                                            odio
+                                           class="text__block"  odio
                                             asperiores animi perspiciatis, repellat dignissimos, aperiam blanditiis
                                             facilis
                                             ullam? Quidem dolore perferendis ratione debitis possimus in sequi
@@ -934,10 +942,10 @@
                             <figure  class="descr__card service__descr">
                                 <img class="content__pic" src="img/alinka3.jpg" alt="#">
 
-                                <figcaption class="text__block">
+                                <figcaption >
 
                                     <div class="descr__block">
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit placeat eos
+                                        <p class="text__block">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit placeat eos
                                             odio
                                             asperiores animi perspiciatis, repellat dignissimos, aperiam blanditiis
                                             facilis
@@ -987,10 +995,10 @@
                             <figure  class="descr__card service__descr">
                                 <img class="content__pic" src="img/3.jpg" alt="#">
 
-                                <figcaption class="text__block">
+                                <figcaption >
 
                                     <div class="descr__block">
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit placeat eos
+                                        <p class="text__block">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit placeat eos
                                             odio
                                             asperiores animi perspiciatis, repellat dignissimos, aperiam blanditiis
                                             facilis
@@ -1345,18 +1353,6 @@
 
                 </section>
             </div>
-
-  <div class="slogan__container">
-                <h1 class="slogan">
-                    Telegram-канал
-                </h1>
-                <p class="telegram__chanel__desc">
-                </p>
-                <a class="btn" href="https://t.me/stoliarova_alina">
-                    Підписатися
-                </a>
-            </div>
-
             <div class="container">
                 <section class="advantages">
                     <h1 class="section__name">
@@ -1487,7 +1483,17 @@
                 </section>
             </div>
 
-          
+            <div class="slogan__container">
+                <h1 class="slogan">
+                    Telegram-канал
+                </h1>
+                <p class="telegram__chanel__desc">
+                </p>
+                <a class="btn" href="https://t.me/stoliarova_alina">
+                    Підписатися
+                </a>
+            </div>
+
            
 
             <div class="divider"></div>
@@ -1605,7 +1611,15 @@
                         <div data-close class="modal__close">&times;</div>
                         <div class="modal__title">Ми скоро передзвонимо!</div>
                         <input required placeholder="Ваше ім'я" name="name" type="text" class="modal__input">
+                     <div class="modal__input__container">
                         <input required placeholder="Ваш номер телефона" name="phone" type="phone" class="modal__input">
+                        <span>
+                            або
+                        </span>
+                        <input required placeholder="Ваш e-mail" name="email" type="email" class="modal__input">
+                     </div> 
+                     
+                       
                         <button type="submit" class="modal__btn btn">Передзвонити</button>
                     </form>
                 </div>
