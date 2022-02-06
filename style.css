@@ -1,6 +1,6 @@
 body {
     padding: 0;
-    margin: 0 auto;
+    margin: 0 10vw;
     font-family:Arial, Helvetica, sans-serif;
     font-size: 1.2em;
     line-height: 1.5;
@@ -47,7 +47,6 @@ nav {
     align-self: center;
     font-family: 'Caveat', cursive;
     height: 100px;
-    padding: 0 50px;
 }
 
 .nav__container,
@@ -117,11 +116,11 @@ a:hover.footer__logo {
 
 }
 
-.title:hover {
+a.title {
     color: #f0aa7c;
     letter-spacing: 5px;
-    border-bottom: 2px solid rgba(255, 151, 82, 0.7);
-    border-top: 2px solid rgba(255, 151, 82, 0.7);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.7);
+    border-top: 2px solid rgba(255, 255, 255, 0.7);
 }
 
 
@@ -135,7 +134,9 @@ a:hover.footer__logo {
     flex: 50%;
 }
 
-
+.shopping__tour__desc .text__block{
+    
+}
 
 
 .menu {
@@ -203,24 +204,26 @@ a:hover.footer__logo {
     width: 65px;
     height: 9px;
     border-radius: 15px/15px;
-    background-color:rgba(255, 255, 255, 0.7);
+    background-color: rgba(255, 151, 82, 1);
     transition-duration: .20s;
 }
 
 .nav-btn>span::before {
     content: '';
     top: -24px;
+    background-color:rgba(255, 255, 255, 0.7);
 }
 
 .nav-btn>span::after {
     content: '';
     top: 24px;
+    background-color:rgba(255, 255, 255, 0.7);
 }
 
 .nav-btn:hover>span,
 .nav-btn:hover>span::before,
 .nav-btn:hover>span::after {
-    background-color: rgba(255, 151, 82, 1);
+    
 }
 
 .nav {
@@ -279,15 +282,16 @@ label .nav-btn {
 .main {
     display: block;
     align-items: center;
-    padding: 20px;
+    padding: 100px 40px;
     margin: 0 auto;
 }
 
 .container {
     display: block;
     align-content: center;
-    margin: 10px;
+    margin: 20px;
     border: 1px solid black;
+    padding: 25px;
     border-radius: 15px/15px;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, .5);
 }
@@ -481,7 +485,7 @@ section h1{
 
 svg.service__icon {
     text-align: center;
-    margin: 10px auto 0;
+    margin: 10px auto ;
     border-radius: 10%;
 }
 
@@ -680,11 +684,14 @@ h1.slogan {
     margin: 0 5vw;
 }
 
-.shopping__tour__desc {
+.shopping__tour__desc p.text__block {
     align-items: center;
     margin: 10px auto;
     padding: 10px;
     text-align: center;
+    color: rgba(255, 151, 82, 1);
+    width: 30%;
+    font-size: 200%;
 }
 
 .shopping__tour__name {
@@ -1026,7 +1033,7 @@ a.social__link:hover {
 
 .vert__divider {
     display: block;
-    height:10vh; I 
+    height: 30vh;
     clear: both;
     width: 1px;
     background-color: rgba(255, 255, 255, 0.1);
