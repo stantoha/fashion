@@ -491,11 +491,11 @@ svg.service__icon {
     height: auto;
     background: rgba(255, 255, 255, 0.5);
     border-radius: 15px/15px;
-    padding: 25px 50px;
+    padding: 20px;
     font-size: 1em;
     font-weight: 300;
     color: rgba(0, 0, 0, .7);
-    box-shadow: 0 0 35px rgba(0, 0, 0, .25)
+    box-shadow: 0 0 30px rgba(0, 0, 0, .25)
 }
 
 .service__descr img {
@@ -503,7 +503,7 @@ svg.service__icon {
     object-fit: cover; */
     transform: scale(0.8);
     margin: 10px;
-    box-shadow: 0 0 35px rgba(0, 0, 0, .25)
+    box-shadow: 0 0 30px rgba(0, 0, 0, .25)
 }
 
 
@@ -552,7 +552,7 @@ h3.service__name {
     font-weight: 700;
     text-align: center;
     border-radius: 15px/15px;
-    min-width: 130px;
+    width: 150px;
     font-size: 1.2em;
     margin: 15px;
     color: rgba(0, 0, 0, .6);
