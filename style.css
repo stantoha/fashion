@@ -422,6 +422,7 @@ section h1{
 
 .advantages__item:hover {
     transform: scale(1.3);
+    color: rgba(255, 255, 255, 0.8);
     box-shadow: 0 0 35px rgba(0, 0, 0, .25);
 
 }
@@ -685,13 +686,18 @@ h1.slogan {
 }
 
 .shopping__tour__desc p.text__block {
-    align-items: center;
+    align-items:baseline;
     margin: 10px auto;
     padding: 10px;
-    text-align: center;
+  
     color: rgba(255, 151, 82, 1);
-    width: 30%;
+    width: 90%;
     font-size: 200%;
+}
+
+.shopping__tour__desc img{
+    display: block;
+    margin: 30px auto;
 }
 
 .shopping__tour__name {
@@ -709,7 +715,10 @@ h1.slogan {
 
 }
 
-.shopping__tour__program {
+.shopping__tour__program h4{
+    color: rgba(255, 151, 82, 1);
+  text-decoration: underline;
+  font-size: 120%;
     margin: 30px auto;
 }
 
