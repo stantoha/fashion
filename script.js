@@ -144,7 +144,6 @@ let navShow=function(){
                   item.classList.add('hide');
                 });
 
-               
                 navButtons[i].classList.remove('hide');  
                 navButtons[i].classList.add('show','active');  
                 let  navBlockCoord= navBlock[i].getBoundingClientRect(),
@@ -176,9 +175,6 @@ navShow();
 
 let subTitle=document.querySelectorAll('.sub__title');
 
-
- 
-
 function slideinSubTitle(){
     subTitle.forEach(item=>{
         let  subTitleCoordY=subTitle.getBoundingClientRect().y;
@@ -191,7 +187,26 @@ function slideinSubTitle(){
     
 }
 
+const itemDesc=document.querySelector('.item__desc'),
+  prev=document.querySelector('.prev'),
+  next=document.querySelector('.next'),
+  itemDescPics=document.querySelectorAll('.item__desc__img');
 
+/* function itemDescPicsHide(){
+  itemDescPics.forEach(item=>{
+    item.classList.add('hidden');
+    item.classList.remove('show','fade');
+  });
+}
+
+function itemDescPicsShow(i=0){
+    itemDescPics.forEach((item,i)=>{
+      itemDescPics[i].classList.remove('hidden');
+      itemDescPics[i].classList.add('show','fade');
+    });
+  }
+  itemDescPicsHide(); */
+  /* itemDescPicsShow(); */
 
          
           

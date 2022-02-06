@@ -30,6 +30,7 @@
         }
 
         .wrapper {
+            width:100vw;
             margin: 0;
         }
 
@@ -53,6 +54,7 @@
         }
 
         .wrapper {
+            width:100vw;
             margin: 0;
         }
 
@@ -109,24 +111,31 @@
         }
 
         .wrapper {
+            width:100vw;
             margin: 0;
         }
 
-        .services__menu,
         .presentation__card,
         .main,
-        .container {
+        .container,
+        .modal__content {
             padding: 0;
             margin: 0;
         }
-
+.modal__content{
+    border:none;
+}
         .menu__container {
             display: none;
             position: absolute;
         }
+.service{
+    max-width: 400px;
+}
 
-
-        .service__descr {
+.service figure.service__descr {
+            padding: 0;
+            margin: 0;
             flex-wrap: wrap;
         }
 
@@ -158,22 +167,32 @@
         }
 
         .wrapper {
+            width:100vw;
             margin: 0;
         }
 
-        .services__menu,
+        .service figure.service__descr {
+            padding: 0;
+            margin: 0;
+            flex-wrap: wrap;
+        }
         .presentation__card,
         .main,
-        .container {
+        .container,
+        .modal__content {
             padding: 0;
             margin: 0;
         }
-
+.modal__content{
+    border:none;
+}
         .menu__container {
             display: none;
             position: absolute;
         }
-
+        .service{
+    max-width: 350px;
+}
         .service__descr {
             flex-wrap: wrap;
         }
@@ -206,6 +225,7 @@
         }
 
         .wrapper {
+            width:100vw;
             margin: 0;
         }
 
@@ -230,19 +250,26 @@
             width: 150px;
         }
 
-        .service__descr {
+        .service figure.service__descr {
+            padding: 0;
+            margin: 0;
             flex-wrap: wrap;
         }
 
-        .service figure,
-        .services__menu,
+        
         .presentation__card,
         .main,
-        .container {
+        .container,
+        .modal__content {
             padding: 0;
             margin: 0;
         }
-
+.modal__content{
+    border:none;
+}
+.service{
+    max-width: 280px;
+}
         .service__item {
 
             font-size: 0.7em;
@@ -318,15 +345,26 @@
         }
 
         .wrapper {
+            width:100vw;
             margin: 0;
         }
 
-        .services__menu,
+        
         .presentation__card,
         .main,
-        .container {
+        .container,
+        .modal__content {
             padding: 0;
             margin: 0;
+        }
+.modal__content{
+    border:none;
+}
+
+.service figure.service__descr {
+            padding: 0;
+            margin: 0;
+            flex-wrap: wrap;
         }
 
         form.sign__up {
@@ -386,15 +424,16 @@
 
                 <div class="logo__container">
                     <a href="#" class="logo">
-                        <img src="img/icons/LOG.jpg " alt="#">
+                        <img src="img/icons/logo.png" alt="#">
                     </a>
                 </div>
 
                 <div class="title__container">
+                    
                     <a href="#" class="title">
-                        <h3>Аліна Столярова</h3>
-                    </a>
-                    <span>персональний стиліст</span>
+                        <h2>Аліна Столярова</h2>
+                    </a>         
+                 <!--    <span>персональний стиліст</span>        -->    
                 </div>
 
                 <div class="nav__container ">
@@ -436,7 +475,7 @@
             <div class="container">
                 <section class="presentation">
 
-                    <figure class="presentation__card">
+                    <figure  class="descr__card presentation__card">
                         <img class="content__pic" src="img/a.jpg" alt="#">
 
                         <figcaption class="text__block">
@@ -457,9 +496,10 @@
                         </figcaption>
 
                     </figure>
+
                     <div class="divider"></div>
 
-                    <figure class="presentation__card">
+                    <figure  class="descr__card presentation__card">
 
                         <figcaption class="text__block">
                             <h1 class="introduction">
@@ -488,7 +528,7 @@
                     <div class="divider"></div>
 
 
-                    <figure class="presentation__card">
+                    <figure  class="descr__card presentation__card">
                         <img class="content__pic" src="img/alinka1.jpg" alt="#">
 
                         <figcaption class="text__block">
@@ -620,10 +660,10 @@
                         Про мене
                     </h1>
                     <div class="divider"></div>
-                    <figure>
+                    <figure class="descr__card">
                         <img class="content__pic" src="img/alinka.jpg" alt="Alinka">
 
-                        <figcaption>
+                        <figcaption class="text__block">
                             <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                                 Consectetur, rem tenetur.</span>
 
@@ -663,7 +703,7 @@
                     Давай познайомимося!?:)
 
                     <button data-modal class="consult__link btn" type="button">
-                    Запишися
+                        Запишися
                     </button>
                     до мене на консультацію!:)
                 </h1>
@@ -681,10 +721,10 @@
                         <div class="service">
                             <h3 class="service__name">Консультація</h3>
 
-                            <figure class="service__descr">
+                            <figure  class="descr__card service__descr">
                                 <img class="content__pic" src="img/al1.JPG" alt="#">
 
-                                <figcaption>
+                                <figcaption class="text__block">
 
                                     <div class="descr__block">
                                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit placeat eos
@@ -735,10 +775,10 @@
                             <h3 class="service__name">Розбір гардеробу</h3>
 
 
-                            <figure class="service__descr">
+                            <figure  class="descr__card service__descr">
                                 <img class="content__pic" src="img/al5.JPG" alt="#">
 
-                                <figcaption>
+                                <figcaption class="text__block">
 
                                     <div class="descr__block">
                                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit placeat eos
@@ -787,10 +827,10 @@
                         <div class="service">
                             <h3 class="service__name">Капсула</h3>
 
-                            <figure class="service__descr">
+                            <figure  class="descr__card service__descr">
                                 <img class="content__pic" src="img/alinka2.jpg" alt="#">
 
-                                <figcaption>
+                                <figcaption class="text__block">
 
                                     <div class="descr__block">
                                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit placeat eos
@@ -840,10 +880,10 @@
                         <div class="service">
                             <h3 class="service__name">Шопінг</h3>
 
-                            <figure class="service__descr">
+                            <figure  class="descr__card service__descr">
                                 <img class="content__pic" src="img/IMG_1104.jpg" alt="#">
 
-                                <figcaption>
+                                <figcaption class="text__block">
                                     <div class="descr__block">
                                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit placeat eos
                                             odio
@@ -891,10 +931,10 @@
                         <div class="service">
                             <h3 class="service__name">Підбір образу під подію</h3>
 
-                            <figure class="service__descr">
+                            <figure  class="descr__card service__descr">
                                 <img class="content__pic" src="img/alinka3.jpg" alt="#">
 
-                                <figcaption>
+                                <figcaption class="text__block">
 
                                     <div class="descr__block">
                                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit placeat eos
@@ -944,10 +984,10 @@
                         <div class="service">
                             <h3 class="service__name">Шопінг-тури</h3>
 
-                            <figure class="service__descr">
+                            <figure  class="descr__card service__descr">
                                 <img class="content__pic" src="img/3.jpg" alt="#">
 
-                                <figcaption>
+                                <figcaption class="text__block">
 
                                     <div class="descr__block">
                                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit placeat eos
@@ -1071,9 +1111,10 @@
                     <div class="item">
                         <h3 class="item__name">Celine</h3>
 
-                        <figure class="item__desc">
+                        <figure  class="descr__card item__desc">
                             <button class="prev">
-                                <</button> <button class="next">>
+                                <</button>
+                                 <button class="next">>
                             </button>
                             <ul>
                                 <li>
@@ -1095,7 +1136,7 @@
                             </ul>
 
 
-                            <figcaption>
+                            <figcaption class="text__block">
                                 <p class="column">
                                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti vel saepe
                                     laudantium. Est voluptates molestias cupiditate perferendis quisquam
@@ -1119,12 +1160,7 @@
                             </p>
 
                         </div>
-
-
-
                     </div>
-
-
 
                 </div>
             </div>
@@ -1142,9 +1178,9 @@
                                 Париж
                             </h3>
 
-                            <figure class="shopping__tour__desc">
+                            <figure  class="descr__card shopping__tour__desc">
                                 <img src="img/paris.jpg" alt="#">
-                                <figcaption>
+                                <figcaption class="text__block"> 
                                     <p>
                                         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi nesciunt
                                         aliquid,
@@ -1227,9 +1263,9 @@
                             <h3 class="shopping__tour__name">
                                 Мілан
                             </h3>
-                            <figure class="shopping__tour__desc">
+                            <figure  class="descr__card shopping__tour__desc">
                                 <img src="img/Milan.jpg" alt="#">
-                                <figcaption>
+                                <figcaption class="text__block">
                                     <p>
                                         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi nesciunt
                                         aliquid,
@@ -1309,94 +1345,6 @@
 
                 </section>
             </div>
-
-
-            <div class="slogan__container">
-                <h1 class="slogan">
-                    SLOGAN TEXT
-                </h1>
-            </div>
-
-
-            <div class="container">
-                <section class="clients__reviews nav__block">
-                    <h1 class="section__name">
-                        Відгуки
-                    </h1>
-                    <div class="divider"></div>
-                    <ul class="reviews__list">
-
-                        <li class="review__item">
-                            <figure>
-                                <img class="client__pic content__pic" src="img/style.jpg" alt="#">
-
-                                <figcaption>
-                                    <p class="client__name">
-                                        <b>Даздраперма</b>
-                                        <br>
-                                        <i><span>клієнтка</span></i>
-                                    </p>
-
-
-                                    <p class="services__recieved">
-                                        Розбір гармидару<br>
-                                        <i><span>замовлена послуга</span></i>
-                                    </p>
-
-
-                                </figcaption>
-                            </figure>
-
-                            <p class="text__block column">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium nulla illum ea quis
-                                magnam eum incidunt consequuntur porro debitis quae voluptas obcaecati tenetur nam sunt
-                                sequi quaerat, nostrum ad accusamus!
-                            </p>
-                        </li>
-                        <li class="review__item">
-
-                            <figure>
-                                <img class="client__pic content__pic " src="img/style1.jpg" alt="#">
-
-                                <figcaption>
-                                    <p class="client__name">
-                                        <b>Василина</b>
-                                        <br>
-                                        <i><span>клієнтка</span></i>
-                                    </p>
-
-
-                                    <p class="services__recieved">
-                                        Розбір гармидару<br>
-                                        <i><span>замовлена послуга</span></i>
-                                    </p>
-
-
-                                </figcaption>
-
-                            </figure>
-                            <p class="text__block column">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium nulla illum ea quis
-                                magnam eum incidunt consequuntur porro debitis quae voluptas obcaecati tenetur nam sunt
-                                sequi quaerat, nostrum ad accusamus!
-                            </p>
-                        </li>
-                    </ul>
-                    <div class="divider"></div>
-                </section>
-            </div>
-
-            <div class="slogan__container">
-                <h1 class="slogan">
-                    Telegram-канал
-                </h1>
-                <p class="telegram__chanel__desc">
-                </p>
-                <a class="btn" href="https://t.me/stoliarova_alina">
-                    Підписатися
-                </a>
-            </div>
-
             <div class="container">
                 <section class="advantages">
                     <h1 class="section__name">
@@ -1409,6 +1357,9 @@
                                 Перевага 1
                             </h4>
                             <p class="text__block advantage__desc">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam fuga animi praesentium
+                                quia consectetur exercitationem officiis, quo ipsam cupiditate laboriosam beatae illum
+                                tenetur ipsum, perferendis ratione ea quis nesciunt a?
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi voluptate saepe quia
                                 laboriosam? Earum provident, exercitationem atque pariatur eaque mollitia ducimus
                                 architecto totam dicta veritatis qui culpa voluptatum amet saepe?
@@ -1432,17 +1383,117 @@
                                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia rem laborum animi
                                 esse deserunt! Suscipit natus ea odit ipsam impedit, a consequatur, modi, vitae alias et
                                 eaque quidem distinctio illum.
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Error consectetur magni
+                                suscipit vel unde. Illo magni veritatis beatae perspiciatis ut aperiam quo totam maxime,
+                                sint quam voluptatem autem! Perferendis, harum!
                             </p>
                         </li>
                     </ul>
 
                     <div class="divider"></div>
+
                 </section>
             </div>
 
+            <div class="slogan__container">
+                <h1 class="slogan">
+                    SLOGAN TEXT
+                </h1>
+            </div>
+
+
+            <div class="container">
+                <section class="clients__reviews nav__block">
+                    <h1 class="section__name">
+                        Відгуки
+                    </h1>
+                    <div class="divider"></div>
+                    <ul class="reviews__list">
+
+                        <li class="review__item">
+                            <figure  class="descr__card">
+                                <img class="content__pic" src="img/style.jpg" alt="#">
+
+                                <figcaption class="text__block">
+                                    <p class="client__name">
+                                        <b>Даздраперма</b>
+                                        <br>
+                                        <i><span>клієнтка</span></i>
+                                    </p>
+                                    
+                                    <p class="services__recieved">
+                                        Розбір гармидару<br>
+                                        <i><span>замовлена послуга</span></i>
+                                    </p>
+                                    
+                                    <p class="client__age"> Вік:
+                                        <span>25</span>
+                                    </p>
+                                    </figcaption>
+                            </figure>
+
+                            <p class="text__block column">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium nulla illum ea quis
+                                magnam eum incidunt consequuntur porro debitis quae voluptas obcaecati tenetur nam sunt
+                                sequi quaerat, nostrum ad accusamus!
+                            </p>
+                        </li>
+                        <li class="review__item">
+
+                            <figure  class="descr__card">
+                                <img class="content__pic " src="img/style1.jpg" alt="#">
+
+                                <figcaption class="text__block">
+                                    <p class="client__name">
+                                        <b>Василина</b>
+                                        <br>
+                                        <i><span>клієнтка</span></i>
+                                    </p>
+                                    
+                                    <p class="services__recieved">
+                                        Розбір гармидару<br>
+                                        <i><span>замовлена послуга</span></i>
+                                    </p>
+                                    
+                                    <p class="client__age">Вік:
+                                        <span>27</span>
+                                    </p>
+
+                                </figcaption>
+
+                            </figure>
+                            <p class="text__block column">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium nulla illum ea quis
+                                magnam eum incidunt consequuntur porro debitis quae voluptas obcaecati tenetur nam sunt
+                                sequi quaerat, nostrum ad accusamus!
+                            </p>
+                        </li>
+                    </ul>
+
+                    <div class="divider"></div>
+
+                </section>
+            </div>
+
+            <div class="slogan__container">
+                <h1 class="slogan">
+                    Telegram-канал
+                </h1>
+                <p class="telegram__chanel__desc">
+                </p>
+                <a class="btn" href="https://t.me/stoliarova_alina">
+                    Підписатися
+                </a>
+            </div>
+
+           
 
             <div class="divider"></div>
+
         </main>
+
+        <!-- FOOTER -->
+
 
         <footer class="footer">
             <div class="footer__top">
@@ -1492,41 +1543,41 @@
                     <br>
 
                     <span>tel:</span>
-                    <a href="tel:380967407500">+38(096)740-75-00</a>
+                    <a href="tel:380967407500"> +38 ( 096 ) 740 75 00 </a>
                     <br>
 
                     <span>email:</span>
-                    <a href="mailto:alinka199@gmail.com">mail me</a>
+                    <a href="mailto:alinka199@gmail.com">Mail me</a>
                     <br>
 
                 </div>
 
                 <div class="footer__logo__container ">
-                    <a class="logo" href="#">
-                        <img src="img/icons/logo.jpg" alt="logo">
+                    <a class="footer__logo" href="#">
+                        <img src="img/icons/logo.png" alt="logo">
                     </a>
                 </div>
 
                 <div class="footer__services__menu__container">
 
-                    <ul class="services-list">
-                        <li class="service-item">
-                            <a class="service-link" href="#">Розбір гардеробу</a>
+                    <ul class="footer__services__list">
+                        <li class="footer__service__item">
+                            <a class="footer__service__link" href="#">Розбір гардеробу</a>
                         </li>
-                        <li class="service-item">
-                            <a class="service-link" href="#">Консультація по гардеробу</a>
+                        <li class="footer__service__item">
+                            <a class="footer__service__link" href="#">Консультація по гардеробу</a>
                         </li>
-                        <li class="service-item">
-                            <a class="service-link" href="#">Шопінг</a>
+                        <li class="footer__service__item">
+                            <a class="footer__service__link" href="#">Шопінг</a>
                         </li>
-                        <li class="service-item">
-                            <a class="service-link" href="#">Створення капсульного гардеробу</a>
+                        <li class="footer__service__item">
+                            <a class="footer__service__link" href="#">Створення капсульного гардеробу</a>
                         </li>
-                        <li class="service-item">
-                            <a class="service-link" href="#">Шопінг-тури</a>
+                        <li class="footer__service__item">
+                            <a class="footer__service__link" href="#">Шопінг-тури</a>
                         </li>
-                        <li class="service-item">
-                            <a class="service-link" href="#">Створення образу під подію</a>
+                        <li class="footer__service__item">
+                            <a class="footer__service__link" href="#">Створення образу під подію</a>
                         </li>
                     </ul>
                 </div>
