@@ -119,8 +119,8 @@ a:hover.footer__logo {
 a.title {
     color: #f0aa7c;
     letter-spacing: 5px;
-    border-bottom: 2px solid rgba(255, 255, 255, 0.7);
-    border-top: 2px solid rgba(255, 255, 255, 0.7);
+    border-bottom: 9px solid rgba(255, 255, 255, 0.7);
+    border-top: 9px solid rgba(255, 255, 255, 0.7);
 }
 
 
