@@ -999,7 +999,7 @@ a.social__link:hover {
     justify-content: center;
     align-items: center;
     text-align: center;
-    max-width: 280px;
+    max-width: 450;
     margin: 0 auto;
     text-decoration: none;
     background-color: rgba(255, 151, 82, 1);
@@ -1008,8 +1008,8 @@ a.social__link:hover {
     border-radius: 35px/35px;
     transition: all 0.5s;
     color: white;
-    font-weight: 300;
-    font-size: 22px;
+    font-weight: 500;
+    font-size: 25px;
    /*  text-shadow: 1px 0 0 rgba(0, 0, 0, .5); */
     box-shadow: 0 0 40px rgba(0, 0, 0, .3),
     inset 0 0 30px rgba(0, 0, 0, .3);
