@@ -7,6 +7,8 @@ window.addEventListener('DOMContentLoaded', () => {
         tabs = document.querySelectorAll('.service__item'),
         tabsContent = document.querySelectorAll('.service'),
         tabParent = document.querySelector('.services__list'),
+        footerTabs = document.querySelectorAll('.footer__service__item'),
+        footerTabParent = document.querySelector('.footer__services__list'),
         upButton=document.querySelector('.up__button');
 
        
@@ -106,9 +108,11 @@ window.addEventListener('DOMContentLoaded', () => {
 
     window.onscroll = function () {
         if (window.pageYOffset > 300) {
+            titleLink.classList.add('hide');
             upButton.classList.remove('hide');
             upButton.classList.add('show','fade');
         } else {
+            titleLink.classList.remove('hide');
             upButton.classList.add('hide');
             upButton.classList.remove('show','fade');
         }
@@ -154,7 +158,8 @@ let navShow=function(){
                     navBlock[i].classList.add('show','fade');
                 }
                 window.scrollTo(x ,y);
-               /*  document.body.style.overflow = 'hidden'; */
+            /*     document.body.style.overflow = 'hidden';
+                navBlock[i].style.overflow='visible'; */
             }
             else{
                 navButtons.forEach(item=>{
@@ -209,6 +214,28 @@ function itemDescPicsShow(i=0){
   /* itemDescPicsShow(); */
 
          
+
+
+function showFooterTabContent(i = 0) {
+    tabsContent[i].classList.add('show', 'fade');
+    tabsContent[i].classList.remove('hide');
+    footerTabs[i].classList.add('active');
+}
+
+hideTabContent();
+showTabContent();
+
+footerTabParent.addEventListener('click', (event) => {
+    const target = event.target;
+    if (target && target.classList.contains('footer__service__item')) {
+        footerTabs.forEach((item, i) => {
+            if (target == item) {
+                hideTabContent();
+                showFooterTabContent(i);
+            }
+        });
+    }
+});
           
                     
               
