@@ -110,15 +110,15 @@ nav {
 
 a.title {
     margin: 0 auto;
-    font-size: 35px;
+    font-size: 25px;
     font-style: normal;
     transition: all 2s; 
     text-decoration: none;
     color: rgba(255, 151, 82, 1);
-    letter-spacing: 5px;
+    letter-spacing: 3px ;
     padding: 0 100px;
-    border-bottom: 3px solid rgba(255, 255, 255, 0.7);
-    border-top: 3px solid rgba(255, 255, 255, 0.7);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.7);
+    border-top: 1px solid rgba(255, 255, 255, 0.7);
 }
 
 
