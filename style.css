@@ -137,11 +137,11 @@ a:hover.title {
        transform: translateX(200vw);
     }
 
-.phone__svg svg{
+.phone__svg{
     position: absolute;
     margin:0 auto;
-    top: 10px;
-    right: 20px;
+    bottom:50px;
+    right: 50px;
     width: 55px;
     height: 55px;
    padding: 9px;
