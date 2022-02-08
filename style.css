@@ -124,7 +124,6 @@ a.title {
 
 a:hover.title {
     color: #fefaf3;
-    text-decoration: none;
     transition: all 0.3s;
 }
 
