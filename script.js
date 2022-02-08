@@ -9,10 +9,16 @@ window.addEventListener('DOMContentLoaded', () => {
         tabParent = document.querySelector('.services__list'),
         footerTabs = document.querySelectorAll('.footer__service__item'),
         footerTabParent = document.querySelector('.footer__services__list'),
-        upButton=document.querySelector('.up__button');
+        upButton=document.querySelector('.up__button'),
+        navBlock=document.querySelectorAll('.nav__block'),
+        navButtons=document.querySelectorAll('.nav__button'),
+        shoppingButton=document.querySelector('.shopping__section__button'),
+        shoppingBlock=document.querySelector('.shopping__section'),
+        titleName=document.querySelector('.title__name'),
+        titleFamilyName=document.querySelector('.title__family__name');
 
-       
 
+    
      //SHOW-HIDE CONTENT
 
             function hideTabContent() {
@@ -108,11 +114,11 @@ window.addEventListener('DOMContentLoaded', () => {
 
     window.onscroll = function () {
         if (window.pageYOffset > 300) {
-            titleLink.classList.add('hide');
+            titleLink.classList.add('left__slide');
             upButton.classList.remove('hide');
             upButton.classList.add('show','fade');
         } else {
-            titleLink.classList.remove('hide');
+            titleLink.classList.remove('left__slide');
             upButton.classList.add('hide');
             upButton.classList.remove('show','fade');
         }
@@ -123,10 +129,7 @@ window.addEventListener('DOMContentLoaded', () => {
     };
 
   
-    const navBlock=document.querySelectorAll('.nav__block'),
-          navButtons=document.querySelectorAll('.nav__button'),
-          shoppingButton=document.querySelector('.shopping__section__button'),
-          shoppingBlock=document.querySelector('.shopping__section');
+  
          
           
           shoppingButton.onclick=function(){
@@ -216,7 +219,7 @@ function itemDescPicsShow(i=0){
          
 
 
-function showFooterTabContent(i = 0) {
+/* function showFooterTabContent(i = 0) {
     tabsContent[i].classList.add('show', 'fade');
     tabsContent[i].classList.remove('hide');
     footerTabs[i].classList.add('active');
@@ -235,7 +238,7 @@ footerTabParent.addEventListener('click', (event) => {
             }
         });
     }
-});
+}); */
           
                     
               
