@@ -1041,10 +1041,11 @@ a.social__link:hover {
 
 .wrapper img.content__pic {
     display: block;
+    box-sizing:content-box;
     border-radius: 15px/15px;
     max-width: 400px;
     max-height: 600px;
-    margin:50px auto ;
+    margin:30px auto ;
     padding: 50px;
     /*  border:3px solid rgba(0, 0, 0, .5); */
     background-color: rgba(255, 255, 255, 0.7);
