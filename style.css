@@ -632,8 +632,6 @@ h3.service__name {
 }
 
 
-
-
 .sign__up {
     display: flex;
     width: auto;
@@ -676,7 +674,8 @@ h1.consult__link{
 }
 
 .day__descr {
-    margin: 0 5vw;
+    margin: 0 20px;
+padding:20px;
 }
 
 .shopping__tour__desc {
@@ -711,6 +710,8 @@ padding:20px;
     color: rgba(255, 151, 82, 1);
     text-decoration: underline;
     margin: 30px auto;
+padding:20px;
+
 }
 
 .tour__price,
