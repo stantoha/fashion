@@ -686,7 +686,8 @@ h1.consult__link{
 }
 
 .short__tour__desc{
-    margin: 20px 10vw;
+    margin: 20px auto;
+    padding:20px;
     text-align: center;
 }
 
@@ -695,7 +696,7 @@ h1.consult__link{
     width: 30%;
     text-align: center;
     font-size: 2em;
-    margin: 0 auto;
+    margin: 20px auto;
 }
 
 .shopping__tour__card {
